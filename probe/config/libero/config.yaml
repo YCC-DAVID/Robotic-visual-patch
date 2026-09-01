@@ -1,0 +1,5 @@
+assets: /home/user1/workspace/chence/WAMattack/third_party/LIBERO/libero/libero/assets
+bddl_files: /home/user1/workspace/chence/WAMattack/third_party/LIBERO/libero/libero/bddl_files
+benchmark_root: /home/user1/workspace/chence/WAMattack/third_party/LIBERO/libero/libero
+datasets: /home/user1/workspace/chence/WAMattack/third_party/LIBERO/libero/libero/../datasets
+init_states: /home/user1/workspace/chence/WAMattack/third_party/LIBERO/libero/libero/init_files

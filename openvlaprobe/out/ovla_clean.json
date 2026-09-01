@@ -1,0 +1,23 @@
+{
+  "rate": 0.7333333333333333,
+  "n": 15,
+  "successes": 11,
+  "mean_steps": 86.63636363636364,
+  "per_ep": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ]
+}

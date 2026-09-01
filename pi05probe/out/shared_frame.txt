@@ -1,0 +1,72 @@
+====================================================================================================
+环境自检
+====================================================================================================
+  libero    @ /home/user1/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero
+  robosuite 1.4.1 | mujoco 3.2.3
+  LIBERO_CONFIG_PATH = /home/user1/workspace/chence/WAMattack/pi05probe/libero_config
+  init_states 目录   = /home/user1/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/libero/./init_files
+  libero_goal n_tasks = 10
+
+====================================================================================================
+1 · 取共享初始状态
+====================================================================================================
+  来源 task[8] = put_the_bowl_on_the_plate  episode 0
+  .pruned_init shape = (50, 79)  dtype=float64
+  SHARED_STATE shape = (79,)  sha=66b1883f351c
+  SHARED_SEED = 10000   warmup = 10 步 dummy
+
+====================================================================================================
+2 · 四条指令 × 同一初始状态 —— 逐位相同性检查(S0.5 检查 B)
+====================================================================================================
+
+  --- task[7] turn_on_the_stove
+      task.language = 'turn on the stove'
+      ngeom=240  nq=41  flatten=79
+      fixture bodies (11) = ['flat_stove_1_base', 'flat_stove_1_burner', 'flat_stove_1_burner_plate', 'flat_stove_1_button', 'flat_stove_1_main', 'wine_rack_1_main', 'wooden_cabinet_1_base', 'wooden_cabinet_1_cabinet_bottom', 'wooden_cabinet_1_cabinet_middle', 'wooden_cabinet_1_cabinet_top', 'wooden_cabinet_1_main']
+      fixture body_pos sha = 00f1acfe191a
+      settle 后 flatten sha = 0125f49e339f
+      img224 sha = 1107e295ff21   wrist224 sha = 1d50636f3840
+      seg: 唯一 id 数=45  depth(m) 范围=[0.6934, 3.0689]
+      主 env 实时帧 vs 几何 env 恢复帧:182/196608 字节不同(Q9 已知:恢复路径 != 实时渲染,这里不是 seg 的锅)
+
+  --- task[9] put_the_wine_bottle_on_the_rack
+      task.language = 'put the wine bottle on the rack'
+      ngeom=240  nq=41  flatten=79
+      fixture bodies (11) = ['flat_stove_1_base', 'flat_stove_1_burner', 'flat_stove_1_burner_plate', 'flat_stove_1_button', 'flat_stove_1_main', 'wine_rack_1_main', 'wooden_cabinet_1_base', 'wooden_cabinet_1_cabinet_bottom', 'wooden_cabinet_1_cabinet_middle', 'wooden_cabinet_1_cabinet_top', 'wooden_cabinet_1_main']
+      fixture body_pos sha = 00f1acfe191a
+      settle 后 flatten sha = 0125f49e339f
+      img224 sha = 1107e295ff21   wrist224 sha = 1d50636f3840
+      seg: 唯一 id 数=45  depth(m) 范围=[0.6934, 3.0689]
+      主 env 实时帧 vs 几何 env 恢复帧:182/196608 字节不同(Q9 已知:恢复路径 != 实时渲染,这里不是 seg 的锅)
+
+  --- task[8] put_the_bowl_on_the_plate
+      task.language = 'put the bowl on the plate'
+      ngeom=240  nq=41  flatten=79
+      fixture bodies (11) = ['flat_stove_1_base', 'flat_stove_1_burner', 'flat_stove_1_burner_plate', 'flat_stove_1_button', 'flat_stove_1_main', 'wine_rack_1_main', 'wooden_cabinet_1_base', 'wooden_cabinet_1_cabinet_bottom', 'wooden_cabinet_1_cabinet_middle', 'wooden_cabinet_1_cabinet_top', 'wooden_cabinet_1_main']
+      fixture body_pos sha = 00f1acfe191a
+      settle 后 flatten sha = 0125f49e339f
+      img224 sha = 1107e295ff21   wrist224 sha = 1d50636f3840
+      seg: 唯一 id 数=45  depth(m) 范围=[0.6934, 3.0689]
+      主 env 实时帧 vs 几何 env 恢复帧:182/196608 字节不同(Q9 已知:恢复路径 != 实时渲染,这里不是 seg 的锅)
+
+  --- task[4] put_the_bowl_on_top_of_the_cabinet
+      task.language = 'put the bowl on top of the cabinet'
+      ngeom=240  nq=41  flatten=79
+      fixture bodies (11) = ['flat_stove_1_base', 'flat_stove_1_burner', 'flat_stove_1_burner_plate', 'flat_stove_1_button', 'flat_stove_1_main', 'wine_rack_1_main', 'wooden_cabinet_1_base', 'wooden_cabinet_1_cabinet_bottom', 'wooden_cabinet_1_cabinet_middle', 'wooden_cabinet_1_cabinet_top', 'wooden_cabinet_1_main']
+      fixture body_pos sha = 00f1acfe191a
+      settle 后 flatten sha = 0125f49e339f
+      img224 sha = 1107e295ff21   wrist224 sha = 1d50636f3840
+      seg: 唯一 id 数=45  depth(m) 范围=[0.6934, 3.0689]
+      主 env 实时帧 vs 几何 env 恢复帧:182/196608 字节不同(Q9 已知:恢复路径 != 实时渲染,这里不是 seg 的锅)
+
+====================================================================================================
+3 · 判据:四个 task 是否真的共用同一场景
+====================================================================================================
+  ✅ sim.get_state().flatten()        逐位相同=True  maxdiff=0.000e+00
+  ✅ 三个 fixture 的 body_pos            逐位相同=True  maxdiff=0.000e+00
+  ✅ agentview RGB 256²               逐位相同=True  maxdiff=0.000e+00
+  ✅ 喂模型的 base 图 224²                 逐位相同=True  maxdiff=0.000e+00
+  ✅ 喂模型的 wrist 图 224²                逐位相同=True  maxdiff=0.000e+00
+  ✅ observation/state (8,)           逐位相同=True  maxdiff=0.000e+00
+
+  ✅ S0.5 检查 B 通过:四条指令面对**逐位相同**的场景,唯一变量是文本。

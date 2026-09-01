@@ -1,0 +1,64 @@
+====================================================================================================
+环境自检
+====================================================================================================
+  transformers        = 4.53.2  @ /home/user1/workspace/chence/WAMattack/third_party/transformers_patched/transformers/__init__.py
+  transformers_replace check = OK
+  torch = 2.7.1+cu126  cuda_available=True
+  torch ckpt = /home/user1/workspace/chence/WAMattack/checkpoints/pi05_libero_pytorch  (6.74 GiB)
+  norm_stats  = OK
+  pytorch_compile_mode: 'max-autotune' -> None
+  共享 ε: shape=(10, 32)  ‖ε‖=17.754799
+
+====================================================================================================
+A · JAX vs PyTorch 一致性(同 observation + 同 ε)
+====================================================================================================
+[A1] 载入 PyTorch policy …
+     actions shape = (10, 7)
+     PyTorch a[0] = [-0.661149  0.190244 -0.738629 -0.002965 -0.001725  0.001656 -0.993534]
+[A2] 载入 JAX policy …
+     JAX     a[0] = [-0.664813  0.1918   -0.744158 -0.003054 -0.002163  0.001773 -0.998305]
+
+  |Δ| max  = 7.449280e-03      (整个 (10,7) chunk)
+  |Δ| mean = 1.447513e-03
+  逐维 max:  [0.007449 0.001907 0.006156 0.00036  0.000438 0.000678 0.004771]
+  a_jx 的量级 (max|a|) = 1.001009
+  相对误差 max = 7.441770e-03
+  夹爪符号 sign(a[:,6]) 两边是否完全一致: True
+     PyTorch: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+     JAX    : [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+
+====================================================================================================
+A' · 验证 FINDINGS Q3b:π0.5-LIBERO 是否真的不读 observation/state
+====================================================================================================
+  换掉 state 后 |Δ| max = 0.000000e+00   (预期恰好 0.0)
+  ⇒ state 确实被完全忽略
+
+====================================================================================================
+B · attention 逐层抽取(forward hook,不改源码)
+====================================================================================================
+  language_model.layers 是 ModuleList,共 18 层
+  _attn_implementation = 'eager'  (pi0_pytorch.py:392 会在 sample_actions 里强制设成 'eager')
+  抓到 attention 的层数: 18 / 18
+  每层被调用次数: [1]  (预期全是 1:prefix 只跑一趟,10 个去噪步走的是 gemma_expert,不碰这些 hook)
+  layer0 attn_weights: shape=(1, 8, 968, 968)  dtype=torch.float32
+  预期 prefix 长度 = 3×256 + 200 = 968;实测 Tq=Tk=968
+  heads = 8  (预期 8);batch = 1
+  行和(应≈1): min=0.997009 max=1.002305
+  prompt 'put the bowl on the plate' 的真实 token 数 Z = 8(200 个 slot 里其余是 padding)
+  attn[text(有效 8 行), base_image(256 列)] = (8, 8, 256)
+  head 求和后 reshape → (8, 16, 16)  (§A-2 第 1-3 步)
+  每个 text token 在 base 图上的注意力质量(行和,head-summed / H):
+     token[ 0]  mass=0.011098  max_cell=0.002506
+     token[ 1]  mass=0.059853  max_cell=0.036814
+     token[ 2]  mass=0.032770  max_cell=0.030358
+     token[ 3]  mass=0.046660  max_cell=0.043802
+     token[ 4]  mass=0.019872  max_cell=0.017454
+     token[ 5]  mass=0.026168  max_cell=0.024138
+     token[ 6]  mass=0.054370  max_cell=0.047258
+     token[ 7]  mass=0.396958  max_cell=0.237399
+  ⚠️ mass 差异这么大正是 §A-4 说的 attention sink / §A-3 要逐行重归一化的理由。
+  padding 行(第 8..199 个 slot)在 base 图上的注意力: sum=405.000000 max=0.001030
+  ⇒ 印证 FINDINGS Q6:算 saliency 前必须按 tokenized_prompt_mask 裁掉这些行。
+
+  存储估算:整层 [1,8,968,968] fp32 = 28.6 MiB/层 ⇒ 18 层 = 0.50 GiB/帧
+            只留 [H,8,256] = 64.0 KiB/层 ⇒ 18 层 = 1.12 MiB/帧 ⇒ T=60 帧 = 0.07 GiB … 按 §B schema 存盘完全可行

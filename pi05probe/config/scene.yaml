@@ -1,0 +1,59 @@
+# S1 场景 patch 配置。所有几何量均为世界坐标(米)。
+# 数值来源:pi05probe/FINDINGS.md Q6/Q7(在 libero_goal 上实测)。
+
+suite: libero_goal
+# 用来定义共享初始状态的 task(见 FINDINGS Q10);十个 task 状态可互相迁移。
+shared_task: open_the_middle_drawer_of_the_cabinet
+shared_episode: 0
+shared_seed: 10000
+camera_height: 256
+camera_width: 256
+
+# ---- 可依附平面:解析式定义(原点 + 两切向量 + 法向 + 边界)。不做 mesh 采样。
+plane:
+  name: table_top
+  origin:    [0.0, 0.0, 0.900]     # 桌面世界 z = 0.900
+  tangent_u: [1.0, 0.0, 0.0]
+  tangent_v: [0.0, 1.0, 0.0]
+  normal:    [0.0, 0.0, 1.0]
+  bounds_u:  [-0.5, 0.5]           # 桌面 x 范围
+  bounds_v:  [-0.6, 0.6]           # 桌面 y 范围
+
+# ---- patch 物理参数
+patch:
+  name: probe_decal
+  size_wh:       [0.10, 0.10]      # 10 cm × 10 cm
+  thickness:     0.001             # 1 mm 薄长方体(不用零厚度 plane)
+  normal_offset: 0.001             # 沿法向再抬 1 mm,防 z-fighting(实测 z=0.9005 会抖)
+  texture: null                    # null => 用 probe_texture.png(脚本自动生成)
+
+# ---- 锚点网格:在平面局部 2D 撒 n_u × n_v,再映射回世界坐标
+# ⚠️ 2026-08-10 改:S2.0 诊断发现 influence 集中在 bowl(x≈-0.10)→plate(x≈0.06)操作路径上,
+# 原网格(x 0.05–0.30 右前角)完全错过任务区 ⇒ 扩到覆盖操作路径 + 无关区(对照)。
+# keepout 不再用于剔除锚点,而是**打标**(标出会遮挡物体、Δa 混入遮挡效应的格子)。
+grid:
+  n_u: 6
+  n_v: 6
+  range_u: [-0.15, 0.30]           # 覆盖 bowl/plate 操作路径(负 x)到右前角无关区
+  range_v: [-0.30, 0.35]
+
+# ---- keep-out:世界 XY 轴对齐包围盒(fixtures + 可动物体),来自 FINDINGS Q6
+# 锚点的 patch 四角若与任一 keep-out 在 x 和 y 上同时重叠即判非法。
+keepout:
+  wooden_cabinet_1: {x: [-0.0946,  0.1622], y: [-0.3486, -0.1218]}
+  flat_stove_1:     {x: [-0.4753, -0.1742], y: [ 0.1084,  0.2984]}
+  wine_rack_1:      {x: [-0.4033, -0.1328], y: [-0.4523, -0.1198]}
+  akita_black_bowl_1: {x: [-0.1653, -0.0084], y: [-0.0741, 0.0833]}
+  cream_cheese_1:   {x: [-0.0862, -0.0031], y: [ 0.1128,  0.1563]}
+  wine_bottle_1:    {x: [-0.2320, -0.1889], y: [-0.0751, -0.0303]}
+  plate_1:          {x: [-0.0427,  0.1210], y: [-0.0991,  0.0650]}
+
+# ---- 任务相关物体的 geom 名前缀,用于统计"patch 是否遮挡了任务物体"
+task_object_bodies:
+  - akita_black_bowl_1
+  - cream_cheese_1
+  - wine_bottle_1
+  - plate_1
+  - wooden_cabinet_1
+  - flat_stove_1
+  - wine_rack_1

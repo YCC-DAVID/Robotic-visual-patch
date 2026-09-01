@@ -1,0 +1,2 @@
+OpenVLA(离散 7B) LIBERO-goal clean rollout  task=put_the_bowl_on_the_plate
+  成功率 11/15 = 73.3%  平均成功步数 87  seed=10000

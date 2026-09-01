@@ -1,0 +1,118 @@
+{
+  "base_normal": [
+    {
+      "ok": true,
+      "t_success": 89,
+      "t_grasp": 52,
+      "n": 80,
+      "path": 729.4416786107097
+    },
+    {
+      "ok": true,
+      "t_success": 85,
+      "t_grasp": 50,
+      "n": 76,
+      "path": 736.268619674491
+    },
+    {
+      "ok": true,
+      "t_success": 88,
+      "t_grasp": 50,
+      "n": 79,
+      "path": 711.597807011266
+    },
+    {
+      "ok": true,
+      "t_success": 79,
+      "t_grasp": 47,
+      "n": 70,
+      "path": 638.8483754223665
+    },
+    {
+      "ok": true,
+      "t_success": 87,
+      "t_grasp": 51,
+      "n": 78,
+      "path": 719.9934566953496
+    },
+    {
+      "ok": true,
+      "t_success": 96,
+      "t_grasp": 51,
+      "n": 87,
+      "path": 754.9372559365771
+    },
+    {
+      "ok": true,
+      "t_success": 80,
+      "t_grasp": 50,
+      "n": 71,
+      "path": 630.2149921639339
+    },
+    {
+      "ok": true,
+      "t_success": 86,
+      "t_grasp": 54,
+      "n": 77,
+      "path": 679.4952324825038
+    }
+  ],
+  "base_zeroed": [
+    {
+      "ok": true,
+      "t_success": 106,
+      "t_grasp": 59,
+      "n": 97,
+      "path": 725.550748033202
+    },
+    {
+      "ok": true,
+      "t_success": 105,
+      "t_grasp": 59,
+      "n": 96,
+      "path": 766.9903722319475
+    },
+    {
+      "ok": true,
+      "t_success": 103,
+      "t_grasp": 57,
+      "n": 94,
+      "path": 749.5532757390272
+    },
+    {
+      "ok": true,
+      "t_success": 92,
+      "t_grasp": 55,
+      "n": 83,
+      "path": 644.1679251591517
+    },
+    {
+      "ok": true,
+      "t_success": 99,
+      "t_grasp": 59,
+      "n": 90,
+      "path": 694.7658594649961
+    },
+    {
+      "ok": true,
+      "t_success": 107,
+      "t_grasp": 64,
+      "n": 98,
+      "path": 745.9347032490334
+    },
+    {
+      "ok": true,
+      "t_success": 103,
+      "t_grasp": 62,
+      "n": 94,
+      "path": 640.4431275183097
+    },
+    {
+      "ok": true,
+      "t_success": 101,
+      "t_grasp": 63,
+      "n": 92,
+      "path": 663.8872638393127
+    }
+  ]
+}

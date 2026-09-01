@@ -1,0 +1,44 @@
+# ===== 大件 / 外部依赖:绝不入库 =====
+third_party/
+checkpoints/
+libero_config/
+**/libero_config/
+
+# ===== 权重 / 数据 dump =====
+*.npz
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.h5
+*.pkl
+*.pruned_init
+
+# ===== 调试散图:只保留 fig_* 交付图,其余 png 一律忽略 =====
+*.png
+!**/fig_*.png
+# 对抗 patch 纹理 / 预览(结果件,保留)
+!**/config/*_texture*.png
+!**/config/probe_texture*.png
+!**/out/*preview*.png
+!**/out/*texture*.png
+
+# ===== 视频 / 其他大二进制 =====
+*.mp4
+*.avi
+*.gif
+*.pdf
+*.tar
+*.tar.gz
+*.zip
+
+# ===== python / 运行残留 =====
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.ipynb_checkpoints/
+nohup.out
+*.egg-info/
+.DS_Store

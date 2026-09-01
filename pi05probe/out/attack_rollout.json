@@ -1,0 +1,111 @@
+{
+  "clean": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 84.66666666666667,
+    "pos": null,
+    "desc": "\u4e0d\u8d34,\u5bf9\u7167",
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "influence_best": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 84.6,
+    "pos": [
+      -0.06,
+      0.22
+    ],
+    "desc": "\u5f71\u54cd\u529b\u6700\u5927\u7684\u5408\u6cd5\u4f4d\u7f6e 126.4mm",
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "attention_top1": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 83.6,
+    "pos": [
+      0.21,
+      0.22
+    ],
+    "desc": "attention \u6700\u5e38\u9009 36/108,\u5f71\u54cd\u529b 31.4mm",
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "attention_top2": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 83.4,
+    "pos": [
+      0.12,
+      0.35
+    ],
+    "desc": "attention \u6b21\u5e38\u9009 32/108,\u5f71\u54cd\u529b 18.9mm",
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}

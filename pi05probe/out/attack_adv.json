@@ -1,0 +1,55 @@
+{
+  "clean": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 85.6,
+    "pos": null,
+    "desc": "\u4e0d\u8d34,\u5bf9\u7167",
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "trained_cell": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 90.26666666666667,
+    "pos": [
+      0.045,
+      0.117
+    ],
+    "desc": "per-cell influence/gradient \u5408\u6cd5\u9996\u9009;\u5bf9\u6297\u8bad\u7ec3\u7528\u683c",
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}

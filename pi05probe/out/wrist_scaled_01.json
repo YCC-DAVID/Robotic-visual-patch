@@ -1,0 +1,27 @@
+{
+  "clean": {
+    "rate": 0.0,
+    "n": 15,
+    "successes": 0,
+    "mean_steps": null,
+    "pos": null,
+    "desc": "\u4e0d\u8d34,\u5bf9\u7167",
+    "per_ep": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  }
+}

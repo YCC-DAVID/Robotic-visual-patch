@@ -1,0 +1,2189 @@
+{
+ "ngeom": 240,
+ "rows": [
+  {
+   "geom_id": 0,
+   "geom_name": "floor",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": "floor",
+   "group": 1
+  },
+  {
+   "geom_id": 1,
+   "geom_name": "wall_leftcorner_visual",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": null,
+   "group": 1
+  },
+  {
+   "geom_id": 2,
+   "geom_name": "wall_rightcorner_visual",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": null,
+   "group": 1
+  },
+  {
+   "geom_id": 3,
+   "geom_name": "wall_left_visual",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": null,
+   "group": 1
+  },
+  {
+   "geom_id": 4,
+   "geom_name": "wall_right_visual",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": null,
+   "group": 1
+  },
+  {
+   "geom_id": 5,
+   "geom_name": "wall_rear_visual",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": null,
+   "group": 1
+  },
+  {
+   "geom_id": 6,
+   "geom_name": "wall_front_visual",
+   "body_id": 0,
+   "body_name": "world",
+   "obj": null,
+   "group": 1
+  },
+  {
+   "geom_id": 7,
+   "geom_name": "table_collision",
+   "body_id": 1,
+   "body_name": "table",
+   "obj": "table",
+   "group": 0
+  },
+  {
+   "geom_id": 8,
+   "geom_name": "table_visual",
+   "body_id": 1,
+   "body_name": "table",
+   "obj": "table",
+   "group": 1
+  },
+  {
+   "geom_id": 9,
+   "geom_name": "table_leg1_visual",
+   "body_id": 1,
+   "body_name": "table",
+   "obj": "table",
+   "group": 1
+  },
+  {
+   "geom_id": 10,
+   "geom_name": "table_leg2_visual",
+   "body_id": 1,
+   "body_name": "table",
+   "obj": "table",
+   "group": 1
+  },
+  {
+   "geom_id": 11,
+   "geom_name": "table_leg3_visual",
+   "body_id": 1,
+   "body_name": "table",
+   "obj": "table",
+   "group": 1
+  },
+  {
+   "geom_id": 12,
+   "geom_name": "table_leg4_visual",
+   "body_id": 1,
+   "body_name": "table",
+   "obj": "table",
+   "group": 1
+  },
+  {
+   "geom_id": 13,
+   "geom_name": "robot0_g0_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 14,
+   "geom_name": "robot0_g1_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 15,
+   "geom_name": "robot0_g2_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 16,
+   "geom_name": "robot0_g3_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 17,
+   "geom_name": "robot0_g4_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 18,
+   "geom_name": "robot0_g5_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 19,
+   "geom_name": "robot0_g6_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 20,
+   "geom_name": "robot0_g7_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 21,
+   "geom_name": "robot0_g8_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 22,
+   "geom_name": "robot0_g9_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 23,
+   "geom_name": "robot0_g10_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 24,
+   "geom_name": "robot0_g11_vis",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 25,
+   "geom_name": "robot0_link0_collision",
+   "body_id": 3,
+   "body_name": "robot0_link0",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 26,
+   "geom_name": "robot0_g12_vis",
+   "body_id": 4,
+   "body_name": "robot0_link1",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 27,
+   "geom_name": "robot0_link1_collision",
+   "body_id": 4,
+   "body_name": "robot0_link1",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 28,
+   "geom_name": "robot0_g13_vis",
+   "body_id": 5,
+   "body_name": "robot0_link2",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 29,
+   "geom_name": "robot0_link2_collision",
+   "body_id": 5,
+   "body_name": "robot0_link2",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 30,
+   "geom_name": "robot0_g14_vis",
+   "body_id": 6,
+   "body_name": "robot0_link3",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 31,
+   "geom_name": "robot0_g15_vis",
+   "body_id": 6,
+   "body_name": "robot0_link3",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 32,
+   "geom_name": "robot0_g16_vis",
+   "body_id": 6,
+   "body_name": "robot0_link3",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 33,
+   "geom_name": "robot0_g17_vis",
+   "body_id": 6,
+   "body_name": "robot0_link3",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 34,
+   "geom_name": "robot0_link3_collision",
+   "body_id": 6,
+   "body_name": "robot0_link3",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 35,
+   "geom_name": "robot0_g18_vis",
+   "body_id": 7,
+   "body_name": "robot0_link4",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 36,
+   "geom_name": "robot0_g19_vis",
+   "body_id": 7,
+   "body_name": "robot0_link4",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 37,
+   "geom_name": "robot0_g20_vis",
+   "body_id": 7,
+   "body_name": "robot0_link4",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 38,
+   "geom_name": "robot0_g21_vis",
+   "body_id": 7,
+   "body_name": "robot0_link4",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 39,
+   "geom_name": "robot0_link4_collision",
+   "body_id": 7,
+   "body_name": "robot0_link4",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 40,
+   "geom_name": "robot0_g22_vis",
+   "body_id": 8,
+   "body_name": "robot0_link5",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 41,
+   "geom_name": "robot0_g23_vis",
+   "body_id": 8,
+   "body_name": "robot0_link5",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 42,
+   "geom_name": "robot0_g24_vis",
+   "body_id": 8,
+   "body_name": "robot0_link5",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 43,
+   "geom_name": "robot0_link5_collision",
+   "body_id": 8,
+   "body_name": "robot0_link5",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 44,
+   "geom_name": "robot0_g25_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 45,
+   "geom_name": "robot0_g26_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 46,
+   "geom_name": "robot0_g27_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 47,
+   "geom_name": "robot0_g28_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 48,
+   "geom_name": "robot0_g29_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 49,
+   "geom_name": "robot0_g30_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 50,
+   "geom_name": "robot0_g31_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 51,
+   "geom_name": "robot0_g32_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 52,
+   "geom_name": "robot0_g33_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 53,
+   "geom_name": "robot0_g34_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 54,
+   "geom_name": "robot0_g35_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 55,
+   "geom_name": "robot0_g36_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 56,
+   "geom_name": "robot0_g37_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 57,
+   "geom_name": "robot0_g38_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 58,
+   "geom_name": "robot0_g39_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 59,
+   "geom_name": "robot0_g40_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 60,
+   "geom_name": "robot0_g41_vis",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 61,
+   "geom_name": "robot0_link6_collision",
+   "body_id": 9,
+   "body_name": "robot0_link6",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 62,
+   "geom_name": "robot0_g42_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 63,
+   "geom_name": "robot0_g43_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 64,
+   "geom_name": "robot0_g44_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 65,
+   "geom_name": "robot0_g45_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 66,
+   "geom_name": "robot0_g46_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 67,
+   "geom_name": "robot0_g47_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 68,
+   "geom_name": "robot0_g48_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 69,
+   "geom_name": "robot0_g49_vis",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 70,
+   "geom_name": "robot0_link7_collision",
+   "body_id": 10,
+   "body_name": "robot0_link7",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 71,
+   "geom_name": "gripper0_hand_visual",
+   "body_id": 12,
+   "body_name": "gripper0_right_gripper",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 72,
+   "geom_name": "gripper0_hand_collision",
+   "body_id": 12,
+   "body_name": "gripper0_right_gripper",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 73,
+   "geom_name": "gripper0_finger1_visual",
+   "body_id": 14,
+   "body_name": "gripper0_leftfinger",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 74,
+   "geom_name": "gripper0_finger1_collision",
+   "body_id": 14,
+   "body_name": "gripper0_leftfinger",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 75,
+   "geom_name": "gripper0_finger1_pad_collision",
+   "body_id": 15,
+   "body_name": "gripper0_finger_joint1_tip",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 76,
+   "geom_name": "gripper0_finger2_visual",
+   "body_id": 16,
+   "body_name": "gripper0_rightfinger",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 77,
+   "geom_name": "gripper0_finger2_collision",
+   "body_id": 16,
+   "body_name": "gripper0_rightfinger",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 78,
+   "geom_name": "gripper0_finger2_pad_collision",
+   "body_id": 17,
+   "body_name": "gripper0_finger_joint2_tip",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 79,
+   "geom_name": "mount0_controller_box_col",
+   "body_id": 19,
+   "body_name": "mount0_controller_box",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 80,
+   "geom_name": "mount0_pedestal_feet_col",
+   "body_id": 20,
+   "body_name": "mount0_pedestal_feet",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 81,
+   "geom_name": "mount0_torso_vis",
+   "body_id": 21,
+   "body_name": "mount0_torso",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 82,
+   "geom_name": "mount0_pedestal_vis",
+   "body_id": 22,
+   "body_name": "mount0_pedestal",
+   "obj": "robot",
+   "group": 1
+  },
+  {
+   "geom_id": 83,
+   "geom_name": "mount0_pedestal_col",
+   "body_id": 22,
+   "body_name": "mount0_pedestal",
+   "obj": "robot",
+   "group": 0
+  },
+  {
+   "geom_id": 84,
+   "geom_name": "akita_black_bowl_1_g0",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 1
+  },
+  {
+   "geom_id": 85,
+   "geom_name": "akita_black_bowl_1_g1",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 86,
+   "geom_name": "akita_black_bowl_1_g2",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 87,
+   "geom_name": "akita_black_bowl_1_g3",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 88,
+   "geom_name": "akita_black_bowl_1_g4",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 89,
+   "geom_name": "akita_black_bowl_1_g5",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 90,
+   "geom_name": "akita_black_bowl_1_g6",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 91,
+   "geom_name": "akita_black_bowl_1_g7",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 92,
+   "geom_name": "akita_black_bowl_1_g8",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 93,
+   "geom_name": "akita_black_bowl_1_g9",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 94,
+   "geom_name": "akita_black_bowl_1_g10",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 95,
+   "geom_name": "akita_black_bowl_1_g11",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 96,
+   "geom_name": "akita_black_bowl_1_g12",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 97,
+   "geom_name": "akita_black_bowl_1_g13",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 98,
+   "geom_name": "akita_black_bowl_1_g14",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 99,
+   "geom_name": "akita_black_bowl_1_g15",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 100,
+   "geom_name": "akita_black_bowl_1_g16",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 101,
+   "geom_name": "akita_black_bowl_1_g17",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 102,
+   "geom_name": "akita_black_bowl_1_g18",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 103,
+   "geom_name": "akita_black_bowl_1_g19",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 104,
+   "geom_name": "akita_black_bowl_1_g20",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 105,
+   "geom_name": "akita_black_bowl_1_g21",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 106,
+   "geom_name": "akita_black_bowl_1_g22",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 107,
+   "geom_name": "akita_black_bowl_1_g23",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 108,
+   "geom_name": "akita_black_bowl_1_g24",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 109,
+   "geom_name": "akita_black_bowl_1_g25",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 110,
+   "geom_name": "akita_black_bowl_1_g26",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 111,
+   "geom_name": "akita_black_bowl_1_g27",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 112,
+   "geom_name": "akita_black_bowl_1_g28",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 113,
+   "geom_name": "akita_black_bowl_1_g29",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 114,
+   "geom_name": "akita_black_bowl_1_g30",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 115,
+   "geom_name": "akita_black_bowl_1_g31",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 116,
+   "geom_name": "akita_black_bowl_1_g32",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 117,
+   "geom_name": "akita_black_bowl_1_g33",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 118,
+   "geom_name": "akita_black_bowl_1_g34",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 119,
+   "geom_name": "akita_black_bowl_1_g35",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 120,
+   "geom_name": "akita_black_bowl_1_g36",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 121,
+   "geom_name": "akita_black_bowl_1_g37",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 122,
+   "geom_name": "akita_black_bowl_1_g38",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 123,
+   "geom_name": "akita_black_bowl_1_g39",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 124,
+   "geom_name": "akita_black_bowl_1_g40",
+   "body_id": 23,
+   "body_name": "akita_black_bowl_1_main",
+   "obj": "bowl",
+   "group": 0
+  },
+  {
+   "geom_id": 125,
+   "geom_name": "cream_cheese_1_g0",
+   "body_id": 24,
+   "body_name": "cream_cheese_1_main",
+   "obj": "cream_cheese",
+   "group": 1
+  },
+  {
+   "geom_id": 126,
+   "geom_name": "cream_cheese_1_g1",
+   "body_id": 24,
+   "body_name": "cream_cheese_1_main",
+   "obj": "cream_cheese",
+   "group": 0
+  },
+  {
+   "geom_id": 127,
+   "geom_name": "wine_bottle_1_g0",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 1
+  },
+  {
+   "geom_id": 128,
+   "geom_name": "wine_bottle_1_g1",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 1
+  },
+  {
+   "geom_id": 129,
+   "geom_name": "wine_bottle_1_g2",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 1
+  },
+  {
+   "geom_id": 130,
+   "geom_name": "wine_bottle_1_g3",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 131,
+   "geom_name": "wine_bottle_1_g4",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 132,
+   "geom_name": "wine_bottle_1_g5",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 133,
+   "geom_name": "wine_bottle_1_g6",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 134,
+   "geom_name": "wine_bottle_1_g7",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 135,
+   "geom_name": "wine_bottle_1_g8",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 136,
+   "geom_name": "wine_bottle_1_g9",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 137,
+   "geom_name": "wine_bottle_1_g10",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 138,
+   "geom_name": "wine_bottle_1_g11",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 139,
+   "geom_name": "wine_bottle_1_g12",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 140,
+   "geom_name": "wine_bottle_1_g13",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 141,
+   "geom_name": "wine_bottle_1_g14",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 142,
+   "geom_name": "wine_bottle_1_g15",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 143,
+   "geom_name": "wine_bottle_1_g16",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 144,
+   "geom_name": "wine_bottle_1_g17",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 145,
+   "geom_name": "wine_bottle_1_g18",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 146,
+   "geom_name": "wine_bottle_1_g19",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 147,
+   "geom_name": "wine_bottle_1_g20",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 148,
+   "geom_name": "wine_bottle_1_g21",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 149,
+   "geom_name": "wine_bottle_1_g22",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 150,
+   "geom_name": "wine_bottle_1_g23",
+   "body_id": 25,
+   "body_name": "wine_bottle_1_main",
+   "obj": "bottle",
+   "group": 0
+  },
+  {
+   "geom_id": 151,
+   "geom_name": "plate_1_g0",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 1
+  },
+  {
+   "geom_id": 152,
+   "geom_name": "plate_1_g1",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 153,
+   "geom_name": "plate_1_g2",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 154,
+   "geom_name": "plate_1_g3",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 155,
+   "geom_name": "plate_1_g4",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 156,
+   "geom_name": "plate_1_g5",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 157,
+   "geom_name": "plate_1_g6",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 158,
+   "geom_name": "plate_1_g7",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 159,
+   "geom_name": "plate_1_g8",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 160,
+   "geom_name": "plate_1_g9",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 161,
+   "geom_name": "plate_1_g10",
+   "body_id": 26,
+   "body_name": "plate_1_main",
+   "obj": "plate",
+   "group": 0
+  },
+  {
+   "geom_id": 162,
+   "geom_name": "wooden_cabinet_1_g0",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 163,
+   "geom_name": "wooden_cabinet_1_g1",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 164,
+   "geom_name": "wooden_cabinet_1_g2",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 165,
+   "geom_name": "wooden_cabinet_1_g3",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 166,
+   "geom_name": "wooden_cabinet_1_g4",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 167,
+   "geom_name": "wooden_cabinet_1_g5",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 168,
+   "geom_name": "wooden_cabinet_1_g6",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 169,
+   "geom_name": "wooden_cabinet_1_g7",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 170,
+   "geom_name": "wooden_cabinet_1_g8",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 171,
+   "geom_name": "wooden_cabinet_1_g9",
+   "body_id": 28,
+   "body_name": "wooden_cabinet_1_base",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 172,
+   "geom_name": "wooden_cabinet_1_g10",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 173,
+   "geom_name": "wooden_cabinet_1_g11",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 174,
+   "geom_name": "wooden_cabinet_1_g12",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 175,
+   "geom_name": "wooden_cabinet_1_g13",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 176,
+   "geom_name": "wooden_cabinet_1_g14",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 177,
+   "geom_name": "wooden_cabinet_1_g15",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 178,
+   "geom_name": "wooden_cabinet_1_g16",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 179,
+   "geom_name": "wooden_cabinet_1_g17",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 180,
+   "geom_name": "wooden_cabinet_1_g18",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 181,
+   "geom_name": "wooden_cabinet_1_g19",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 182,
+   "geom_name": "wooden_cabinet_1_g20",
+   "body_id": 29,
+   "body_name": "wooden_cabinet_1_cabinet_top",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 183,
+   "geom_name": "wooden_cabinet_1_g21",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 184,
+   "geom_name": "wooden_cabinet_1_g22",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 185,
+   "geom_name": "wooden_cabinet_1_g23",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 186,
+   "geom_name": "wooden_cabinet_1_g24",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 187,
+   "geom_name": "wooden_cabinet_1_g25",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 188,
+   "geom_name": "wooden_cabinet_1_g26",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 189,
+   "geom_name": "wooden_cabinet_1_g27",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 190,
+   "geom_name": "wooden_cabinet_1_g28",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 191,
+   "geom_name": "wooden_cabinet_1_g29",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 192,
+   "geom_name": "wooden_cabinet_1_g30",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 193,
+   "geom_name": "wooden_cabinet_1_g31",
+   "body_id": 30,
+   "body_name": "wooden_cabinet_1_cabinet_middle",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 194,
+   "geom_name": "wooden_cabinet_1_g32",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 195,
+   "geom_name": "wooden_cabinet_1_g33",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 196,
+   "geom_name": "wooden_cabinet_1_g34",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 197,
+   "geom_name": "wooden_cabinet_1_g35",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 198,
+   "geom_name": "wooden_cabinet_1_g36",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 199,
+   "geom_name": "wooden_cabinet_1_g37",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 200,
+   "geom_name": "wooden_cabinet_1_g38",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 201,
+   "geom_name": "wooden_cabinet_1_g39",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 1
+  },
+  {
+   "geom_id": 202,
+   "geom_name": "wooden_cabinet_1_g40",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 203,
+   "geom_name": "wooden_cabinet_1_g41",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 204,
+   "geom_name": "wooden_cabinet_1_g42",
+   "body_id": 31,
+   "body_name": "wooden_cabinet_1_cabinet_bottom",
+   "obj": "cabinet",
+   "group": 0
+  },
+  {
+   "geom_id": 205,
+   "geom_name": "flat_stove_1_base_vis",
+   "body_id": 34,
+   "body_name": "flat_stove_1_burner",
+   "obj": "stove",
+   "group": 1
+  },
+  {
+   "geom_id": 206,
+   "geom_name": "flat_stove_1_base",
+   "body_id": 34,
+   "body_name": "flat_stove_1_burner",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 207,
+   "geom_name": "flat_stove_1_collision_burner",
+   "body_id": 34,
+   "body_name": "flat_stove_1_burner",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 208,
+   "geom_name": "flat_stove_1_burner",
+   "body_id": 35,
+   "body_name": "flat_stove_1_burner_plate",
+   "obj": "stove",
+   "group": 1
+  },
+  {
+   "geom_id": 209,
+   "geom_name": "flat_stove_1_g4",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 1
+  },
+  {
+   "geom_id": 210,
+   "geom_name": "flat_stove_1_g5",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 211,
+   "geom_name": "flat_stove_1_g6",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 212,
+   "geom_name": "flat_stove_1_g7",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 213,
+   "geom_name": "flat_stove_1_g8",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 214,
+   "geom_name": "flat_stove_1_g9",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 215,
+   "geom_name": "flat_stove_1_g10",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 216,
+   "geom_name": "flat_stove_1_g11",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 217,
+   "geom_name": "flat_stove_1_g12",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 218,
+   "geom_name": "flat_stove_1_g13",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 219,
+   "geom_name": "flat_stove_1_g14",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 220,
+   "geom_name": "flat_stove_1_g15",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 221,
+   "geom_name": "flat_stove_1_g16",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 222,
+   "geom_name": "flat_stove_1_g17",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 223,
+   "geom_name": "flat_stove_1_g18",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 224,
+   "geom_name": "flat_stove_1_g19",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 225,
+   "geom_name": "flat_stove_1_g20",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 226,
+   "geom_name": "flat_stove_1_g21",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 227,
+   "geom_name": "flat_stove_1_g22",
+   "body_id": 36,
+   "body_name": "flat_stove_1_button",
+   "obj": "stove",
+   "group": 0
+  },
+  {
+   "geom_id": 228,
+   "geom_name": "wine_rack_1_g0",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 1
+  },
+  {
+   "geom_id": 229,
+   "geom_name": "wine_rack_1_g1",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 230,
+   "geom_name": "wine_rack_1_g2",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 231,
+   "geom_name": "wine_rack_1_g3",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 1
+  },
+  {
+   "geom_id": 232,
+   "geom_name": "wine_rack_1_g4",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 233,
+   "geom_name": "wine_rack_1_g5",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 234,
+   "geom_name": "wine_rack_1_g6",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 1
+  },
+  {
+   "geom_id": 235,
+   "geom_name": "wine_rack_1_g7",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 236,
+   "geom_name": "wine_rack_1_g8",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 237,
+   "geom_name": "wine_rack_1_g9",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 238,
+   "geom_name": "wine_rack_1_g10",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  },
+  {
+   "geom_id": 239,
+   "geom_name": "wine_rack_1_g11",
+   "body_id": 37,
+   "body_name": "wine_rack_1_main",
+   "obj": "rack",
+   "group": 0
+  }
+ ],
+ "obj2ids": {
+  "bowl": [
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   119,
+   120,
+   121,
+   122,
+   123,
+   124
+  ],
+  "plate": [
+   151,
+   152,
+   153,
+   154,
+   155,
+   156,
+   157,
+   158,
+   159,
+   160,
+   161
+  ],
+  "cream_cheese": [
+   125,
+   126
+  ],
+  "bottle": [
+   127,
+   128,
+   129,
+   130,
+   131,
+   132,
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150
+  ],
+  "rack": [
+   228,
+   229,
+   230,
+   231,
+   232,
+   233,
+   234,
+   235,
+   236,
+   237,
+   238,
+   239
+  ],
+  "cabinet": [
+   162,
+   163,
+   164,
+   165,
+   166,
+   167,
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189,
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   197,
+   198,
+   199,
+   200,
+   201,
+   202,
+   203,
+   204
+  ],
+  "stove": [
+   205,
+   206,
+   207,
+   208,
+   209,
+   210,
+   211,
+   212,
+   213,
+   214,
+   215,
+   216,
+   217,
+   218,
+   219,
+   220,
+   221,
+   222,
+   223,
+   224,
+   225,
+   226,
+   227
+  ],
+  "robot": [
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83
+  ],
+  "table": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "floor": [
+   0
+  ],
+  "None": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ]
+ }
+}

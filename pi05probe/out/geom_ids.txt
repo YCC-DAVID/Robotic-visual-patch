@@ -1,0 +1,31 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /home/user1/miniconda3/envs/openpi-libero/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+/home/user1/miniconda3/envs/openpi-libero/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user1/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/libero/../datasets does not exist!
+ngeom = 240   (⚠️ 8f1084e 上记的是 239;这里是当前 commit 的实测值)
+
+物体 → geom_id 列表:
+  bowl            41 geoms  [84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97] … 共 41 个
+  plate           11 geoms  [151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161]
+  cream_cheese     2 geoms  [125, 126]
+  bottle          24 geoms  [127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140] … 共 24 个
+  rack            12 geoms  [228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239]
+  cabinet         43 geoms  [162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175] … 共 43 个
+  stove           23 geoms  [205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218] … 共 23 个
+  robot           71 geoms  [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26] … 共 71 个
+  table            6 geoms  [7, 8, 9, 10, 11, 12]
+  floor            1 geoms  [0]
+  None             6 geoms  [1, 2, 3, 4, 5, 6]
+
+⚠️ 未归类的 6 个 geom(前 20 个):
+    id=  1  geom='wall_leftcorner_visual'  body='world'
+    id=  2  geom='wall_rightcorner_visual'  body='world'
+    id=  3  geom='wall_left_visual'  body='world'
+    id=  4  geom='wall_right_visual'  body='world'
+    id=  5  geom='wall_rear_visual'  body='world'
+    id=  6  geom='wall_front_visual'  body='world'
+
+[written] /home/user1/workspace/chence/WAMattack/pi05probe/out/geom_ids.json

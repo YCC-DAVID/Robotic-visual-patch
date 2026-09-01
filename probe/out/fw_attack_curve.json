@@ -1,0 +1,48 @@
+{
+  "clean": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 100.86666666666666,
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "curve": {
+    "rate": 1.0,
+    "n": 15,
+    "successes": 15,
+    "mean_steps": 104.13333333333334,
+    "per_ep": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}

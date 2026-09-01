@@ -1,0 +1,42 @@
+{
+  "clean": {
+    "rate": 1.0,
+    "n": 2,
+    "successes": 2,
+    "mean_steps": 103.5,
+    "per_ep": [
+      true,
+      true
+    ]
+  },
+  "away": {
+    "rate": 1.0,
+    "n": 2,
+    "successes": 2,
+    "mean_steps": 110.0,
+    "per_ep": [
+      true,
+      true
+    ]
+  },
+  "curve": {
+    "rate": 1.0,
+    "n": 2,
+    "successes": 2,
+    "mean_steps": 109.0,
+    "per_ep": [
+      true,
+      true
+    ]
+  },
+  "dev": {
+    "rate": 0.5,
+    "n": 2,
+    "successes": 1,
+    "mean_steps": 106.0,
+    "per_ep": [
+      true,
+      false
+    ]
+  }
+}

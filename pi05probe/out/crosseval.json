@@ -1,0 +1,56 @@
+{
+  "episodes": 10,
+  "seed": 7,
+  "short": {
+    "turn_on_the_stove": "stove",
+    "put_the_wine_bottle_on_the_rack": "bottle_rack",
+    "put_the_bowl_on_the_plate": "bowl_plate",
+    "put_the_bowl_on_top_of_the_cabinet": "bowl_cabinet"
+  },
+  "matrix": {
+    "turn_on_the_stove": {
+      "turn_on_the_stove": 9,
+      "put_the_wine_bottle_on_the_rack": 0,
+      "put_the_bowl_on_the_plate": 0,
+      "put_the_bowl_on_top_of_the_cabinet": 0
+    },
+    "put_the_wine_bottle_on_the_rack": {
+      "turn_on_the_stove": 0,
+      "put_the_wine_bottle_on_the_rack": 10,
+      "put_the_bowl_on_the_plate": 0,
+      "put_the_bowl_on_top_of_the_cabinet": 0
+    },
+    "put_the_bowl_on_the_plate": {
+      "turn_on_the_stove": 0,
+      "put_the_wine_bottle_on_the_rack": 0,
+      "put_the_bowl_on_the_plate": 10,
+      "put_the_bowl_on_top_of_the_cabinet": 0
+    },
+    "put_the_bowl_on_top_of_the_cabinet": {
+      "turn_on_the_stove": 0,
+      "put_the_wine_bottle_on_the_rack": 0,
+      "put_the_bowl_on_the_plate": 0,
+      "put_the_bowl_on_top_of_the_cabinet": 10
+    }
+  },
+  "b2_success": {
+    "B1_orig": 10,
+    "L1_place": 10,
+    "L1_set": 10,
+    "L1_move": 10,
+    "L2_frontPP": 10,
+    "L3_please": 10
+  },
+  "tids": {
+    "turn_on_the_stove": 7,
+    "put_the_wine_bottle_on_the_rack": 9,
+    "put_the_bowl_on_the_plate": 8,
+    "put_the_bowl_on_top_of_the_cabinet": 4
+  },
+  "prompts": {
+    "turn_on_the_stove": "turn on the stove",
+    "put_the_wine_bottle_on_the_rack": "put the wine bottle on the rack",
+    "put_the_bowl_on_the_plate": "put the bowl on the plate",
+    "put_the_bowl_on_top_of_the_cabinet": "put the bowl on top of the cabinet"
+  }
+}

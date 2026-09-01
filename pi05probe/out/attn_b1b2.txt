@@ -1,0 +1,118 @@
+====================================================================================================
+0 · 输入与环境
+====================================================================================================
+  shared_frame.npz 里的 task: ['turn_on_the_stove', 'put_the_wine_bottle_on_the_rack', 'put_the_bowl_on_the_plate', 'put_the_bowl_on_top_of_the_cabinet']
+  shared_state sha 见 shared_frame.txt;warmup = 10 步
+  ✅ 四个 task 的 img224/wrist224 逐位相同(再次确认)  img224(224, 224, 3) uint8
+  pytorch_compile_mode: 'max-autotune' -> None
+  policy 就绪;language_model.layers = 18
+
+====================================================================================================
+1 · 逐 variant 前向 + hook 抓 attention
+====================================================================================================
+  stove_orig           Z= 6  pieces=['<bos>', 'turn', '▁on', '▁the', '▁stove', '\n']
+                       head_sum(18, 6, 2, 16, 16)  per_head(18, 8, 6, 2, 16, 16)  rollout(6, 2, 16, 16)
+  stove_L1_switch      Z= 6  pieces=['<bos>', 'switch', '▁on', '▁the', '▁stove', '\n']
+                       head_sum(18, 6, 2, 16, 16)  per_head(18, 8, 6, 2, 16, 16)  rollout(6, 2, 16, 16)
+  stove_L1_power       Z= 6  pieces=['<bos>', 'power', '▁on', '▁the', '▁stove', '\n']
+                       head_sum(18, 6, 2, 16, 16)  per_head(18, 8, 6, 2, 16, 16)  rollout(6, 2, 16, 16)
+  stove_L2_partmove    Z= 6  pieces=['<bos>', 'turn', '▁the', '▁stove', '▁on', '\n']
+                       head_sum(18, 6, 2, 16, 16)  per_head(18, 8, 6, 2, 16, 16)  rollout(6, 2, 16, 16)
+  stove_L3_please      Z= 7  pieces=['<bos>', 'please', '▁turn', '▁on', '▁the', '▁stove', '\n']
+                       head_sum(18, 7, 2, 16, 16)  per_head(18, 8, 7, 2, 16, 16)  rollout(7, 2, 16, 16)
+  bottle_rack_orig     Z= 9  pieces=['<bos>', 'put', '▁the', '▁wine', '▁bottle', '▁on', '▁the', '▁rack', '\n']
+                       head_sum(18, 9, 2, 16, 16)  per_head(18, 8, 9, 2, 16, 16)  rollout(9, 2, 16, 16)
+  bottle_rack_L1_place Z= 9  pieces=['<bos>', 'place', '▁the', '▁wine', '▁bottle', '▁on', '▁the', '▁rack', '\n']
+                       head_sum(18, 9, 2, 16, 16)  per_head(18, 8, 9, 2, 16, 16)  rollout(9, 2, 16, 16)
+  bottle_rack_L1_set   Z= 9  pieces=['<bos>', 'set', '▁the', '▁wine', '▁bottle', '▁on', '▁the', '▁rack', '\n']
+                       head_sum(18, 9, 2, 16, 16)  per_head(18, 8, 9, 2, 16, 16)  rollout(9, 2, 16, 16)
+  bottle_rack_L1_move  Z= 9  pieces=['<bos>', 'move', '▁the', '▁wine', '▁bottle', '▁on', '▁the', '▁rack', '\n']
+                       head_sum(18, 9, 2, 16, 16)  per_head(18, 8, 9, 2, 16, 16)  rollout(9, 2, 16, 16)
+  bottle_rack_L2_front Z=10  pieces=['<bos>', 'on', '▁the', '▁rack', ',', '▁put', '▁the', '▁wine', '▁bottle', '\n']
+                       head_sum(18, 10, 2, 16, 16)  per_head(18, 8, 10, 2, 16, 16)  rollout(10, 2, 16, 16)
+  bottle_rack_L3_please Z=10  pieces=['<bos>', 'please', '▁put', '▁the', '▁wine', '▁bottle', '▁on', '▁the', '▁rack', '\n']
+                       head_sum(18, 10, 2, 16, 16)  per_head(18, 8, 10, 2, 16, 16)  rollout(10, 2, 16, 16)
+  bowl_plate_orig      Z= 8  pieces=['<bos>', 'put', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+                       head_sum(18, 8, 2, 16, 16)  per_head(18, 8, 8, 2, 16, 16)  rollout(8, 2, 16, 16)
+  bowl_plate_L1_place  Z= 8  pieces=['<bos>', 'place', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+                       head_sum(18, 8, 2, 16, 16)  per_head(18, 8, 8, 2, 16, 16)  rollout(8, 2, 16, 16)
+  bowl_plate_L1_set    Z= 8  pieces=['<bos>', 'set', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+                       head_sum(18, 8, 2, 16, 16)  per_head(18, 8, 8, 2, 16, 16)  rollout(8, 2, 16, 16)
+  bowl_plate_L1_move   Z= 8  pieces=['<bos>', 'move', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+                       head_sum(18, 8, 2, 16, 16)  per_head(18, 8, 8, 2, 16, 16)  rollout(8, 2, 16, 16)
+  bowl_plate_L2_front  Z= 9  pieces=['<bos>', 'on', '▁the', '▁plate', ',', '▁put', '▁the', '▁bowl', '\n']
+                       head_sum(18, 9, 2, 16, 16)  per_head(18, 8, 9, 2, 16, 16)  rollout(9, 2, 16, 16)
+  bowl_plate_L3_please Z= 9  pieces=['<bos>', 'please', '▁put', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+                       head_sum(18, 9, 2, 16, 16)  per_head(18, 8, 9, 2, 16, 16)  rollout(9, 2, 16, 16)
+  bowl_cabinet_orig    Z=10  pieces=['<bos>', 'put', '▁the', '▁bowl', '▁on', '▁top', '▁of', '▁the', '▁cabinet', '\n']
+                       head_sum(18, 10, 2, 16, 16)  per_head(18, 8, 10, 2, 16, 16)  rollout(10, 2, 16, 16)
+  bowl_cabinet_L1_place Z=10  pieces=['<bos>', 'place', '▁the', '▁bowl', '▁on', '▁top', '▁of', '▁the', '▁cabinet', '\n']
+                       head_sum(18, 10, 2, 16, 16)  per_head(18, 8, 10, 2, 16, 16)  rollout(10, 2, 16, 16)
+  bowl_cabinet_L1_set  Z=10  pieces=['<bos>', 'set', '▁the', '▁bowl', '▁on', '▁top', '▁of', '▁the', '▁cabinet', '\n']
+                       head_sum(18, 10, 2, 16, 16)  per_head(18, 8, 10, 2, 16, 16)  rollout(10, 2, 16, 16)
+  bowl_cabinet_L1_move Z=10  pieces=['<bos>', 'move', '▁the', '▁bowl', '▁on', '▁top', '▁of', '▁the', '▁cabinet', '\n']
+                       head_sum(18, 10, 2, 16, 16)  per_head(18, 8, 10, 2, 16, 16)  rollout(10, 2, 16, 16)
+  bowl_cabinet_L2_front Z=11  pieces=['<bos>', 'on', '▁top', '▁of', '▁the', '▁cabinet', ',', '▁put', '▁the', '▁bowl', '\n']
+                       head_sum(18, 11, 2, 16, 16)  per_head(18, 8, 11, 2, 16, 16)  rollout(11, 2, 16, 16)
+  bowl_cabinet_L3_please Z=11  pieces=['<bos>', 'please', '▁put', '▁the', '▁bowl', '▁on', '▁top', '▁of', '▁the', '▁cabinet', '\n']
+                       head_sum(18, 11, 2, 16, 16)  per_head(18, 8, 11, 2, 16, 16)  rollout(11, 2, 16, 16)
+  REPEAT_bowl_plate    Z= 8  pieces=['<bos>', 'put', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+                       head_sum(18, 8, 2, 16, 16)  per_head(18, 8, 8, 2, 16, 16)  rollout(8, 2, 16, 16)
+
+====================================================================================================
+2 · 红线 1:什么都不改的重复(prefix 前向无随机性 ⇒ 必须逐位相同)
+====================================================================================================
+  attention |Δ| max = 0.000000e+00
+  动作     |Δ| max = 6.529117e-02   (⚠️ 动作会因 ε 重采样而不同,这是预期的)
+  ✅ attention 逐位相同 —— 噪声地板为 0,后面任何差异都是真实信号
+
+====================================================================================================
+3 · §A2 saliency(逐行归一化 → token max/sum → 3×3 窗口)· 主视角 base_0_rgb
+====================================================================================================
+  【sanity check,别拿来下结论】四条原生指令的 3×3 窗口 argmax(逐行归一化 + token max):
+  layer |          stove |    bottle_rack |     bowl_plate |   bowl_cabinet
+      0 |        (13, 2) |        (13, 2) |        (13, 2) |        (13, 2)
+      1 |         (1, 1) |         (2, 6) |         (1, 1) |         (2, 6)
+      2 |        (13, 1) |        (13, 1) |         (8, 8) |        (13, 1)
+      3 |         (7, 9) |         (7, 9) |        (12, 8) |         (7, 9)
+      4 |         (7, 8) |         (7, 8) |         (7, 8) |        (7, 13)
+      5 |         (7, 4) |         (7, 9) |         (7, 8) |        (7, 13)
+      6 |         (6, 8) |         (7, 8) |         (7, 8) |         (7, 8)
+      7 |         (7, 8) |         (7, 8) |        (11, 8) |         (7, 8)
+      8 |         (6, 4) |         (7, 8) |         (8, 8) |        (7, 13)
+      9 |         (6, 4) |         (7, 8) |         (7, 8) |         (7, 8)
+     10 |         (6, 4) |         (6, 8) |         (8, 8) |         (8, 8)
+     11 |         (4, 5) |         (7, 9) |         (8, 8) |         (8, 8)
+     12 |         (5, 5) |         (5, 8) |         (1, 1) |         (9, 7)
+     13 |         (1, 1) |         (1, 1) |         (1, 1) |         (1, 1)
+     14 |        (13, 2) |        (13, 1) |        (13, 1) |         (7, 8)
+     15 |        (13, 1) |         (7, 9) |         (7, 9) |         (7, 8)
+     16 |        (14, 2) |        (14, 2) |         (3, 8) |         (3, 7)
+     17 |         (3, 6) |        (14, 2) |        (14, 2) |        (13, 1)
+
+====================================================================================================
+4 · §A-4 sink:各 token 的注意力质量(layer 0,主视角,head 求和后除以 H)
+====================================================================================================
+  stove_orig               argmax_token=5('\n')  mass=0.3817  其余均值=0.0332  比值=11.5×
+  stove_L1_switch          argmax_token=5('\n')  mass=0.3817  其余均值=0.0337  比值=11.3×
+  stove_L1_power           argmax_token=5('\n')  mass=0.3817  其余均值=0.0327  比值=11.7×
+  stove_L2_partmove        argmax_token=5('\n')  mass=0.3816  其余均值=0.0299  比值=12.8×
+  stove_L3_please          argmax_token=6('\n')  mass=0.3809  其余均值=0.0418  比值=9.1×
+  bottle_rack_orig         argmax_token=8('\n')  mass=0.3808  其余均值=0.0255  比值=15.0×
+  bottle_rack_L1_place     argmax_token=8('\n')  mass=0.3808  其余均值=0.0274  比值=13.9×
+  bottle_rack_L1_set       argmax_token=8('\n')  mass=0.3808  其余均值=0.0302  比值=12.6×
+  bottle_rack_L1_move      argmax_token=8('\n')  mass=0.3808  其余均值=0.0304  比值=12.5×
+  bottle_rack_L2_front     argmax_token=9('\n')  mass=0.3822  其余均值=0.0272  比值=14.0×
+  bottle_rack_L3_please    argmax_token=9('\n')  mass=0.3822  其余均值=0.0317  比值=12.1×
+  bowl_plate_orig          argmax_token=7('\n')  mass=0.3806  其余均值=0.0216  比值=17.6×
+  bowl_plate_L1_place      argmax_token=7('\n')  mass=0.3806  其余均值=0.0234  比值=16.2×
+  bowl_plate_L1_set        argmax_token=7('\n')  mass=0.3806  其余均值=0.0271  比值=14.0×
+  bowl_plate_L1_move       argmax_token=7('\n')  mass=0.3806  其余均值=0.0269  比值=14.1×
+  bowl_plate_L2_front      argmax_token=8('\n')  mass=0.3808  其余均值=0.0215  比值=17.7×
+  bowl_plate_L3_please     argmax_token=8('\n')  mass=0.3808  其余均值=0.0280  比值=13.6×
+  bowl_cabinet_orig        argmax_token=9('\n')  mass=0.3822  其余均值=0.0236  比值=16.2×
+  bowl_cabinet_L1_place    argmax_token=9('\n')  mass=0.3822  其余均值=0.0246  比值=15.6×
+  bowl_cabinet_L1_set      argmax_token=9('\n')  mass=0.3822  其余均值=0.0277  比值=13.8×
+  bowl_cabinet_L1_move     argmax_token=9('\n')  mass=0.3822  其余均值=0.0257  比值=14.9×
+  bowl_cabinet_L2_front    argmax_token=10('\n')  mass=0.3833  其余均值=0.0250  比值=15.3×
+  bowl_cabinet_L3_please   argmax_token=10('\n')  mass=0.3833  其余均值=0.0297  比值=12.9×

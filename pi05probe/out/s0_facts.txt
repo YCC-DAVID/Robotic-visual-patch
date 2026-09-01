@@ -1,0 +1,140 @@
+====================================================================================================
+Q1 · 256 -> 224 的 resize:走 openpi_client.image_tools.resize_with_pad
+====================================================================================================
+  输入 (256, 256, 3) -> 输出 (224, 224, 3)  dtype=uint8
+  ratio=1.1428571429  resized=(224,224)  pad=(h=0, w=0)
+  ⇒ 【零 padding】,纯 PIL BILINEAR 各向同性缩放,尺度因子恰好 224/256 = 0.875
+  四边最小值(pad 会是 0): top=15 bottom=8 left=9 right=11
+  像素中心映射(PIL/tf resize 约定,反投影必须用这个,不是 u*224/256):
+      u_256 = (u_224 + 0.5) * 256/224 - 0.5 = (u_224 + 0.5) / 0.875 - 0.5
+  ⇒ 内参随分辨率线性缩放:f_224 = f_256 * 224/256;agentview f_256=309.0193 ⇒ f_224 = 270.3919; c_224 = (111.5, 111.5)
+  服务端 model_transforms 里还有一次 _transforms.ResizeImages(224,224) (config.py:131),对已经 224 的输入是 no-op(image_tools.py:28-29 提前 return)
+
+====================================================================================================
+Q3 · 归一化:π0.5 走【分位数】(q01/q99),不是 mean/std
+====================================================================================================
+  config.py:187  use_quantile_norm = (model_config.model_type != ModelType.PI0)
+  pi05_libero 的 model_type 是 PI05 (pi0_config.py:51-56) ⇒ use_quantile_norm=True
+  transforms.py:141-145  _normalize_quantile:  (x - q01) / (q99 - q01 + 1e-6) * 2 - 1
+  transforms.py:175-183  _unnormalize_quantile: 反过来
+  stats 文件: /home/user1/.cache/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json
+  解析链: policy_config.py:59-64 load_norm_stats(checkpoint_dir/'assets', asset_id)
+          asset_id = repo_id = 'physical-intelligence/libero' (config.py:181-183)
+  ⚠️ 注意:norm stats 取自 **checkpoint 的 assets**,不是 config 的 assets_dirs(policy_config.py:60-61 明确说是为了和训练时一致)
+  json 顶层 keys: ['norm_stats']
+  --- 'state' 里有的字段: ['mean', 'std', 'q01', 'q99']
+  --- 'actions' 里有的字段: ['mean', 'std', 'q01', 'q99']
+
+  ######## state  (dim=8) ########
+   q01  = [-0.35245 -0.26825  0.04084  1.53177 -2.71523 -1.07654  0.00172 -0.04004]
+   q99  = [ 0.13891  0.3252   1.2569   3.26277  2.44372  0.56385  0.04031 -0.00171]
+   mean = [-0.04364  0.03525  0.7637   2.96737 -0.2108  -0.12975  0.02779 -0.02801]
+   std  = [0.10338 0.15188 0.38154 0.35452 0.92918 0.33075 0.01413 0.01396]
+   (只印前 8 维;数组本身长 8,其余是 padding)
+
+  ######## actions  (dim=7) ########
+   q01  = [-0.74738 -0.79612 -0.9375  -0.1158  -0.16943 -0.1945  -1.     ]
+   q99  = [0.93712 0.8595  0.93712 0.14023 0.18104 0.31155 0.9996 ]
+   mean = [ 0.02683  0.08886 -0.09983  0.00024  0.00128 -0.00294 -0.13052]
+   std  = [0.33119 0.37192 0.45226 0.03949 0.06278 0.07318 0.99145]
+   (只印前 8 维;数组本身长 7,其余是 padding)
+
+  ⇒ 给 S3 §D 用的量(前 7 维 = LIBERO 真实动作维):
+     q99 - q01 = [1.6845  1.65562 1.87462 0.25603 0.35047 0.50605 1.9996 ]
+     std_clean(a^i) 的先验(训练集 std) = [0.33119 0.37192 0.45226 0.03949 0.06278 0.07318 0.99145]
+     norm_bound 的 d_max^i = max(|a_clean^i - q01^i|, |a_clean^i - q99^i|),逐帧算
+
+====================================================================================================
+Q2 · 动作 7 维的含义与单位
+====================================================================================================
+  维度:libero_policy.py:100  data['actions'][..., :7]  ⇒ 对外 7 维
+        模型内部 action_dim=32(pi0_config.py:24),LIBERO 只取前 7,其余是 padding
+  是否 delta:config.py:332-338 —— 'LIBERO already represents actions as deltas',
+        且 pi05_libero 用 extra_delta_transform=False ⇒ 【模型直接输出 LIBERO 原生动作空间】,
+        没有额外的 delta/absolute 转换。
+  main.py:153  env.step(action.tolist()) —— 【原样送入,没有任何缩放/符号翻转】
+
+  控制器:LIBERO env_wrapper.py:17 controller='OSC_POSE',用 robosuite 默认 osc_pose.json:
+     input_min/max  = -1 / 1
+     output_max     = [0.05, 0.05, 0.05, 0.5, 0.5, 0.5]
+     output_min     = [-0.05,-0.05,-0.05,-0.5,-0.5,-0.5]
+     control_delta  = true    uncouple_pos_ori = true    impedance_mode = fixed  kp=150
+
+  ⇒ a[0:3] 平移 delta:∈[-1,1] 线性映射到 **±0.05 m**(base_controller.py:104-123 scale_action)
+  ⇒ a[3:6] 旋转 delta:∈[-1,1] 线性映射到 **±0.5 rad**,是 **axis-angle**(不是欧拉角)
+        证据:control_utils.py:150-176 set_goal_orientation 的 docstring 明确写
+        'Desired relative change in orientation, in axis-angle form [ax, ay, az]',
+        并 axisangle2quat(delta) 转成旋转矩阵左乘当前姿态。
+        ⇒ S3 的旋转通道用 SO(3) 测地距离是对的,不能直接减。
+  ⚠️ scale_action 先 np.clip(action, -1, 1):**模型输出超过 ±1 的部分被截断**,
+        Δa 里超出 ±1 的差异对环境无效果 ⇒ S3 报 influence 时要记这一点。
+
+  ⇒ a[6] 夹爪:panda_gripper.py:43-58 format_action
+        current_action = clip(current_action + [-1,1]*speed*np.sign(action), -1, 1),speed=0.01
+        注释:'-1 => open, 1 => closed'
+  ⚠️⚠️ **只用 np.sign(action),幅值被完全丢弃**,而且夹爪命令是【积分状态】。
+        ⇒ 夹爪通道唯一有物理意义的量就是 **sign(a[6]) 是否翻转**;
+          不翻符号的 Δa[6] 对环境**完全没有影响**。这正好印证计划里'夹爪看是否翻转'。
+        ⇒ 判据写死:flip ⟺ sign(a_patched[6]) != sign(a_clean[6]);注意 sign(0)=0 的边界。
+
+  main.py:17  LIBERO_DUMMY_ACTION = [0.0]*6 + [-1.0]  ⇒ warmup 的 10 步是'不动 + 张开'
+
+====================================================================================================
+Q6 · token 布局 / SigLIP grid / Gemma 层头数
+====================================================================================================
+  pi05=True  model_type=ModelType.PI05  action_dim=32  action_horizon=10
+  max_token_len=200   discrete_state_input=False
+  paligemma_variant='gemma_2b': width=2048 depth=18 num_heads=8 num_kv_heads=1 head_dim=256
+  action_expert_variant='gemma_300m': width=1024 depth=18 num_heads=8 num_kv_heads=1 head_dim=256
+  vision tower: pi0.py:81-89  siglip.Module(variant='So400m/14', pool_type='none', num_classes=width)
+  ⇒ SigLIP So400m/**14** @ 224 ⇒ grid 16×16 = 256 patch token/图
+     pool_type='none' ⇒ 不池化,**没有 CLS token**,全是 patch token(正好,B0 要的就是 patch)
+
+  prefix token 顺序(pi0.py:112-133,按 obs.images 的插入序,libero_policy.py:53-57):
+     [   0 ..  255]  base_0_rgb   (16×16)
+     [ 256 ..  511]  left_wrist_0_rgb   (16×16)
+     [ 512 ..  767]  right_wrist_0_rgb   (16×16)
+     [ 768 ..  967]  language (max_token_len=200)
+  ⇒ prefix 长度 = 3×256 + 200 = 968
+  suffix:pi05 **没有 state token**(pi0.py:151-157 的 state_proj 在 `if not self.pi05` 里)
+         ⇒ suffix = 10 个 action token,总长 978
+
+  ⇒ 【B0 要的 attn[text_idx, image_idx] 区间】
+     text 行  : 768 .. 967
+     base 图列: 0 .. 255,reshape 成 (16, 16)
+
+  ⚠️⚠️ 【text token 有效行只有前几个,其余是 padding】
+     tokenizer.py:33  discrete_state_input=False ⇒ tokens = encode(text, add_bos=True) + encode('\n')
+     tokenizer.py:35-38  不足 max_token_len 的用 **0 填充**,mask=False
+     ⇒ 200 个 slot 里绝大多数是 padding,attention 里被 mask 掉。
+     ⇒ 算 A ∈ R^{Z×N_v} 时 **Z 必须只取 tokenized_prompt_mask==True 的行**,
+       否则 191 行垃圾进 max/sum。这一条直接决定 §A 的 saliency 正确性。
+
+  四条候选指令的实际 token 数(PaligemmaTokenizer,state=None):
+     Z= 6  'turn on the stove'
+            ids    = [2, 15508, 611, 573, 37932, 108]
+            pieces = ['<bos>', 'turn', '▁on', '▁the', '▁stove', '\n']
+     Z= 9  'put the wine bottle on the rack'
+            ids    = [2, 1065, 573, 10058, 12989, 611, 573, 23409, 108]
+            pieces = ['<bos>', 'put', '▁the', '▁wine', '▁bottle', '▁on', '▁the', '▁rack', '\n']
+     Z= 8  'put the bowl on the plate'
+            ids    = [2, 1065, 573, 14581, 611, 573, 8811, 108]
+            pieces = ['<bos>', 'put', '▁the', '▁bowl', '▁on', '▁the', '▁plate', '\n']
+     Z=10  'put the bowl on top of the cabinet'
+            ids    = [2, 1065, 573, 14581, 611, 2267, 576, 573, 22402, 108]
+            pieces = ['<bos>', 'put', '▁the', '▁bowl', '▁on', '▁top', '▁of', '▁the', '▁cabinet', '\n']
+     Z= 9  'open the middle drawer of the cabinet'
+            ids    = [2, 4141, 573, 7185, 39635, 576, 573, 22402, 108]
+            pieces = ['<bos>', 'open', '▁the', '▁middle', '▁drawer', '▁of', '▁the', '▁cabinet', '\n']
+  ⚠️ 各指令 Z 不同 ⇒ 计划 §C 说的'全 token max 跨指令有偏'确有其事,数值在这里。
+
+====================================================================================================
+⚠️ 顺带发现(重要,会影响 S2 的设计):π0.5-LIBERO **完全不消费 observation/state**
+====================================================================================================
+  1. pi05 的 embed_suffix 里 state token 在 `if not self.pi05:` 分支(pi0.py:151-157)⇒ 不加
+  2. pi05_libero 显式设了 discrete_state_input=False(config.py:745)
+     ⇒ TokenizePrompt 收到 state=None(transforms.py:256-261)⇒ state 不进 prompt
+  3. 于是 state 被 Normalize + PadStatesAndActions 处理过,然后**没人读**
+  ⇒ 动作只依赖 (3 路图像, prompt, flow matching 的 ε)。这让 S2 的反事实查询更干净:
+    换 patch 不会通过 state 这条路径间接影响输出。
+  ⇒ 【待实测确认】喂两个不同 state、其余逐位相同 ⇒ 输出动作应逐位相同。

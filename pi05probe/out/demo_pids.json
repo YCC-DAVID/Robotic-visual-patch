@@ -1,0 +1,13 @@
+{
+  "server": 286382,
+  "client": -1,
+  "gpu": 0,
+  "port": 8123,
+  "suite": "libero_goal",
+  "trials": 3,
+  "seed": 7,
+  "backend": "pytorch",
+  "server_log": "/home/user1/workspace/chence/WAMattack/pi05probe/out/server_torch.log",
+  "client_log": "/home/user1/workspace/chence/WAMattack/pi05probe/out/client_torch.log",
+  "started": "2026-08-24 21:32:17"
+}
