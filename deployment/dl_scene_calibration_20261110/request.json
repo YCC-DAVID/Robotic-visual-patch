@@ -1,0 +1,24 @@
+{
+  "state": "preparing_network",
+  "objective": "Pose-diverse calibration once; subsequent single-frame RGB+EEF predicts H/C/S/mask with analytic H",
+  "phases": [
+    "restore_and_verify_data",
+    "implement_joint_scene_model",
+    "cpu_structure_and_gradient_checks",
+    "gpu_preflight",
+    "waiting_for_gpu_if_unavailable",
+    "training",
+    "heldout_parameter_and_texture_evaluation",
+    "complete"
+  ],
+  "GPU_queue_authorized": true,
+  "no_patch_or_policy_training": true,
+  "calibration_prefix": 12,
+  "context_selected_by_EEF": 4,
+  "query": "strictly later timestamps",
+  "initialization": "existing RGB+EEF checkpoint and optional small geometry head; jointly fine-tune layer3/4, fusion, geometry and C/S/mask heads",
+  "max_epochs": 80,
+  "patience": 15,
+  "seed": 19,
+  "test_not_used_for_selection": true
+}

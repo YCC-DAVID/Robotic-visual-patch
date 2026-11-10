@@ -1,0 +1,122 @@
+{
+  "archive": "scene_calibration.tar.zst",
+  "archive_bytes": 184906206,
+  "archive_sha256": "83df86f2e9d23a11d7be1b12c3919af59d5f12943610a03a669441abf7c53b1a",
+  "parts": [
+    {
+      "name": "scene_calibration.tar.zst.part000",
+      "bytes": 8388608,
+      "sha256": "09a1efd9506480860e9fd2402fe488f91025329d29c4b8ca6ee43757bfb4c175"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part001",
+      "bytes": 8388608,
+      "sha256": "7271db736225c1e6e623aa9f55ec86b640cd8b83f5cce466e247c27bea64fa6a"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part002",
+      "bytes": 8388608,
+      "sha256": "38be91acd4ab038ec3cd627450d367aa3d8db2c519ab849652e3fc4a7aa08d77"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part003",
+      "bytes": 8388608,
+      "sha256": "6b6b76f26fe5b3a1d025b52abe8ab89736a6a2833d1d0fa50fdf3bf88fb7b5d9"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part004",
+      "bytes": 8388608,
+      "sha256": "a3cc2eb0a90cb9d595c2606d5aa1ba0d4f046fc848c2a355c3ea0fcea70bd109"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part005",
+      "bytes": 8388608,
+      "sha256": "6caf0273392298766ea96965c8bab392658c88f381a59a4deabd4513d0c404b0"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part006",
+      "bytes": 8388608,
+      "sha256": "4526265c5ad5cd24dd1b4727e463a3360207ddce198bcf10059ed527e75155f8"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part007",
+      "bytes": 8388608,
+      "sha256": "fbdfc29062eb3ea4de5caf57e80fdcfaf93931c90f1bd5594106c09f9e5eac25"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part008",
+      "bytes": 8388608,
+      "sha256": "dbed3af7233f1ef604d0e993f8bcfa9a642e1614a63aa7ae1b210e6710d449ca"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part009",
+      "bytes": 8388608,
+      "sha256": "8598f3527617e811dc25801772e6905db44dd14828422c2437761ee0df135e56"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part010",
+      "bytes": 8388608,
+      "sha256": "9541ba960c72555d96520f2d22b0ba36868803b1fef843e5fdf1913289eabfcb"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part011",
+      "bytes": 8388608,
+      "sha256": "1cab57dec7470e5113ad1e2809b2f3f15ca526f14e30d87cccf812307dde0c81"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part012",
+      "bytes": 8388608,
+      "sha256": "70d22ef0d9b75e84b331107ba74ff2ec9c4b83c6483b9b9932ea5f993ee13101"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part013",
+      "bytes": 8388608,
+      "sha256": "0ee03b009ca59fd95c85802bd63ff579f16c9e1f0e232bfd9c8775d433563dcc"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part014",
+      "bytes": 8388608,
+      "sha256": "7fd556c5a563beb2d7ea292dca23fc7f6ffe8ccffd314d70a56070293af7ea43"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part015",
+      "bytes": 8388608,
+      "sha256": "2242b73f75f4021a77dcc966e81e07acf47f75e4bcbab00e386640ca87ce619a"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part016",
+      "bytes": 8388608,
+      "sha256": "0b3e0fb78178a7e5e6c0dfb72125a056098aaa93e75fce77fa63fe597e03800b"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part017",
+      "bytes": 8388608,
+      "sha256": "166559ee0d7dbeaf910b4b7d094ed21a49ea1b9b4556596baf6a17c813a58bcd"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part018",
+      "bytes": 8388608,
+      "sha256": "093ecb66ee6609ad2c325687bfd37891fbc662430c5acc65a0148ac61b6bb1ef"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part019",
+      "bytes": 8388608,
+      "sha256": "722a3b91b79364cb9395b9573f4226328ff83cbce6369c813625ebeecc4c1301"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part020",
+      "bytes": 8388608,
+      "sha256": "c2f1a7eff687e26dff05f3a54619b5d01e6b0c4467e7050083d78a07d7f30dae"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part021",
+      "bytes": 8388608,
+      "sha256": "ddd36d0aec18013b6a3c2cb7f8c794e9cdcad0d13df8f8dd7429326216e4450d"
+    },
+    {
+      "name": "scene_calibration.tar.zst.part022",
+      "bytes": 356830,
+      "sha256": "d34d15f56004caec1449e741e72ae1fcd58df0362d621ae86c56f56ca000c817"
+    }
+  ]
+}

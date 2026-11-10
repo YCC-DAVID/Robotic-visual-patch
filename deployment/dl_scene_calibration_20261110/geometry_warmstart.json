@@ -1,0 +1,5 @@
+{
+  "bytes": 1769525,
+  "sha256": "e67b44bb72b244d56f790513af61b7f99481f895da91f7b59762ad98e6ac5e82",
+  "purpose": "Optional initialization of shared calibration head; all scene model branches train jointly afterward"
+}
