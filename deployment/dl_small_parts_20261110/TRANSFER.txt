@@ -1,0 +1,14 @@
+DL render proxy transfer bundle
+
+Only simulation proxy observations and custom runtime code are included.
+No real robot recordings, policy weights or Python environments are included.
+
+Fetch branch migration/dl-render-proxy-20261110 from the existing repository.
+Run from repository root (choose a NEW destination):
+  python3 deployment/dl_small_parts_20261110/restore_small_payload.py deployment/dl_small_parts_20261110 /home/chence/workspace/wamattack/restored_20261110
+
+This checks all 29 part hashes and all restored file hashes.
+See restored WAMattack/deployment/a6000_eef_20261109/MIGRATION.txt.
+Install public LIBERO at the manifest commit, then use the custom code overlay.
+Public pi05_libero policy weights require the recorded conversion and hash check.
+No GPU may start before the gpu-preflight skill and local GPU check.
