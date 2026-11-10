@@ -1,0 +1,5 @@
+{
+  "updated": "2026-11-09T19:26:35.492408+00:00",
+  "pid": 1231966,
+  "error": "ResourceBlocked('another controller holds GPU allocation lock: GPU-b3371e7f-1ad4-c399-8b02-dd0287aa7c71')"
+}

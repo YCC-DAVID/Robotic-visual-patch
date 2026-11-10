@@ -1,0 +1,59 @@
+{
+  "parent_body": "robot0_right_hand",
+  "mesh_path": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_pi0_render_20261109/run/geometry/gripper_plane.obj",
+  "mesh_sha256": "2718ce56a3466815249b07bfae47e5f353d31169d4c8c9d97b3a1b0421317e0b",
+  "source_suite": "libero_spatial",
+  "source_task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "source_init": 10,
+  "target_model_roi_yxhw": [
+    192,
+    96,
+    32,
+    32
+  ],
+  "camera_depth_m": 0.040786517947912215,
+  "plane_width_m": 0.008941884562034621,
+  "plane_height_m": 0.008941884562034628,
+  "parent_vertices": [
+    [
+      0.027645288594913286,
+      0.004470942281017313,
+      0.040786517947912035
+    ],
+    [
+      0.027645288594913286,
+      -0.004470942281017308,
+      0.040786517947912035
+    ],
+    [
+      0.018703404032878658,
+      -0.004470942281017307,
+      0.040786517947912035
+    ],
+    [
+      0.018703404032878658,
+      0.004470942281017314,
+      0.040786517947912035
+    ]
+  ],
+  "camera_fovy_deg": 75.0,
+  "gripper_support_fraction_roi_native": 1.0,
+  "physical_extension": "Rigid zero-mass visual plane on the gripper camera parent; exact nominal ROI projection. A mounted plate, not a demonstrated flush sticker. Metric pose is not specified by DRIFT. Normal MuJoCo lighting, filtering and occlusion; no input-space compositing for render conditions.",
+  "box_center_parent": [
+    0.02317434631389597,
+    3.0362457129076575e-18,
+    0.04088651794791204
+  ],
+  "box_quat_parent": [
+    9.167443865711552e-19,
+    0.7071067811865481,
+    0.7071067811865469,
+    -5.112504929410637e-18
+  ],
+  "box_half_sizes": [
+    0.0044709422810173104,
+    0.004470942281017314,
+    0.0001
+  ],
+  "texture_upload_transform": "fliplr"
+}

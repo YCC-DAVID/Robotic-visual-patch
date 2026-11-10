@@ -1,0 +1,206 @@
+{
+  "complete": true,
+  "updated": "2026-11-09T20:25:57.350452+00:00",
+  "scope": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2
+    ],
+    "init_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "rendered_conditions": [
+      "drift_render",
+      "random_render"
+    ],
+    "rendered_episodes": 60
+  },
+  "model": "pi0",
+  "conditions": {
+    "clean": {
+      "n": 30,
+      "successes": 30,
+      "SR": 1.0,
+      "matched_clean_successes": 30,
+      "relative_ASR": 0.0,
+      "paired_ASR": 0.0
+    },
+    "random_digital": {
+      "n": 30,
+      "successes": 30,
+      "SR": 1.0,
+      "matched_clean_successes": 30,
+      "relative_ASR": 0.0,
+      "paired_ASR": 0.0
+    },
+    "drift_digital": {
+      "n": 30,
+      "successes": 0,
+      "SR": 0.0,
+      "matched_clean_successes": 30,
+      "relative_ASR": 1.0,
+      "paired_ASR": 1.0
+    },
+    "random_render": {
+      "n": 30,
+      "successes": 30,
+      "SR": 1.0,
+      "matched_clean_successes": 30,
+      "relative_ASR": 0.0,
+      "paired_ASR": 0.0
+    },
+    "drift_render": {
+      "n": 30,
+      "successes": 27,
+      "SR": 0.9,
+      "matched_clean_successes": 30,
+      "relative_ASR": 0.1,
+      "paired_ASR": 0.1
+    }
+  },
+  "tasks": {
+    "0": {
+      "clean": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "drift_digital": {
+        "n": 10,
+        "successes": 0,
+        "SR": 0.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 1.0,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "drift_render": {
+        "n": 10,
+        "successes": 9,
+        "SR": 0.9,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.1,
+        "paired_ASR": 0.1
+      }
+    },
+    "1": {
+      "clean": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "drift_digital": {
+        "n": 10,
+        "successes": 0,
+        "SR": 0.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 1.0,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "drift_render": {
+        "n": 10,
+        "successes": 8,
+        "SR": 0.8,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.2,
+        "paired_ASR": 0.2
+      }
+    },
+    "2": {
+      "clean": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "drift_digital": {
+        "n": 10,
+        "successes": 0,
+        "SR": 0.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 1.0,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      },
+      "drift_render": {
+        "n": 10,
+        "successes": 10,
+        "SR": 1.0,
+        "matched_clean_successes": 10,
+        "relative_ASR": 0.0,
+        "paired_ASR": 0.0
+      }
+    }
+  },
+  "render_episodes": 60,
+  "target_render_episodes": 60,
+  "patch_png_sha256": "a08b3014edc0a3f526b0fe7670a053a034dfc0f6c9189cb8b2421358d0b2ff86",
+  "geometry_sha256": "ab5ea889ec6a57555274fea715f6f10911cc9dd71f6950ab6d5f1ac2ac8c5900",
+  "runtime_errors_counted": false,
+  "validation": "hashes, matched physics/layout/noise, finite actions"
+}

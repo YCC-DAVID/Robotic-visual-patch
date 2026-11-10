@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "validated_episodes": 2000,
+  "validated_condition_pairs": 1600,
+  "missing_episodes": 0,
+  "fixture_layout_exact": true,
+  "initial_state_exact": true,
+  "noise_prefix_exact": true,
+  "runtime_errors_counted": false
+}

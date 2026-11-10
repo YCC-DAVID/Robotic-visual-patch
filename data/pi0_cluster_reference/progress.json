@@ -1,0 +1,17 @@
+{
+  "stage": "blocked",
+  "active_jobs": {},
+  "updated": "2026-11-09T19:26:35.490320+00:00",
+  "controller_pid": 1231966,
+  "host": "nnmc71",
+  "last_phase": "initializing",
+  "error": "another controller holds GPU allocation lock: GPU-b3371e7f-1ad4-c399-8b02-dd0287aa7c71",
+  "job": "drift_priority_pi0_native_render_20261109T192635490256",
+  "gpu": {
+    "host": "nnmc71",
+    "index": 3,
+    "uuid": "GPU-b3371e7f-1ad4-c399-8b02-dd0287aa7c71",
+    "name": "NVIDIA H100 NVL",
+    "egl_index": 0
+  }
+}

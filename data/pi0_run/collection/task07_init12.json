@@ -1,0 +1,15 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 7,
+  "task": "pick up the black bowl on the stove and place it on the plate",
+  "init_index": 12,
+  "condition": "clean",
+  "success": true,
+  "success_step": 110,
+  "queries": 21,
+  "env_seed": 700712,
+  "initial_state_sha256": "9ad5f24d85645e6d3646c110d50dad3fe4a70c71d78431f8932cc9b04a11be93",
+  "record": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_pi0_render_20261109/run/collection/task07_init12.npz",
+  "record_sha256": "89f4f9e08dcdcf53986357dccc6a13e5ab7790972626ac6247615e3d67b2756b",
+  "runtime_error": false
+}

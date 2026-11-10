@@ -1,0 +1,15 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 2,
+  "task": "pick up the black bowl from table center and place it on the plate",
+  "init_index": 10,
+  "condition": "clean",
+  "success": true,
+  "success_step": 106,
+  "queries": 20,
+  "env_seed": 700210,
+  "initial_state_sha256": "8b86deed84334b45047c45241e434f12d7294d03759d36a197dea5955d02afde",
+  "record": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_pi0_render_20261109/run/collection/task02_init10.npz",
+  "record_sha256": "3dcae6e673d0dcc823702ac0183d71a9f3534b8742fdc81fb1bd4c3dc71f3451",
+  "runtime_error": false
+}

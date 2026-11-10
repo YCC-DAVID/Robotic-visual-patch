@@ -1,0 +1,71 @@
+{
+  "schema": "drift-priority-native-render-subset-v1",
+  "model": "pi0",
+  "created": "2026-11-09T18:31:55.797272+00:00",
+  "source_root": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_pi0_render_20261109/run",
+  "checkpoint": "/shared/user65/.cache/openpi/openpi-assets/checkpoints/pi0_libero",
+  "scope": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2
+    ],
+    "init_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "rendered_conditions": [
+      "drift_render",
+      "random_render"
+    ],
+    "rendered_episodes": 60
+  },
+  "source_protocol_sha256": "64bb11d5c697fa051ebcb16edf169d17ad9d2915facc0239fb14e76100ff2c4c",
+  "source_sha256": {
+    "drift_pi0_common.py": "dbd02ee63c4559282b1f6e53c62a492d9cd5add9bd90cd64c23e860bda0f5135",
+    "drift_pi0_model.py": "3a102fc35b3c373379a800cc8ab594ae8d357a31efbd2737e1b75056bf2b7b7f",
+    "drift_pi0_sim.py": "a319cc76b0285dac452d9681e8acb6d3a3b0fe86a427337bcdbac5d99f48a160",
+    "drift_pi0_pipeline.py": "87adbb0ae39216bb79d5f373d8e0d850b4ada0fe2111e62a6dff855035f3d8cf"
+  },
+  "source_checkpoint_sha256": {
+    "assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1",
+    "download_manifest.json": "d65d34c9fab4d8b3ccd7c223bcd7cd25c344b341c6cb1b819292b0c32a0de2cd",
+    "params/_METADATA": "65cc6a84efeb1947131d78a313b8c20bbc95b958c2ba7a41be1a1f523dabf10d",
+    "params/_sharding": "e1b29e984e147e7c998859ec31b82558f67a30dcdbf5342c869f10f6d8c77783",
+    "params/d/5b6b2a896e0651f82a2c879b8a2a8ba8": "42198dc6ffc4a30fef05ccd82c103f59d6cc331380580ecb8ee4016b9220def3",
+    "params/manifest.ocdbt": "a62034cfdc5f7b771819ccde16d124f4d2b5527d19206ea148cfb93c7d03ac11",
+    "params/ocdbt.process_0/d/0ca4bf816ec10acaec0f62490a41529d": "c80548576912b015f00c56c789e9e1befcaf18bd8887c56fd4207df7d87e4359",
+    "params/ocdbt.process_0/d/15ad1c4fa76e1c764766b9bc865e8d1d": "66f72792257fb1d2bad695eb0d011615b731f48342c4eeb5e0cbb6a787181d42",
+    "params/ocdbt.process_0/d/2e38713b6caa7bfde0385f0adced748d": "702499a4edf7fa6b1c9471aeba5d1dca2f10231897676e7b9334d7af47d3d9a9",
+    "params/ocdbt.process_0/d/5b573f911a8101f0fcfdd62f73b218fb": "2764a97b179246378b7fdbae46261091e37d04b151b0dbb1f12919be8d678525",
+    "params/ocdbt.process_0/d/5c296f4f9a224be488612a6025ca58c6": "282f63599c2a5dba3645d44f259bba23271aaefaf78e2ff8b0e395a094464894",
+    "params/ocdbt.process_0/d/680b47b37cc767ff45156e23565e2252": "359fc9329c8a3414f0d02d9df0403a60bc36ab00774391647cea3fe7a7567efc",
+    "params/ocdbt.process_0/d/7a559626d53988daabd96a179a6bff54": "ac51652cca71246a431eda2d810c262023030ec929f0e47402e2461c390d45e5",
+    "params/ocdbt.process_0/d/a3bd463a29df7b76a4d71263d8c05704": "26d81b3cc53079196d983ae4c7bdee0361de6502eb913b38ff885ebb9bec4d23",
+    "params/ocdbt.process_0/d/a87389eb66cb14add95ad6441a413ee9": "fff2f8b328c86ab34912c01d5758210df1805bcd73e3709be401d1989b9b18c3",
+    "params/ocdbt.process_0/d/cae25c26b881cdb73257fea25bd132a2": "70755d54e4edea5a288f717437d2f68456083a620ce95d10d6bd4a4315633a23",
+    "params/ocdbt.process_0/d/e98fbfe843f0b1a0938e2e174f5fe64b": "d9afd99aeb73f1bd60c82d939250c69bddaf76602580c5a5323c0d2a937c642f",
+    "params/ocdbt.process_0/d/f0bdaf7cbb943edbc868f15a685f9881": "5abc3ccf4a34e49820f1163ac54c233dd25c4f5d87515a46b378e8d08ed59ff7",
+    "params/ocdbt.process_0/d/f251f0005f1667fe8e596da96c894e50": "3ba9f77400c2459be0a4a6c9c1e4ab28c014ec603c39a292ed9c8f22156cf105",
+    "params/ocdbt.process_0/manifest.ocdbt": "85faf4b9d866fb219df9f905f85ad1131a9f1bf86588540f2a05e623bc94d591"
+  },
+  "patch_npy_sha256": "423692e1c2a23310592b4d4a771435639452027fd1e0892fb0877c7d2e47c01b",
+  "patch_png_sha256": "a08b3014edc0a3f526b0fe7670a053a034dfc0f6c9189cb8b2421358d0b2ff86",
+  "geometry_sha256": "ab5ea889ec6a57555274fea715f6f10911cc9dd71f6950ab6d5f1ac2ac8c5900",
+  "random_png_sha256": "086dae91266c377302ab283b2bb6e9da8dae063c249a73e8fac6152f16bd3673",
+  "runner_sha256": "c660c9918c8895c12a84e6c07832f2f4773856142b22058d982e4e4cf1961166",
+  "patch_stem": "drift_pi0_32px",
+  "training": "none; exact fixed final upstream-trained patch reused",
+  "observation": "native MuJoCo RGB in both cameras, frozen preprocessing; no input overlay",
+  "limitation": "Rigid visual plate, not proof of a flush physical sticker",
+  "references": "Unmodified source clean/digital JSON; original NPZ record paths and hashes retained"
+}
