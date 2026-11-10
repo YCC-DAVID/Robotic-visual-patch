@@ -1,0 +1,632 @@
+[
+  {
+    "path": "eval/libero_spatial/task00/clean/init00.json",
+    "source_json_sha256": "b6c3a7f4979759b54ba1c17eaa0d43c30e87cb15039871f5f5251788e4bb3389",
+    "snapshot_json_sha256": "b6c3a7f4979759b54ba1c17eaa0d43c30e87cb15039871f5f5251788e4bb3389",
+    "reused_source_json": true,
+    "record_sha256": "a883cfd2537fb687b1a77d7c53b7707fd68e698da49eae1c0b969224b4096422"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init01.json",
+    "source_json_sha256": "992a2732d5f48528210306603272f33b2bcd69f583c6418f0f271f33c303f7cc",
+    "snapshot_json_sha256": "992a2732d5f48528210306603272f33b2bcd69f583c6418f0f271f33c303f7cc",
+    "reused_source_json": true,
+    "record_sha256": "8de17833ffa9d5890bcece91e9fdb324c03d96caceb0278085ec44fd6d7f9be6"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init02.json",
+    "source_json_sha256": "ea33e7e710fe197d18ecc607759fa7266976a68b70e543d63f68f9e62bc720f3",
+    "snapshot_json_sha256": "ea33e7e710fe197d18ecc607759fa7266976a68b70e543d63f68f9e62bc720f3",
+    "reused_source_json": true,
+    "record_sha256": "ceb34bc31cd3b7f321596bdbc7285a9513434441d8da0028327cba3bf5b16c8a"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init03.json",
+    "source_json_sha256": "4632448403870504399d6232e08a2f51c18e44c422fec528dd3cca29d8a5eae9",
+    "snapshot_json_sha256": "4632448403870504399d6232e08a2f51c18e44c422fec528dd3cca29d8a5eae9",
+    "reused_source_json": true,
+    "record_sha256": "79513ef0443a1acf7c09465f0d4286e8f86a65576ca629cc995ef79e9722a068"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init04.json",
+    "source_json_sha256": "e743891ef2f33859f73e42d6c746f1a9ae73b773ab2539dc0ae5f7aff4be8a96",
+    "snapshot_json_sha256": "e743891ef2f33859f73e42d6c746f1a9ae73b773ab2539dc0ae5f7aff4be8a96",
+    "reused_source_json": true,
+    "record_sha256": "58f99e58b18b00f137b53becce8a174a083aaf3223a02b46abb71e1659c59905"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init05.json",
+    "source_json_sha256": "4e3d57d3c5f0d1dd9afda141eb10fed5be5b908b9e7391b447044129b08ef00c",
+    "snapshot_json_sha256": "4e3d57d3c5f0d1dd9afda141eb10fed5be5b908b9e7391b447044129b08ef00c",
+    "reused_source_json": true,
+    "record_sha256": "7c565d7289a6c9ba7bb68a1b26e8b8b4e61c4a36b52103bc5f6304f6c2aed4da"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init06.json",
+    "source_json_sha256": "97454d34237c7ba7346a8f127ea2fb85d9d38489f7fdce462146b38279a5ab38",
+    "snapshot_json_sha256": "97454d34237c7ba7346a8f127ea2fb85d9d38489f7fdce462146b38279a5ab38",
+    "reused_source_json": true,
+    "record_sha256": "fb9e1277d500365540642be0212499b2f856d64af47c393de8f5ed19cde98671"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init07.json",
+    "source_json_sha256": "1510dd2d64b0cde2fa22b953ba401a49dd503598933a3542b218716b959b7088",
+    "snapshot_json_sha256": "1510dd2d64b0cde2fa22b953ba401a49dd503598933a3542b218716b959b7088",
+    "reused_source_json": true,
+    "record_sha256": "38f32bb0d49a26b80df3a183d85f17adbd22d7c1deeddaf070ed5b7cf736d6d8"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init08.json",
+    "source_json_sha256": "1cbc9831b15e88f8752c09a1ec1125aea4f8a72b5e4fceffb3cbc11cbeb29db2",
+    "snapshot_json_sha256": "1cbc9831b15e88f8752c09a1ec1125aea4f8a72b5e4fceffb3cbc11cbeb29db2",
+    "reused_source_json": true,
+    "record_sha256": "1681c6488edfcb9bcf9b77785c1e9628afa71509f9df82433289b54fc8e25bad"
+  },
+  {
+    "path": "eval/libero_spatial/task00/clean/init09.json",
+    "source_json_sha256": "ecc3a7c265e5174f858c7ba67bc5ed97de42d8453fea2dc737fd8555d78d2990",
+    "snapshot_json_sha256": "ecc3a7c265e5174f858c7ba67bc5ed97de42d8453fea2dc737fd8555d78d2990",
+    "reused_source_json": true,
+    "record_sha256": "ce3b19a8ca9776a3e8a0a887e3dd3bc9eacb061e7e154722ee424124e7676a87"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init00.json",
+    "source_json_sha256": "a0cad53fdc997c4513e54a9530921d31b931f79eb8c860c80e14006c7ea1eb06",
+    "snapshot_json_sha256": "a0cad53fdc997c4513e54a9530921d31b931f79eb8c860c80e14006c7ea1eb06",
+    "reused_source_json": true,
+    "record_sha256": "bad5ca61b535b1cfe1c209fdc51ef4eb12a685512a222a724f888ca34d88a6ee"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init01.json",
+    "source_json_sha256": "0861519565d8830222dc1957c71dfaed3f0a19c0793604e8eb34bc27d1e4ce7b",
+    "snapshot_json_sha256": "0861519565d8830222dc1957c71dfaed3f0a19c0793604e8eb34bc27d1e4ce7b",
+    "reused_source_json": true,
+    "record_sha256": "5f9e77b5916bdc2ace50e55776f3a06c26bc25cc74cfc371c90741b05e71d232"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init02.json",
+    "source_json_sha256": "f9880f510c7b8a52d2359e7ce5790f4cd10409dbf9952820c712512fd7399a7c",
+    "snapshot_json_sha256": "f9880f510c7b8a52d2359e7ce5790f4cd10409dbf9952820c712512fd7399a7c",
+    "reused_source_json": true,
+    "record_sha256": "f087680f30e64e46f1bde7e5d00cfbed32d50f5de52ca69ac2308a39e8bd283d"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init03.json",
+    "source_json_sha256": "04b6789b3ae8bbfbcafe3836818544eb6d61af9b86df910b4dfdbd00796b61d6",
+    "snapshot_json_sha256": "04b6789b3ae8bbfbcafe3836818544eb6d61af9b86df910b4dfdbd00796b61d6",
+    "reused_source_json": true,
+    "record_sha256": "17b1b4ffa117fdc3490bdaa7536746b61d2533aed92b268f84a279d2d7dc60ce"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init04.json",
+    "source_json_sha256": "05fea7cb75774751f617898449069fec1a184f19bf2360e972fef7fc2de4f4a7",
+    "snapshot_json_sha256": "05fea7cb75774751f617898449069fec1a184f19bf2360e972fef7fc2de4f4a7",
+    "reused_source_json": true,
+    "record_sha256": "3b5ace93e88b9698d8163dae0382226a848e6750400d7d5cccedb9d55cdbac61"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init05.json",
+    "source_json_sha256": "44a23f503bec27fca8777f24ed3377a60221a6254fb8283d244d6aa7235e693e",
+    "snapshot_json_sha256": "44a23f503bec27fca8777f24ed3377a60221a6254fb8283d244d6aa7235e693e",
+    "reused_source_json": true,
+    "record_sha256": "10fb75ab551b65d8d13307167524fc3b729530bc0b5c6434c618888331c4f0a2"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init06.json",
+    "source_json_sha256": "8e2c139f5a9d535d4a19476c9bfc31ab18ba82670f26aaae9cc0a6a381add1ae",
+    "snapshot_json_sha256": "8e2c139f5a9d535d4a19476c9bfc31ab18ba82670f26aaae9cc0a6a381add1ae",
+    "reused_source_json": true,
+    "record_sha256": "722a232733e3845a99fba8713692aa8dfa2309ef3eda1441acf1c1daa839f99d"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init07.json",
+    "source_json_sha256": "5bf499e29c591f9e73815ee8414c81c833089b3a541f83eec9767f6e02da0409",
+    "snapshot_json_sha256": "5bf499e29c591f9e73815ee8414c81c833089b3a541f83eec9767f6e02da0409",
+    "reused_source_json": true,
+    "record_sha256": "6811c29e6da3dc7a867fc76b5f709e0ed7865b51f56db7899643233386ddc434"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init08.json",
+    "source_json_sha256": "aec6b21f63134f64ff7da025e749e0b82237f3327b7f3c1a1178da957d67d94d",
+    "snapshot_json_sha256": "aec6b21f63134f64ff7da025e749e0b82237f3327b7f3c1a1178da957d67d94d",
+    "reused_source_json": true,
+    "record_sha256": "1198c0fbec9bc66429b993dbb5c28d9a6de90519122dcb2083577b5c3b0238c8"
+  },
+  {
+    "path": "eval/libero_spatial/task00/random_digital/init09.json",
+    "source_json_sha256": "896fffe7f03d39b3d5a93af3c8aea07c862bbd9eb669f21e8c366629e81c5c99",
+    "snapshot_json_sha256": "896fffe7f03d39b3d5a93af3c8aea07c862bbd9eb669f21e8c366629e81c5c99",
+    "reused_source_json": true,
+    "record_sha256": "08f23490a89bb731c5ea8905cd0e12d67be395bbf69ab26717ada9be0adf5bf5"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init00.json",
+    "source_json_sha256": "9d4a28cc1b907927c5b2db8fadfb883055f3d3a8471b15ea96ea5424abea3116",
+    "snapshot_json_sha256": "9d4a28cc1b907927c5b2db8fadfb883055f3d3a8471b15ea96ea5424abea3116",
+    "reused_source_json": true,
+    "record_sha256": "e60f30c1051f1582666692b1680361e03b6da2de7dca1dcdc4e69c1950b38aae"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init01.json",
+    "source_json_sha256": "b7b1da1c3edd300d51380ea12c60475fc5445155f50a16a1d4f23fde6dcb8957",
+    "snapshot_json_sha256": "b7b1da1c3edd300d51380ea12c60475fc5445155f50a16a1d4f23fde6dcb8957",
+    "reused_source_json": true,
+    "record_sha256": "dc596d5aeab1236a8b1fe7cb1aa4299e546a6bf0573ef87daf46ff9aca246353"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init02.json",
+    "source_json_sha256": "f4f7e0d128c7697a95c8038ffe788b1c90051155669592f34a206f8a6d1743d0",
+    "snapshot_json_sha256": "f4f7e0d128c7697a95c8038ffe788b1c90051155669592f34a206f8a6d1743d0",
+    "reused_source_json": true,
+    "record_sha256": "f7118199719c37626dfc045a8ebf64b945c1765962501e413869ac9ec8a4abe8"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init03.json",
+    "source_json_sha256": "7ff245a33af26ed8c57748488f52b7ea5ad4caae35e80a72ae414f0e3c54b6b4",
+    "snapshot_json_sha256": "7ff245a33af26ed8c57748488f52b7ea5ad4caae35e80a72ae414f0e3c54b6b4",
+    "reused_source_json": true,
+    "record_sha256": "fdef00930221d09fe6e3ece06cbe9fbbb7c02cce870e1a58bfdc81d609092c70"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init04.json",
+    "source_json_sha256": "8716963a020ca553934823b17c0d9c0903778e870e8eeff02258bf1d2f96f6c7",
+    "snapshot_json_sha256": "8716963a020ca553934823b17c0d9c0903778e870e8eeff02258bf1d2f96f6c7",
+    "reused_source_json": true,
+    "record_sha256": "acc0d0f10e692bf74b046b3a307bc73121360a0a31c9829a90d3f5794c29872b"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init05.json",
+    "source_json_sha256": "369803bfa1765e643181ae976216e40e9c187ac4261c0b795ce25fe0919fd99a",
+    "snapshot_json_sha256": "369803bfa1765e643181ae976216e40e9c187ac4261c0b795ce25fe0919fd99a",
+    "reused_source_json": true,
+    "record_sha256": "62688960863133db09fa0fb6d4213eaeef61c3136f7fd3bd3cb51f4a824157a9"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init06.json",
+    "source_json_sha256": "9b0f2a41d5609d0e635cc3c672e27e56df2af23da1a381e4fe0c7dabebd83db4",
+    "snapshot_json_sha256": "9b0f2a41d5609d0e635cc3c672e27e56df2af23da1a381e4fe0c7dabebd83db4",
+    "reused_source_json": true,
+    "record_sha256": "1d7e7947221456fbc8bc80dd49edcebea5786e414ee245a57e4c203597e95b7f"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init07.json",
+    "source_json_sha256": "e7cb0e51610ceacb2a800e81dc732c3012d252c5aa7df1173e5f18aa8e0e6b3f",
+    "snapshot_json_sha256": "e7cb0e51610ceacb2a800e81dc732c3012d252c5aa7df1173e5f18aa8e0e6b3f",
+    "reused_source_json": true,
+    "record_sha256": "2f7fee214d26a04af3f1d2c032e1e52dc77d28100d8321fc65a3b3f1ed90e853"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init08.json",
+    "source_json_sha256": "af539cf7a74ea898c0e628fc0567b3a177176db01592b6ad9fd0f39ade1bf685",
+    "snapshot_json_sha256": "af539cf7a74ea898c0e628fc0567b3a177176db01592b6ad9fd0f39ade1bf685",
+    "reused_source_json": true,
+    "record_sha256": "c51f6cb0ed24601a2d2598dcebe608756d410c6db9520c78e42c1236cb102616"
+  },
+  {
+    "path": "eval/libero_spatial/task00/drift_digital/init09.json",
+    "source_json_sha256": "ad85c1d755211e9aa30ec44efc6b14b0e7034622046fb5a53d59b780f401be6f",
+    "snapshot_json_sha256": "ad85c1d755211e9aa30ec44efc6b14b0e7034622046fb5a53d59b780f401be6f",
+    "reused_source_json": true,
+    "record_sha256": "429b3d4fc217141a5c5cfee57a9f159cc13de84b22097ec8b032c286cbbb0e56"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init00.json",
+    "source_json_sha256": "b6920914326bcfd4ef13b3fdd8e2ae0f59a20fe279de1a5d01efb9ab256d45d5",
+    "snapshot_json_sha256": "b6920914326bcfd4ef13b3fdd8e2ae0f59a20fe279de1a5d01efb9ab256d45d5",
+    "reused_source_json": true,
+    "record_sha256": "8a2a143e2fa2dc663ae6136e91ea045dd884c2582fa2dc4831f1c24bd75945ba"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init01.json",
+    "source_json_sha256": "fd2503d440898f4399d5ea7eaaa0b7196b0dd3c344a422c6c9566900bb8c5dcf",
+    "snapshot_json_sha256": "fd2503d440898f4399d5ea7eaaa0b7196b0dd3c344a422c6c9566900bb8c5dcf",
+    "reused_source_json": true,
+    "record_sha256": "8bac2dfa09b10ef3de22723d8b65c572e817e4b7e9f14ccc1a6d7a18bedba070"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init02.json",
+    "source_json_sha256": "c5bb11362fcc51b8c9e48cab06579a9574d316bf60a923b1b05d6869e3a2a0ca",
+    "snapshot_json_sha256": "c5bb11362fcc51b8c9e48cab06579a9574d316bf60a923b1b05d6869e3a2a0ca",
+    "reused_source_json": true,
+    "record_sha256": "06a856fb376d9380116d18553deabea80226bb102e62218797138d8608b3adbe"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init03.json",
+    "source_json_sha256": "6aa5e4ac1140e84a90052b6c5bc86bf294a758df2b596e4c714e7018c281b673",
+    "snapshot_json_sha256": "6aa5e4ac1140e84a90052b6c5bc86bf294a758df2b596e4c714e7018c281b673",
+    "reused_source_json": true,
+    "record_sha256": "5ed692ef4e3b04ed8938f1baa331fae6047408c39c6fba15b3fd247f2ecff53a"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init04.json",
+    "source_json_sha256": "25d494f2e6e618bfc8546f465078942585794088d5698e2cdf76d2d075a6bad7",
+    "snapshot_json_sha256": "25d494f2e6e618bfc8546f465078942585794088d5698e2cdf76d2d075a6bad7",
+    "reused_source_json": true,
+    "record_sha256": "7eb59b1e55861c15bb543289da1153e29745e54805c46e588ad3b1d5203a8ac4"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init05.json",
+    "source_json_sha256": "ecf601aa1cf3072b44bde1e5afba140c55a2e4235e4ee79d367aecf00489819f",
+    "snapshot_json_sha256": "ecf601aa1cf3072b44bde1e5afba140c55a2e4235e4ee79d367aecf00489819f",
+    "reused_source_json": true,
+    "record_sha256": "852877297e4c89d2feddf169faf00c455dbb8cf93a840796e9e33b19b51146ac"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init06.json",
+    "source_json_sha256": "ded92000d59734b1fb9f9ffd8f817dd2379ed1c719db4964f21d3e5b6d1d12f9",
+    "snapshot_json_sha256": "ded92000d59734b1fb9f9ffd8f817dd2379ed1c719db4964f21d3e5b6d1d12f9",
+    "reused_source_json": true,
+    "record_sha256": "a0f28dea625824ea3e6dcfbaa19388b9f5cca6a103d1a16c4b2b5db46880199c"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init07.json",
+    "source_json_sha256": "0a184f5f87226ece06c22b4562ed9a1d65563871227e0b395a3b616143b81d4b",
+    "snapshot_json_sha256": "0a184f5f87226ece06c22b4562ed9a1d65563871227e0b395a3b616143b81d4b",
+    "reused_source_json": true,
+    "record_sha256": "e56ad406958ef0f2f5b7a947f36b82143c05473306e016169764e6e40c290e75"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init08.json",
+    "source_json_sha256": "5390bc1b6e3461740b1fb0b95758115be79bc2e8f13b3a6073bce7b55b188de8",
+    "snapshot_json_sha256": "5390bc1b6e3461740b1fb0b95758115be79bc2e8f13b3a6073bce7b55b188de8",
+    "reused_source_json": true,
+    "record_sha256": "1b3ea44609e07c4d468beafc4c90984d7e495d010c045405dad53e43c2efaa85"
+  },
+  {
+    "path": "eval/libero_spatial/task01/clean/init09.json",
+    "source_json_sha256": "a0ab4f43bb4f169ff67942f2fa2e5df44607797777b49632fbefe71a96c58849",
+    "snapshot_json_sha256": "a0ab4f43bb4f169ff67942f2fa2e5df44607797777b49632fbefe71a96c58849",
+    "reused_source_json": true,
+    "record_sha256": "4a74e69d029ec56f4c9d722b59134174a18d2c8894a5afe8e61e3aae4c18203d"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init00.json",
+    "source_json_sha256": "8d65602a6cfc629156ad2e2c3bb8060033096c3591c1625834e5cf2682acec4f",
+    "snapshot_json_sha256": "8d65602a6cfc629156ad2e2c3bb8060033096c3591c1625834e5cf2682acec4f",
+    "reused_source_json": true,
+    "record_sha256": "4cfedbc342bd0dc17437173c707613652bdaf80fd8b7341def7a60063ab5fd3b"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init01.json",
+    "source_json_sha256": "4cae704b01a345748ce824e556bc4a2439d05127e4af2c6ce543a53e62498041",
+    "snapshot_json_sha256": "4cae704b01a345748ce824e556bc4a2439d05127e4af2c6ce543a53e62498041",
+    "reused_source_json": true,
+    "record_sha256": "d3c62e2e92cc2acf889ff3eadb95712d1d2b8045a34951203d2199028259bdf3"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init02.json",
+    "source_json_sha256": "4b095a8990182db9c1b625b0215c1adb8cb0e8a28ac160cb4fa046f1aaa34a8a",
+    "snapshot_json_sha256": "4b095a8990182db9c1b625b0215c1adb8cb0e8a28ac160cb4fa046f1aaa34a8a",
+    "reused_source_json": true,
+    "record_sha256": "d4b5ec031930b5604b142df84b2655ebab594c06979af63d604d37cf564c687f"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init03.json",
+    "source_json_sha256": "d3ad7f24e39f7d93520f856a932eb3a1037fece5dcbcdce25a830ff9d4dca762",
+    "snapshot_json_sha256": "d3ad7f24e39f7d93520f856a932eb3a1037fece5dcbcdce25a830ff9d4dca762",
+    "reused_source_json": true,
+    "record_sha256": "15c5b0a7641c6d7cc70f6aae4f58b89ff22b0d9e57c83e6db03dc91c3af4ff46"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init04.json",
+    "source_json_sha256": "fc51d3b5d81ec2f58e5ded5028b75b86e3310498fc059d7d5240b29a36c74694",
+    "snapshot_json_sha256": "fc51d3b5d81ec2f58e5ded5028b75b86e3310498fc059d7d5240b29a36c74694",
+    "reused_source_json": true,
+    "record_sha256": "cc81df992201992ab9b98da6bff76b05ef7d44dd15a51eb6bffceae952c7f560"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init05.json",
+    "source_json_sha256": "2c13149dd9eee159711b1f7cc5c68c36ff81ebd745ede108ea6d9392977d309c",
+    "snapshot_json_sha256": "2c13149dd9eee159711b1f7cc5c68c36ff81ebd745ede108ea6d9392977d309c",
+    "reused_source_json": true,
+    "record_sha256": "608a7e91e1645298f7fe82dd015b39a675e53bb1af758191bcd74215842ac6cd"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init06.json",
+    "source_json_sha256": "dd6fc610f93caf528a58f74cdfb8ed4f053b67b8027e162f73e523f64609f81f",
+    "snapshot_json_sha256": "dd6fc610f93caf528a58f74cdfb8ed4f053b67b8027e162f73e523f64609f81f",
+    "reused_source_json": true,
+    "record_sha256": "9a2ba66ffce70feab533ba2b6c71db19ff43edc702bccc51822c3da7355648e1"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init07.json",
+    "source_json_sha256": "9be1c52e566efcbd10dc302c2e867ece8f00e98bb97913adeb1d00b00c58177c",
+    "snapshot_json_sha256": "9be1c52e566efcbd10dc302c2e867ece8f00e98bb97913adeb1d00b00c58177c",
+    "reused_source_json": true,
+    "record_sha256": "5d1119dd2b9218097d21f951eba3bbca719f7008c9d52616df9cf1af4cb4707b"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init08.json",
+    "source_json_sha256": "f28ed0e0edbc84fd4b28a8013850460ac286f02bf88b7e28234e366afea5b6c0",
+    "snapshot_json_sha256": "f28ed0e0edbc84fd4b28a8013850460ac286f02bf88b7e28234e366afea5b6c0",
+    "reused_source_json": true,
+    "record_sha256": "813b25ce1ba2176e9db2e553db7d63e8c6fb6b1934526875aab3b7c65b45ecc8"
+  },
+  {
+    "path": "eval/libero_spatial/task01/random_digital/init09.json",
+    "source_json_sha256": "8afe34dd97e3edfcf95d74dc74c31af3fd51bd71472e2342b33f5198a2b992d3",
+    "snapshot_json_sha256": "8afe34dd97e3edfcf95d74dc74c31af3fd51bd71472e2342b33f5198a2b992d3",
+    "reused_source_json": true,
+    "record_sha256": "4fb94c6fe321de7e54b4f992c92bc7b7379c4072dcc5e3093d41a8beb67e20be"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init00.json",
+    "source_json_sha256": "c233a927adf666cc6e4e0e7d9adde8e8edcbcea72a3ebb1bcec2b41503cfefd8",
+    "snapshot_json_sha256": "c233a927adf666cc6e4e0e7d9adde8e8edcbcea72a3ebb1bcec2b41503cfefd8",
+    "reused_source_json": true,
+    "record_sha256": "f73dc6fec4af322f41f6c6664b1b716cd0ba187c4aadf3c15781270ff6b18682"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init01.json",
+    "source_json_sha256": "c0fe20e1482c3c42226afa258fb47ce697c11828016f295a8e881726cf8b669f",
+    "snapshot_json_sha256": "c0fe20e1482c3c42226afa258fb47ce697c11828016f295a8e881726cf8b669f",
+    "reused_source_json": true,
+    "record_sha256": "5dcc2926f7ce63f99caea1aa3727e80bc3bb996e16ed398e0063363c4c5d84d8"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init02.json",
+    "source_json_sha256": "8c5b40c1acc2bbf904b6e35402c5740752c3ecc6b917e1c43d7e6cfe800a82b9",
+    "snapshot_json_sha256": "8c5b40c1acc2bbf904b6e35402c5740752c3ecc6b917e1c43d7e6cfe800a82b9",
+    "reused_source_json": true,
+    "record_sha256": "03b6d4b762d07d579f35a3fbedda8e39ac8bbda0225e2e355720056194686847"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init03.json",
+    "source_json_sha256": "57ffd153713f1847e21cd8e36ca2fea7f661f4fc8bfc77b67b659313b1eb1c2d",
+    "snapshot_json_sha256": "57ffd153713f1847e21cd8e36ca2fea7f661f4fc8bfc77b67b659313b1eb1c2d",
+    "reused_source_json": true,
+    "record_sha256": "8202950dff445e3b292881da84a5e8528697652bf8ea7ee64cdfdebc774b5d4b"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init04.json",
+    "source_json_sha256": "d9354f5e34b516b9eccc299fdb15a8c9bf68f7411dc2875533965e3d1a464be1",
+    "snapshot_json_sha256": "d9354f5e34b516b9eccc299fdb15a8c9bf68f7411dc2875533965e3d1a464be1",
+    "reused_source_json": true,
+    "record_sha256": "2360b86a744bea388ab87ff0a9f5b971d7ac838314478f7049a2f9e849884d43"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init05.json",
+    "source_json_sha256": "14ba17ba3f04ab5b05047e84c2b1dd5b622da246b91a85b55ff7e0519a34c3c2",
+    "snapshot_json_sha256": "14ba17ba3f04ab5b05047e84c2b1dd5b622da246b91a85b55ff7e0519a34c3c2",
+    "reused_source_json": true,
+    "record_sha256": "35dfb6cebe6afb0787fbafcace2c26f8892138145bc27430a95c829ca2b9aa13"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init06.json",
+    "source_json_sha256": "984dedf69363d4d99f3f181ca35472e844d9c0823ab45be58cae7b00e60d35f1",
+    "snapshot_json_sha256": "984dedf69363d4d99f3f181ca35472e844d9c0823ab45be58cae7b00e60d35f1",
+    "reused_source_json": true,
+    "record_sha256": "041af71bd1df1fdaecc2c316ea363bbf5ac225e12e65e87b67fbc7e7c136a001"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init07.json",
+    "source_json_sha256": "92226d2a024f696512c438afbdccdfdb960c639018060f6fa3393d882e99fb19",
+    "snapshot_json_sha256": "92226d2a024f696512c438afbdccdfdb960c639018060f6fa3393d882e99fb19",
+    "reused_source_json": true,
+    "record_sha256": "3615bb37add41f98d9ce4e6a5f7508fd3cc0722074df9793d51925d028332924"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init08.json",
+    "source_json_sha256": "b46a7c13c2d17834ff6b8333f8ad638a83da67c07c473090563012ca5d8def8d",
+    "snapshot_json_sha256": "b46a7c13c2d17834ff6b8333f8ad638a83da67c07c473090563012ca5d8def8d",
+    "reused_source_json": true,
+    "record_sha256": "192c87b4cc70721121603ac7518e10298114877711875dc6a78f015584be337d"
+  },
+  {
+    "path": "eval/libero_spatial/task01/drift_digital/init09.json",
+    "source_json_sha256": "cbd9f861798f262f312f907040171f7d65c3522b2a2d0f2ec0b611e3fe151775",
+    "snapshot_json_sha256": "cbd9f861798f262f312f907040171f7d65c3522b2a2d0f2ec0b611e3fe151775",
+    "reused_source_json": true,
+    "record_sha256": "cec0a1a74ef429337e9dfab81e8424fc5235e06e1cdbfb996f987cd5f2e60054"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init00.json",
+    "source_json_sha256": "cc69aff3b8df173ba6b6ee33397fdd294eddcbf681efcee0f2e21a4c5102d3f0",
+    "snapshot_json_sha256": "cc69aff3b8df173ba6b6ee33397fdd294eddcbf681efcee0f2e21a4c5102d3f0",
+    "reused_source_json": true,
+    "record_sha256": "e65f34b2016db18ae5961f85eb03cb5af46457459f03787537cebb0bc14322b5"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init01.json",
+    "source_json_sha256": "5b57c40b5d281fe39414ec85f1527448e39681cf4a5151775bfc4a6a7474f281",
+    "snapshot_json_sha256": "5b57c40b5d281fe39414ec85f1527448e39681cf4a5151775bfc4a6a7474f281",
+    "reused_source_json": true,
+    "record_sha256": "7613b4b46929b80fd2fd924a956ef34e1029555df0c464cbfcfcb6b1ff3a44ef"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init02.json",
+    "source_json_sha256": "50668d8f1294ce52b9de98a4744d1d934f0ba8b91f2a41283f9e0655b43256b9",
+    "snapshot_json_sha256": "50668d8f1294ce52b9de98a4744d1d934f0ba8b91f2a41283f9e0655b43256b9",
+    "reused_source_json": true,
+    "record_sha256": "a90da0a0fd6313ea620a7cc30353d9542639c3792d3801e6d50365ed2656568f"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init03.json",
+    "source_json_sha256": "9440d5a4d78d1cb2d540884d1d855ba6d4ac3085dc8ccf8e79a288db7a1098eb",
+    "snapshot_json_sha256": "9440d5a4d78d1cb2d540884d1d855ba6d4ac3085dc8ccf8e79a288db7a1098eb",
+    "reused_source_json": true,
+    "record_sha256": "3ac92bc8c3977413fa4a37d1fede5ce56ac085b64c43d24d57732e07d482bcf1"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init04.json",
+    "source_json_sha256": "73937ac47935bd07fe177e24e085842c2987f7c17b323de4ab492fe50d9de973",
+    "snapshot_json_sha256": "73937ac47935bd07fe177e24e085842c2987f7c17b323de4ab492fe50d9de973",
+    "reused_source_json": true,
+    "record_sha256": "13696221849c98ad46cd4feb39023d26b68daf36920ff1e8cf74fc1bf7e4f340"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init05.json",
+    "source_json_sha256": "7dc08662e3ee57e686dfd15e551d507cb24be1a88d89380505567b59cba62a9d",
+    "snapshot_json_sha256": "7dc08662e3ee57e686dfd15e551d507cb24be1a88d89380505567b59cba62a9d",
+    "reused_source_json": true,
+    "record_sha256": "fe29d845e39f0b5a5527b702bfe527081900ffd41a8bae9e6c90f0d4dc7ecc67"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init06.json",
+    "source_json_sha256": "2ca1b60c399a14575915554672715cab427b7f48c8bf8e7f1677a7921aafad06",
+    "snapshot_json_sha256": "2ca1b60c399a14575915554672715cab427b7f48c8bf8e7f1677a7921aafad06",
+    "reused_source_json": true,
+    "record_sha256": "0e0888e12a38c40d7be6969052d6c5f6965989e8d5fafc563f8d853a747c4775"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init07.json",
+    "source_json_sha256": "7f54ada6c85a0ba6f900b7cc4ccbf247778081329f072f3e934e0bfb9790062c",
+    "snapshot_json_sha256": "7f54ada6c85a0ba6f900b7cc4ccbf247778081329f072f3e934e0bfb9790062c",
+    "reused_source_json": true,
+    "record_sha256": "60b93f87407f0af509b04e661383cba648b647127c3cb7d8f2444cd6828e4d9b"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init08.json",
+    "source_json_sha256": "4547366e8041743236a1bb4a881d003764c0a9406a0a682211bceff1602a12e0",
+    "snapshot_json_sha256": "4547366e8041743236a1bb4a881d003764c0a9406a0a682211bceff1602a12e0",
+    "reused_source_json": true,
+    "record_sha256": "f94e6f593e94e3f6d798e4f4db58f72686f3133fe29430d70546902528407299"
+  },
+  {
+    "path": "eval/libero_spatial/task02/clean/init09.json",
+    "source_json_sha256": "249f0c48c4ee6885c4fc58702c9414cda5ecfe9f5a6d3d1167667fc127021910",
+    "snapshot_json_sha256": "249f0c48c4ee6885c4fc58702c9414cda5ecfe9f5a6d3d1167667fc127021910",
+    "reused_source_json": true,
+    "record_sha256": "9cf904046be211b22f2d83d93e3ded2a1cc66c31295b233fcb010a46c9b46285"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init00.json",
+    "source_json_sha256": "833d5574abebdd6d77106c915e7db13c266ade9014b61d97d2776d04b4b73f77",
+    "snapshot_json_sha256": "833d5574abebdd6d77106c915e7db13c266ade9014b61d97d2776d04b4b73f77",
+    "reused_source_json": true,
+    "record_sha256": "f6e681bf81722c793760177e238e4f03feef3a570f42be61102aae168e35b5a9"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init01.json",
+    "source_json_sha256": "e80b52a170294edc97db0034a55dc14789de01c5fbe7bc24ba7739ae1d8bd44b",
+    "snapshot_json_sha256": "e80b52a170294edc97db0034a55dc14789de01c5fbe7bc24ba7739ae1d8bd44b",
+    "reused_source_json": true,
+    "record_sha256": "63c1270cfc7f9524a2ccaf706b0e4dcc42a6deb61778ea2404ea28fc526d41a7"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init02.json",
+    "source_json_sha256": "a70e3b78a4f3d5c97def90694ff28bb851807b6bb06a874187da26d27fdde698",
+    "snapshot_json_sha256": "a70e3b78a4f3d5c97def90694ff28bb851807b6bb06a874187da26d27fdde698",
+    "reused_source_json": true,
+    "record_sha256": "9a32c5d75f8ddc0067e4bc7b3ff8ca6952dcc46f79299394d34b143205ed4423"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init03.json",
+    "source_json_sha256": "92d06f40bc51737977260ca990482cd6c75fd63b87487b0a6fc72173c54a38f4",
+    "snapshot_json_sha256": "92d06f40bc51737977260ca990482cd6c75fd63b87487b0a6fc72173c54a38f4",
+    "reused_source_json": true,
+    "record_sha256": "ccdb1eb2897ee8c1835aec50b16ef6171a4c809d5c7637c4fffbcf0008c77b60"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init04.json",
+    "source_json_sha256": "dd3d837285bef3183d7ffc96b2c96ce7832c1007369cc645e82f198764a9facb",
+    "snapshot_json_sha256": "dd3d837285bef3183d7ffc96b2c96ce7832c1007369cc645e82f198764a9facb",
+    "reused_source_json": true,
+    "record_sha256": "71a12756549ddacdf06efad839dcec8ea2c3c1287e54d0b3aa884f5770ddd856"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init05.json",
+    "source_json_sha256": "bcdc2f78c8fe3bdfdfc6c9e9b44e16b4292f1b46594fdab3d12803e24f3e6195",
+    "snapshot_json_sha256": "bcdc2f78c8fe3bdfdfc6c9e9b44e16b4292f1b46594fdab3d12803e24f3e6195",
+    "reused_source_json": true,
+    "record_sha256": "0ff67237f22755b8ed97542e03454cc14e6ea5346d9a3212d50d5e6dca664789"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init06.json",
+    "source_json_sha256": "57dd584606c993f55869fa32b72dfaca0c22dfc455a68a0b4f614bdbdf1b61ab",
+    "snapshot_json_sha256": "57dd584606c993f55869fa32b72dfaca0c22dfc455a68a0b4f614bdbdf1b61ab",
+    "reused_source_json": true,
+    "record_sha256": "d60605d069aab9e16f4962bedb0855a5bb93a276c3cf86015409e17b01a2e312"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init07.json",
+    "source_json_sha256": "f09b5d0e929db927e6fc6b112ee7235ad6042746fb47ab56ca56087160bc2ae6",
+    "snapshot_json_sha256": "f09b5d0e929db927e6fc6b112ee7235ad6042746fb47ab56ca56087160bc2ae6",
+    "reused_source_json": true,
+    "record_sha256": "06e82aeb4d86ab3a08001ddb4f53c1ff5deaa8abb1a191316abec220032a58a3"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init08.json",
+    "source_json_sha256": "7494a29f34e0b8df49b407b78375ce917e580b39363f42a2694400a7e9d38963",
+    "snapshot_json_sha256": "7494a29f34e0b8df49b407b78375ce917e580b39363f42a2694400a7e9d38963",
+    "reused_source_json": true,
+    "record_sha256": "87961af0366dc90275942bae9f82aaf8561bcf120de0edbd286bc56dac85d8da"
+  },
+  {
+    "path": "eval/libero_spatial/task02/random_digital/init09.json",
+    "source_json_sha256": "8db2c690bffbdc03ae7b357323fd6846ea366f493825fc7e921aaebbb1953d83",
+    "snapshot_json_sha256": "8db2c690bffbdc03ae7b357323fd6846ea366f493825fc7e921aaebbb1953d83",
+    "reused_source_json": true,
+    "record_sha256": "75e285c6e215955c0f7f88ce8984d739caf6125b274c9bdd11a04cd9d69bdca1"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init00.json",
+    "source_json_sha256": "985ba86ce37a2bc53d32b35ab851af080d39ff654d3a5849035dd4f7986515c7",
+    "snapshot_json_sha256": "985ba86ce37a2bc53d32b35ab851af080d39ff654d3a5849035dd4f7986515c7",
+    "reused_source_json": true,
+    "record_sha256": "ad8c1b1bda029bbed3b88a5a3e91b2da1535bb18b8bd87b74b6aa66560264307"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init01.json",
+    "source_json_sha256": "61681cfb3e1ab3dfeac5c44e273204344016f8bcc93f2bfc075e7abd6b78a759",
+    "snapshot_json_sha256": "61681cfb3e1ab3dfeac5c44e273204344016f8bcc93f2bfc075e7abd6b78a759",
+    "reused_source_json": true,
+    "record_sha256": "cd285e02d0a506408af5e25265f9dcf5c3ece0c1b1b2afb110e8165e827084c5"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init02.json",
+    "source_json_sha256": "ad482cd97d2f7c3bbf9b467bd4b21846a76f8c6cb7a715a5b9b0b7118fdb1059",
+    "snapshot_json_sha256": "ad482cd97d2f7c3bbf9b467bd4b21846a76f8c6cb7a715a5b9b0b7118fdb1059",
+    "reused_source_json": true,
+    "record_sha256": "e0de44c2a1215c85c76b605810ee0edd07d869b306b3bed51d46a31521a6b1f9"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init03.json",
+    "source_json_sha256": "7f9ad7c4f736ae3c7b0a48112130be2088c1d25ff2ed08129d7bca0b5afc8189",
+    "snapshot_json_sha256": "7f9ad7c4f736ae3c7b0a48112130be2088c1d25ff2ed08129d7bca0b5afc8189",
+    "reused_source_json": true,
+    "record_sha256": "3e68c792f7e945f8c8ee539f821545ae68fac7718627861a3277b3149103568e"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init04.json",
+    "source_json_sha256": "5cdeadb0b30e190a04c861459121b532193574bb1b2a96cbcc85382a85524c6b",
+    "snapshot_json_sha256": "5cdeadb0b30e190a04c861459121b532193574bb1b2a96cbcc85382a85524c6b",
+    "reused_source_json": true,
+    "record_sha256": "547e2861d8d6a0917b075f30484272cd6cb37a0f22caa736ac2aa56b48326753"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init05.json",
+    "source_json_sha256": "d21ef90ebc5d83465d94d7b882f1fbebafc80481f4a4bfe0828f8fdf4594e8da",
+    "snapshot_json_sha256": "d21ef90ebc5d83465d94d7b882f1fbebafc80481f4a4bfe0828f8fdf4594e8da",
+    "reused_source_json": true,
+    "record_sha256": "15766c4ffb820da74b99bf241063ab18728bd5f2ed12633dcba78e1f6e0038fc"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init06.json",
+    "source_json_sha256": "b83dae78a8f1fb8a0ae8c07e28472af4614cd37962eff0bbdfd759aae73b0d95",
+    "snapshot_json_sha256": "b83dae78a8f1fb8a0ae8c07e28472af4614cd37962eff0bbdfd759aae73b0d95",
+    "reused_source_json": true,
+    "record_sha256": "cdf1e97faced2dc9dfb3019ac789ebfa227a80064381be4cc931dcbbf411d48e"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init07.json",
+    "source_json_sha256": "97b6cc98b821e87c1212c896f6859f1504714f23753751026f083faca1a37972",
+    "snapshot_json_sha256": "97b6cc98b821e87c1212c896f6859f1504714f23753751026f083faca1a37972",
+    "reused_source_json": true,
+    "record_sha256": "8a59532a95d8d4ed3884111a70ed8cbab3d0e17cdc1781c2710a4a41a29fbd36"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init08.json",
+    "source_json_sha256": "bc0c95cc1d0b368eaf3100caefe8e6efea0d59bebc003cbd5771b9434c0064c2",
+    "snapshot_json_sha256": "bc0c95cc1d0b368eaf3100caefe8e6efea0d59bebc003cbd5771b9434c0064c2",
+    "reused_source_json": true,
+    "record_sha256": "47f6a6efe454f84d94a5e3fd9142551fb609036b51178a3c4437b76ecaf35ae9"
+  },
+  {
+    "path": "eval/libero_spatial/task02/drift_digital/init09.json",
+    "source_json_sha256": "5c7b5799ff4b242cac5fbe67a0985c23bc50272dcc13e70f8f7f2f277ebdec92",
+    "snapshot_json_sha256": "5c7b5799ff4b242cac5fbe67a0985c23bc50272dcc13e70f8f7f2f277ebdec92",
+    "reused_source_json": true,
+    "record_sha256": "5f4ec1b1b838db5e2a4d80c1566d0e87d488e7633597ffc16acb0eaee96e9c3a"
+  }
+]

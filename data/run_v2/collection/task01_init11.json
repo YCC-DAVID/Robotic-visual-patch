@@ -1,0 +1,15 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 1,
+  "task": "pick up the black bowl next to the ramekin and place it on the plate",
+  "init_index": 11,
+  "condition": "clean",
+  "success": true,
+  "success_step": 108,
+  "queries": 20,
+  "env_seed": 700111,
+  "initial_state_sha256": "fdfe81757a140f8b925a7209afb3ae98b42d612ac5c0958b49fd4c12e2d9f76d",
+  "record": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_paper_render_20261109/run_v2/collection/task01_init11.npz",
+  "record_sha256": "49e9b9556f4560d10618f6cdd2bbe872ceb668a61ffa1b1c15537280a7643079",
+  "runtime_error": false
+}

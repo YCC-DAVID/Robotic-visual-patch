@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "updated": "2026-11-09T18:51:14.477561+00:00",
+  "scope": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2
+    ],
+    "init_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "rendered_conditions": [
+      "drift_render",
+      "random_render"
+    ],
+    "rendered_episodes": 60
+  },
+  "render_episodes": 60,
+  "priority_summary_sha256": "22cc3e8852986a4e62c324811c0365e76a4ee85a44d6e7597bc1326dfc90bdb4"
+}

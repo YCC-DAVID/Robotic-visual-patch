@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "physics_exact": true,
+  "ten_step_physics_evolution_exact": true,
+  "original_body_inertias_exact": true,
+  "rgb_repeat_exact": true,
+  "uv_quadrants": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "wrist_roi_iou": 1.0,
+  "visible_wrist224": 4096,
+  "visible_base224": 16,
+  "geometry_sha256": "d81a52a5132985ba02aea5cb64eadf1213b1d2e87555090065f59a6ab56bee5c"
+}

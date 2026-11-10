@@ -1,0 +1,10 @@
+{
+  "complete": false,
+  "validated_episodes": 1214,
+  "validated_condition_pairs": 814,
+  "missing_episodes": 786,
+  "fixture_layout_exact": true,
+  "initial_state_exact": true,
+  "noise_prefix_exact": true,
+  "runtime_errors_counted": false
+}

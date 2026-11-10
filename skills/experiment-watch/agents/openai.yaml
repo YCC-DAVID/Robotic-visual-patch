@@ -1,0 +1,6 @@
+interface:
+  display_name: "实验小时监控"
+  short_description: "按任务启用每小时实验检查，汇报进度、失败、暂停与完成并发送邮件"
+  default_prompt: "使用 $experiment-watch 监控当前实验，每小时检查一次并将简要总结发到 che.yang@northeastern.com。"
+policy:
+  allow_implicit_invocation: false

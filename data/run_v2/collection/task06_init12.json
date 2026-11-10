@@ -1,0 +1,15 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 6,
+  "task": "pick up the black bowl next to the cookie box and place it on the plate",
+  "init_index": 12,
+  "condition": "clean",
+  "success": true,
+  "success_step": 119,
+  "queries": 22,
+  "env_seed": 700612,
+  "initial_state_sha256": "4edefe7df68a3e3f4b6dc623cbe7d6e75b81e4fef15d5c968fffb3a2d6fc866d",
+  "record": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_paper_render_20261109/run_v2/collection/task06_init12.npz",
+  "record_sha256": "2ef0166739a9a6f416d0c410cc0f88c7eac241a0d83f396b060d1c5d8f34e375",
+  "runtime_error": false
+}

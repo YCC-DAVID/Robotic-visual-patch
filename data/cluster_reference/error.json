@@ -1,0 +1,5 @@
+{
+  "updated": "2026-11-09T18:38:36.530925+00:00",
+  "pid": 2551726,
+  "error": "ResourceBlocked(\"selected GPU is occupied, faulty or insufficient: {'index': 0, 'uuid': 'GPU-45e614d3-e8cf-cd1e-e6eb-f6112fc80776', 'name': 'NVIDIA L40S', 'total_mib': 46068, 'used_mib': 10062, 'utilization_pct': 0, 'pids': [2550664], 'faulty': False, 'free_mib': 36006, 'idle': False, 'eligible': False}\")"
+}

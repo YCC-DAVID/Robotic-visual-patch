@@ -1,0 +1,14 @@
+{
+  "python": "3.11.15",
+  "packages": {
+    "jax": "0.5.3",
+    "jaxlib": "0.5.3",
+    "flax": "0.10.2",
+    "orbax-checkpoint": "0.11.13",
+    "numpy": "1.26.4",
+    "Pillow": "12.2.0",
+    "websockets": "16.0"
+  },
+  "openpi_commit": "15a9616a00943ada6c20a0f158e3adb39df2ccac",
+  "drift_commit": "2505a6897c0cc3e07f8fc8315caa145603737bb1"
+}

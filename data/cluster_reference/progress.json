@@ -1,0 +1,41 @@
+{
+  "stage": "complete",
+  "active_jobs": {},
+  "updated": "2026-11-09T18:51:14.479368+00:00",
+  "controller_pid": 2676603,
+  "host": "nnmc64",
+  "model": "pi05",
+  "gpu": {
+    "host": "nnmc64",
+    "index": 5,
+    "uuid": "GPU-30cb5805-5b99-ef3b-d5e8-a14a6abc5ef1",
+    "name": "NVIDIA L40S",
+    "egl_index": 6
+  },
+  "scope": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2
+    ],
+    "init_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "rendered_conditions": [
+      "drift_render",
+      "random_render"
+    ],
+    "rendered_episodes": 60
+  },
+  "render_episodes": 60
+}

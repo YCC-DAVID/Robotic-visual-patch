@@ -1,0 +1,218 @@
+{
+  "complete": false,
+  "updated": "2026-11-09T20:30:57.842867+00:00",
+  "episodes": 1214,
+  "target_episodes": 2000,
+  "suites": {
+    "libero_spatial": {
+      "clean": {
+        "n": 100,
+        "complete": true,
+        "successes": 96,
+        "SR": 0.96,
+        "relative_ASR": 0.0,
+        "paired_n": 96,
+        "paired_failures": 0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 94,
+        "SR": 0.94,
+        "relative_ASR": 0.020833333333333353,
+        "paired_n": 96,
+        "paired_failures": 6,
+        "paired_ASR": 0.0625
+      },
+      "drift_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 0,
+        "SR": 0.0,
+        "relative_ASR": 1.0,
+        "paired_n": 96,
+        "paired_failures": 96,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 10,
+        "complete": false,
+        "successes": 8,
+        "SR": 0.8,
+        "relative_ASR": null,
+        "paired_n": 10,
+        "paired_failures": 2,
+        "paired_ASR": null
+      },
+      "drift_render": {
+        "n": 4,
+        "complete": false,
+        "successes": 4,
+        "SR": 1.0,
+        "relative_ASR": null,
+        "paired_n": 4,
+        "paired_failures": 0,
+        "paired_ASR": null
+      }
+    },
+    "libero_goal": {
+      "clean": {
+        "n": 100,
+        "complete": true,
+        "successes": 96,
+        "SR": 0.96,
+        "relative_ASR": 0.0,
+        "paired_n": 96,
+        "paired_failures": 0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 92,
+        "SR": 0.92,
+        "relative_ASR": 0.04166666666666659,
+        "paired_n": 96,
+        "paired_failures": 5,
+        "paired_ASR": 0.052083333333333336
+      },
+      "drift_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 0,
+        "SR": 0.0,
+        "relative_ASR": 1.0,
+        "paired_n": 96,
+        "paired_failures": 96,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 0,
+        "complete": false,
+        "successes": 0,
+        "SR": null,
+        "relative_ASR": null,
+        "paired_n": 0,
+        "paired_failures": 0,
+        "paired_ASR": null
+      },
+      "drift_render": {
+        "n": 0,
+        "complete": false,
+        "successes": 0,
+        "SR": null,
+        "relative_ASR": null,
+        "paired_n": 0,
+        "paired_failures": 0,
+        "paired_ASR": null
+      }
+    },
+    "libero_object": {
+      "clean": {
+        "n": 100,
+        "complete": true,
+        "successes": 99,
+        "SR": 0.99,
+        "relative_ASR": 0.0,
+        "paired_n": 99,
+        "paired_failures": 0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 95,
+        "SR": 0.95,
+        "relative_ASR": 0.04040404040404044,
+        "paired_n": 99,
+        "paired_failures": 5,
+        "paired_ASR": 0.050505050505050504
+      },
+      "drift_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 0,
+        "SR": 0.0,
+        "relative_ASR": 1.0,
+        "paired_n": 99,
+        "paired_failures": 99,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 0,
+        "complete": false,
+        "successes": 0,
+        "SR": null,
+        "relative_ASR": null,
+        "paired_n": 0,
+        "paired_failures": 0,
+        "paired_ASR": null
+      },
+      "drift_render": {
+        "n": 0,
+        "complete": false,
+        "successes": 0,
+        "SR": null,
+        "relative_ASR": null,
+        "paired_n": 0,
+        "paired_failures": 0,
+        "paired_ASR": null
+      }
+    },
+    "libero_10": {
+      "clean": {
+        "n": 100,
+        "complete": true,
+        "successes": 94,
+        "SR": 0.94,
+        "relative_ASR": 0.0,
+        "paired_n": 94,
+        "paired_failures": 0,
+        "paired_ASR": 0.0
+      },
+      "random_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 84,
+        "SR": 0.84,
+        "relative_ASR": 0.10638297872340424,
+        "paired_n": 94,
+        "paired_failures": 13,
+        "paired_ASR": 0.13829787234042554
+      },
+      "drift_digital": {
+        "n": 100,
+        "complete": true,
+        "successes": 0,
+        "SR": 0.0,
+        "relative_ASR": 1.0,
+        "paired_n": 94,
+        "paired_failures": 94,
+        "paired_ASR": 1.0
+      },
+      "random_render": {
+        "n": 0,
+        "complete": false,
+        "successes": 0,
+        "SR": null,
+        "relative_ASR": null,
+        "paired_n": 0,
+        "paired_failures": 0,
+        "paired_ASR": null
+      },
+      "drift_render": {
+        "n": 0,
+        "complete": false,
+        "successes": 0,
+        "SR": null,
+        "relative_ASR": null,
+        "paired_n": 0,
+        "paired_failures": 0,
+        "paired_ASR": null
+      }
+    }
+  },
+  "seed_count": 1,
+  "patch_count": 1
+}

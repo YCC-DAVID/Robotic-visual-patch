@@ -1,0 +1,3 @@
+interface:
+  display_name: "桌面与相机粗代理"
+  short_description: "估计多相机到共享桌面的度量投影，并复现可微成像代理与几何检查流程"

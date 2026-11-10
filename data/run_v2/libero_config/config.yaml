@@ -1,0 +1,5 @@
+assets: /shared/user65/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/libero/assets
+bddl_files: /shared/user65/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/libero/bddl_files
+benchmark_root: /shared/user65/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/libero
+datasets: /shared/user65/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/datasets
+init_states: /shared/user65/workspace/chence/WAMattack/third_party/openpi/third_party/libero/libero/libero/init_files

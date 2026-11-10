@@ -1,0 +1,15 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 9,
+  "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+  "init_index": 12,
+  "condition": "clean",
+  "success": true,
+  "success_step": 125,
+  "queries": 24,
+  "env_seed": 700912,
+  "initial_state_sha256": "877a268531865a6176f068b00603498600559af681f5100cb30f0db760ce81bf",
+  "record": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/drift_paper_render_20261109/run_v2/collection/task09_init12.npz",
+  "record_sha256": "d06e4a17a5d4759b1211c3f5f6d816012dc6979002f5b57b239a6aadb9c718a6",
+  "runtime_error": false
+}
