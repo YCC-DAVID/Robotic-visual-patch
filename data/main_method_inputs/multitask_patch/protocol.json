@@ -1,0 +1,62 @@
+{
+  "experiment": "same-checkpoint multi-task patch",
+  "model": "pi05_libero (one checkpoint, all LIBERO suites)",
+  "train_tasks": [
+    "put_the_bowl_on_the_plate",
+    "put_the_bowl_on_top_of_the_cabinet",
+    "put_the_wine_bottle_on_the_rack",
+    "turn_on_the_stove"
+  ],
+  "heldout_tasks": [
+    "put_the_bowl_on_the_stove",
+    "put_the_cream_cheese_in_the_bowl",
+    "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "conditions": [
+    "clean",
+    "random",
+    "single_task",
+    "multi_task"
+  ],
+  "test_indices": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "capture": "per train task clean pi0.5 inits 0-11 (0-9 train, 10-11 validation); E22 pool + E26 dual-view rules",
+  "training": "E26 both-camera recipe: gray init, 500 iters x batch 8 (2/task), sign lr .01, noise 20260901, first-step velocity SSE vs same-noise clean; per-frame task prompt; same compute as single-task E26",
+  "geometry": "13cm, position 101 (E26), same for every task; no EOT",
+  "controls": {
+    "random": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/manifest_both/random.png",
+    "single_task": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/train_both/texture_0500.png",
+    "note": "single_task = E26 patch trained only on put_the_bowl_on_the_plate (5/9 source, 0 on E28 targets)"
+  },
+  "metric": "per task: clean success AND attacked failure / clean successes (paired, task-local clean)",
+  "rollout": "cross_task_transfer_rollout.py: env seed 10000+init, noise 20261006+init*1000+replan, 300 steps, replan 5",
+  "gpus": [
+    {
+      "index": 3,
+      "uuid": "GPU-dbc08168-b00b-de4d-12fe-33ccc9b19dea"
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-80d9263c-90c3-5b5a-f23f-18381f070dce"
+    }
+  ],
+  "host": "nnmc65",
+  "source_sha256": {
+    "multitask_pipeline.py": "81546c0062d454ab299952d82daa8fc09ba9a768138cf5f1ab90a1397ed6096a",
+    "multitask_capture.py": "3b9b1932d84fb4c6bc42f541d9043addd9355007442bb1b9d18a9273f917e115",
+    "multitask_train.py": "a8657c3b75dbae0613e90caa73bf3a259e9f1fc6e9f60c50227bd5329119b07d",
+    "cross_task_transfer_rollout.py": "32586ac76a7c996254fd0247ea98b71ef663ee2ae456ed7bad46f4179d111f0d",
+    "render_proxy_policy_server.py": "2f43f508cc74d56249bba2a79e5310c00b7deb908c71cc86b4644ef4528a7122",
+    "dual_view_proxy.py": "e1cf070ab9ac3f066b997c982a483d73d411818679f3b17e8d30eefa0f5abaf0"
+  }
+}

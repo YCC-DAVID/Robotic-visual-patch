@@ -1,0 +1,306 @@
+{
+  "schema": "libero-per-task-main-method-v1",
+  "method": "both-camera render-proxy texture-plane EOT",
+  "tasks": [
+    "put_the_bowl_on_the_plate",
+    "put_the_bowl_on_top_of_the_cabinet",
+    "put_the_wine_bottle_on_the_rack",
+    "turn_on_the_stove",
+    "put_the_bowl_on_the_stove",
+    "put_the_cream_cheese_in_the_bowl",
+    "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "conditions": [
+    "clean",
+    "random",
+    "eot"
+  ],
+  "indices": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "training": {
+    "iters": 500,
+    "batch": 8,
+    "lr": 0.01,
+    "batch_seed": 20261005,
+    "noise_seed": 20260901,
+    "eot_seed": 2026102901,
+    "proxy_rmse_max": 0.02
+  },
+  "metric": "per task and condition: attacked failure among the same init40-49 clean successes; undefined if zero clean successes",
+  "rollout": {
+    "max_steps": 300,
+    "settling_steps": 10,
+    "replan": 5,
+    "env_seed": "10000+init_index",
+    "action_noise": "20261006+init_index*1000+replan_index",
+    "cameras": "both actual MuJoCo rendered inputs"
+  },
+  "selection": {
+    "put_the_bowl_on_the_plate": {
+      "task": "put_the_bowl_on_the_plate",
+      "candidate": 142,
+      "world": [
+        0.09,
+        0.15
+      ],
+      "wrist_mean": 3503.6838709677418,
+      "wrist_max": 7221,
+      "base_mean": 1280.9354838709678,
+      "eligible": 195,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 3503.6838709677418
+    },
+    "put_the_bowl_on_top_of_the_cabinet": {
+      "task": "put_the_bowl_on_top_of_the_cabinet",
+      "candidate": 142,
+      "world": [
+        0.09,
+        0.15
+      ],
+      "wrist_mean": 2270.890804597701,
+      "wrist_max": 6115,
+      "base_mean": 1281.0057471264367,
+      "eligible": 195,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 2270.890804597701
+    },
+    "put_the_wine_bottle_on_the_rack": {
+      "task": "put_the_wine_bottle_on_the_rack",
+      "candidate": 67,
+      "world": [
+        -0.09,
+        0.24
+      ],
+      "wrist_mean": 312.8198757763975,
+      "wrist_max": 3173,
+      "base_mean": 825.1273291925465,
+      "eligible": 195,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 157.1583850931677
+    },
+    "turn_on_the_stove": {
+      "task": "turn_on_the_stove",
+      "candidate": 26,
+      "world": [
+        -0.33,
+        0.03
+      ],
+      "wrist_mean": 1344.5714285714287,
+      "wrist_max": 4895,
+      "base_mean": 484.3975155279503,
+      "eligible": 207,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 338.58385093167703
+    },
+    "put_the_bowl_on_the_stove": {
+      "task": "put_the_bowl_on_the_stove",
+      "candidate": 67,
+      "world": [
+        -0.09,
+        0.24
+      ],
+      "wrist_mean": 2886.1387283236995,
+      "wrist_max": 10929,
+      "base_mean": 825.0,
+      "eligible": 195,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 1792.0231213872833
+    },
+    "put_the_cream_cheese_in_the_bowl": {
+      "task": "put_the_cream_cheese_in_the_bowl",
+      "candidate": 142,
+      "world": [
+        0.09,
+        0.15
+      ],
+      "wrist_mean": 6510.17032967033,
+      "wrist_max": 20164,
+      "base_mean": 1281.0,
+      "eligible": 195,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 6510.17032967033
+    },
+    "open_the_middle_drawer_of_the_cabinet": {
+      "task": "open_the_middle_drawer_of_the_cabinet",
+      "candidate": 90,
+      "world": [
+        -0.03,
+        0.24
+      ],
+      "wrist_mean": 1028.0352564102564,
+      "wrist_max": 18947,
+      "base_mean": 907.7179487179487,
+      "eligible": 195,
+      "site101_nearest_candidate": [
+        0.09,
+        0.15
+      ],
+      "site101_nearest_wrist_mean": 561.0512820512821
+    }
+  },
+  "selection_sha256": "2cb3cf47638210f74106fa7a69089b601d0626efd8f47aff0a3e69342e27ec72",
+  "calibration": {
+    "put_the_bowl_on_the_plate": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/put_the_bowl_on_the_plate",
+      "cell_world": [
+        0.09,
+        0.15,
+        0.9015
+      ],
+      "frames": 187,
+      "train_frames": 155,
+      "validation_frames": 32,
+      "capture_sha256": "34fa5abf3c86b467b8656151cf8dbe9c47d4b4d20a27ea9777b229cec1e5d500",
+      "init_states_sha256": "ef3466ffad734754dc40eba1f6f5712e37aa46b9692c595e0da34f16d3a0c668",
+      "scan_sha256": "181eb1b58dab7d0e9ba567371bec0ef705f39ba6ef98c781fb23c52b4dd2db12",
+      "calibration_sha256": {
+        "base": "edb0e0a71dfc72902223097fd6fe34b3b6264b336a9489a3983c21f3c912c328",
+        "wrist": "65093dabc5fd2da3eac364333e63853a7a8e56d2018f193e987d8d774a19496d"
+      }
+    },
+    "put_the_bowl_on_top_of_the_cabinet": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/put_the_bowl_on_top_of_the_cabinet",
+      "cell_world": [
+        0.09,
+        0.15,
+        0.9015
+      ],
+      "frames": 218,
+      "train_frames": 174,
+      "validation_frames": 44,
+      "capture_sha256": "2d822c851aa942f461020caee21dded7317d4d634fe0542ba8e6828dd055c463",
+      "init_states_sha256": "c0b7baf82f36f5304488bac91d788800a1c93d0a9fd19a73f448992d5366e145",
+      "scan_sha256": "a97b54b86ee44793c9bba305589c640035f87b472b5bfae7e697cbb8f0976e3e",
+      "calibration_sha256": {
+        "base": "5996575a43902f2549a53336880a631349443c44c91e401bd447368ad8f4798d",
+        "wrist": "725c00de301311fe73ab0d04b6a27a757f24638ae1432e67bc759fb631c9da1e"
+      }
+    },
+    "put_the_wine_bottle_on_the_rack": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/put_the_wine_bottle_on_the_rack",
+      "cell_world": [
+        -0.09,
+        0.24,
+        0.9015
+      ],
+      "frames": 374,
+      "train_frames": 322,
+      "validation_frames": 52,
+      "capture_sha256": "d1798534134d4d41df6a0d2dd32bbc3f4b92db292b52d04131db3a6735bfab28",
+      "init_states_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+      "scan_sha256": "4295de733abf15b840a551f26e90fe5044ccf338c7969160364a88c87ead7067",
+      "calibration_sha256": {
+        "base": "65b23b1632549afe9fc51386b3bbe8eca1dd5f39a3b0b88ff633428f6e0efbb3",
+        "wrist": "8aaa8fcd8c0d56557e99e2fa6029d8a7cedab040d828dfa38abc661fb705b605"
+      }
+    },
+    "turn_on_the_stove": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/turn_on_the_stove",
+      "cell_world": [
+        -0.33,
+        0.03,
+        0.9015
+      ],
+      "frames": 191,
+      "train_frames": 161,
+      "validation_frames": 30,
+      "capture_sha256": "5ab5d9f6471332b1f9474e29df95995c7bf4c516e7a16046e83f747de9e492ff",
+      "init_states_sha256": "ed121db31d749647d70741c4c4ef0bd8e0876663986578795968e962d9b91340",
+      "scan_sha256": "99859c7c0a5d55f3ed3c7316756e37139ca2c8e2ae974b921aac13e30e016f78",
+      "calibration_sha256": {
+        "base": "34d91371bc1e4c41a981796e93552d14f5523697109a820c59d52cf4db6a4472",
+        "wrist": "fb3cb030f0d07fb58daeb8dcb74bfbc60ad5c774bc85011da2b54bb4c95d67f1"
+      }
+    },
+    "put_the_bowl_on_the_stove": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/put_the_bowl_on_the_stove",
+      "cell_world": [
+        -0.09,
+        0.24,
+        0.9015
+      ],
+      "frames": 209,
+      "train_frames": 173,
+      "validation_frames": 36,
+      "capture_sha256": "d3418a3c385547a2f4d87984df753e0788fd5e024a0afcc8c0d9963fd77645d9",
+      "init_states_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+      "scan_sha256": "82020ec5aeeb64974a00d73f9a97859104a13fde32c29977433fd57e124fd3fe",
+      "calibration_sha256": {
+        "base": "ef2feca1e95774a1c9db3decca99dc2da1261c1c63c29737b51c1b8969159f44",
+        "wrist": "a73858756cb66a2e1be548ad74f8d3680dea0406a48fed6715f0986ddee98543"
+      }
+    },
+    "put_the_cream_cheese_in_the_bowl": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/put_the_cream_cheese_in_the_bowl",
+      "cell_world": [
+        0.09,
+        0.15,
+        0.9015
+      ],
+      "frames": 218,
+      "train_frames": 182,
+      "validation_frames": 36,
+      "capture_sha256": "d535a7cff2c15c025ace63c06c9862e5c5bae77b383a2bde7930a02c14c20991",
+      "init_states_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+      "scan_sha256": "e7cdf9e48ac4127ecf40d5144e3e42987b773b87d68fadb93cdf0b1951b2d330",
+      "calibration_sha256": {
+        "base": "d40ec9d68fd3868432a260178de1304b801917911b7b5093f13dd6ee316c6228",
+        "wrist": "af6b41b27d598341fbf2cf3194e94a33c7c1542d5b43fe0bed17337add7de38f"
+      }
+    },
+    "open_the_middle_drawer_of_the_cabinet": {
+      "folder": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/visible_pos/tasks/open_the_middle_drawer_of_the_cabinet",
+      "cell_world": [
+        -0.03,
+        0.24,
+        0.9015
+      ],
+      "frames": 364,
+      "train_frames": 312,
+      "validation_frames": 52,
+      "capture_sha256": "7aaefa6126479fd07796ecc6724e30b3dad02900d7b847a8e913d31552c74400",
+      "init_states_sha256": "977efe1216bee72bb4e9fa9ec4be1bcfe37fb00ece815eac117feba019b34b9f",
+      "scan_sha256": "9ad12f915bf8777928014f555b53f8e51a992f8847cb41e67cb734889170bb7e",
+      "calibration_sha256": {
+        "base": "4eb3f31b7a9444e1e29d316ddbcaa33fdc74ef7c1600eee8141a8b0a9a44bc82",
+        "wrist": "935f40c0caf5405e11f37d5746af18420e1a16cd5870677ca8d01dff56f441bc"
+      }
+    }
+  },
+  "random_texture_sha256": "d3f845aa17142cd5ed4aac8f030eb0090a43f9d51187c32fc5dd3d96ce7178bd",
+  "source_sha256": {
+    "multitask_train.py": "f996e91433994ddd91043eb23bf2002d31894ca55fd4406856e526864e77c6d6",
+    "dual_view_proxy.py": "e1cf070ab9ac3f066b997c982a483d73d411818679f3b17e8d30eefa0f5abaf0",
+    "cross_task_transfer_rollout.py": "32586ac76a7c996254fd0247ea98b71ef663ee2ae456ed7bad46f4179d111f0d",
+    "render_proxy_policy_server.py": "2f43f508cc74d56249bba2a79e5310c00b7deb908c71cc86b4644ef4528a7122"
+  },
+  "source_eot_sha256": "b0c395aeea15e72fed23d46b5e0c75e2ae874226bac8e5efae2f5da17f218e56"
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "wam-multitask-texture-train-v1",
+  "complete": true,
+  "mode": "both",
+  "tasks": [
+    "put_the_bowl_on_the_plate"
+  ],
+  "prompts": [
+    "put the bowl on the plate"
+  ],
+  "iters": 500,
+  "batch": 8,
+  "per_task_per_batch": 8,
+  "lr": 0.01,
+  "seed_batch": 20261005,
+  "noise_seed": 20260901,
+  "init": "constant gray .5",
+  "calibration_sha256": {
+    "put_the_bowl_on_the_plate": {
+      "base": "edb0e0a71dfc72902223097fd6fe34b3b6264b336a9489a3983c21f3c912c328",
+      "wrist": "65093dabc5fd2da3eac364333e63853a7a8e56d2018f193e987d8d774a19496d"
+    }
+  },
+  "fit_sha256": {
+    "base": "d2efeff05a91e3b2dca7a6d0b9c48debdc43afcb65cbc5c2c84e6f6c2e3529ba",
+    "wrist": "e16b8516c4196885f3e9e2931a237218c282e01ef5e2563b73aaf2d35d4837e0"
+  },
+  "train_frames": {
+    "put_the_bowl_on_the_plate": 155
+  },
+  "validation_frames": {
+    "put_the_bowl_on_the_plate": 32
+  },
+  "source_sha256": {
+    "multitask_train.py": "f996e91433994ddd91043eb23bf2002d31894ca55fd4406856e526864e77c6d6",
+    "dual_view_proxy.py": "e1cf070ab9ac3f066b997c982a483d73d411818679f3b17e8d30eefa0f5abaf0"
+  },
+  "checkpoint": "/shared/user65/workspace/chence/WAMattack/checkpoints/pi05_libero_pytorch",
+  "patch_m": 0.13,
+  "cell_world": [
+    0.09,
+    0.15,
+    0.9015
+  ],
+  "cell_world_by_task": {
+    "put_the_bowl_on_the_plate": [
+      0.09,
+      0.15,
+      0.9015
+    ]
+  },
+  "eot": null,
+  "source_eot_sha256": "b0c395aeea15e72fed23d46b5e0c75e2ae874226bac8e5efae2f5da17f218e56",
+  "notes": "E26 both-camera recipe unchanged except multi-task stratified sampling and per-frame prompt. No EOT.",
+  "proxy_check": {
+    "put_the_bowl_on_the_plate/base": {
+      "frames": 12,
+      "mask_RMSE_max": 0.002523248637741332
+    },
+    "put_the_bowl_on_the_plate/wrist": {
+      "frames": 12,
+      "mask_RMSE_max": 0.01454146289190138
+    }
+  },
+  "proxy_rmse_max": 0.02
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "wam-multitask-texture-train-v1",
+  "complete": true,
+  "mode": "both",
+  "tasks": [
+    "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "prompts": [
+    "open the middle drawer of the cabinet"
+  ],
+  "iters": 500,
+  "batch": 8,
+  "per_task_per_batch": 8,
+  "lr": 0.01,
+  "seed_batch": 20261005,
+  "noise_seed": 20260901,
+  "init": "constant gray .5",
+  "calibration_sha256": {
+    "open_the_middle_drawer_of_the_cabinet": {
+      "base": "4eb3f31b7a9444e1e29d316ddbcaa33fdc74ef7c1600eee8141a8b0a9a44bc82",
+      "wrist": "935f40c0caf5405e11f37d5746af18420e1a16cd5870677ca8d01dff56f441bc"
+    }
+  },
+  "fit_sha256": {
+    "base": "d2efeff05a91e3b2dca7a6d0b9c48debdc43afcb65cbc5c2c84e6f6c2e3529ba",
+    "wrist": "e16b8516c4196885f3e9e2931a237218c282e01ef5e2563b73aaf2d35d4837e0"
+  },
+  "train_frames": {
+    "open_the_middle_drawer_of_the_cabinet": 312
+  },
+  "validation_frames": {
+    "open_the_middle_drawer_of_the_cabinet": 52
+  },
+  "source_sha256": {
+    "multitask_train.py": "f996e91433994ddd91043eb23bf2002d31894ca55fd4406856e526864e77c6d6",
+    "dual_view_proxy.py": "e1cf070ab9ac3f066b997c982a483d73d411818679f3b17e8d30eefa0f5abaf0"
+  },
+  "checkpoint": "/shared/user65/workspace/chence/WAMattack/checkpoints/pi05_libero_pytorch",
+  "patch_m": 0.13,
+  "cell_world": [
+    -0.03,
+    0.24,
+    0.9015
+  ],
+  "cell_world_by_task": {
+    "open_the_middle_drawer_of_the_cabinet": [
+      -0.03,
+      0.24,
+      0.9015
+    ]
+  },
+  "eot": {
+    "ranges": {
+      "angle_deg": [
+        -15.0,
+        15.0
+      ],
+      "dx_fraction": [
+        -0.05,
+        0.05
+      ],
+      "dy_fraction": [
+        -0.05,
+        0.05
+      ],
+      "scale": [
+        0.9,
+        1.1
+      ],
+      "gain": [
+        0.9,
+        1.1
+      ]
+    },
+    "seed": 2026102901,
+    "source": "robotwinprobe/texture_eot.py",
+    "scope": "one draw per sampled frame, shared by base+wrist proxies; diag/validation nominal"
+  },
+  "source_eot_sha256": "b0c395aeea15e72fed23d46b5e0c75e2ae874226bac8e5efae2f5da17f218e56",
+  "notes": "E26 both-camera recipe unchanged except multi-task stratified sampling and per-frame prompt. Texture-plane EOT on.",
+  "proxy_check": {
+    "open_the_middle_drawer_of_the_cabinet/base": {
+      "frames": 13,
+      "mask_RMSE_max": 0.002621741612782493
+    },
+    "open_the_middle_drawer_of_the_cabinet/wrist": {
+      "frames": 4,
+      "mask_RMSE_max": 0.008501118355639877
+    }
+  },
+  "proxy_rmse_max": 0.02
+}

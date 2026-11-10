@@ -1,0 +1,24 @@
+{
+  "source_task": "multi:put_the_bowl_on_the_plate+put_the_bowl_on_top_of_the_cabinet+put_the_wine_bottle_on_the_rack+turn_on_the_stove",
+  "stage": "multitask_eval",
+  "geometry": {
+    "patch_m": 0.13,
+    "cell_world": [
+      0.04532392120444463,
+      0.11654159759599582,
+      0.9015
+    ]
+  },
+  "textures": {
+    "clean": null,
+    "random": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/manifest_both/random.png",
+    "single_task": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/train_both/texture_0500.png",
+    "multi_task": "/home/user1/workspace/chence/WAMattack/pi05probe/out/multitask_patch/train/texture_0500.png"
+  },
+  "texture_sha256": {
+    "clean": null,
+    "random": "d3f845aa17142cd5ed4aac8f030eb0090a43f9d51187c32fc5dd3d96ce7178bd",
+    "single_task": "f55fd7b5ceb4e0df2be80e70de3b732d729449d6e271b6f004d6324eb1ff7aef",
+    "multi_task": "17d36df7cabeadb3f607435dba2070f5eec78f322dff273572091e397a333f77"
+  }
+}

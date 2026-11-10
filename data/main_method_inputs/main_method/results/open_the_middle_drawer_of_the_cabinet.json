@@ -1,0 +1,49 @@
+{
+  "task": "open_the_middle_drawer_of_the_cabinet",
+  "complete": true,
+  "indices": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "conditions": [
+    "clean",
+    "random",
+    "eot"
+  ],
+  "episodes": "/shared/user65/workspace/chence/WAMattack/pi05probe/out/main_method/eval/open_the_middle_drawer_of_the_cabinet/attempt_000/episodes.json",
+  "episodes_sha256": "88ac89867c09723d1c51129e81b1aae7aefa61f234d41f2ee0c58b7f6751d687",
+  "summary": {
+    "clean": {
+      "n": 10,
+      "successes": 10,
+      "clean_success_n": 10,
+      "paired_clean_success_n": 10,
+      "paired_failures": 0,
+      "paired_ASR": 0.0
+    },
+    "random": {
+      "n": 10,
+      "successes": 10,
+      "clean_success_n": 10,
+      "paired_clean_success_n": 10,
+      "paired_failures": 0,
+      "paired_ASR": 0.0
+    },
+    "eot": {
+      "n": 10,
+      "successes": 10,
+      "clean_success_n": 10,
+      "paired_clean_success_n": 10,
+      "paired_failures": 0,
+      "paired_ASR": 0.0
+    }
+  }
+}

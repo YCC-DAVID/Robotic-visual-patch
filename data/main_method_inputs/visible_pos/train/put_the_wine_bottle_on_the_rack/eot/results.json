@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "iterations": 500,
+  "gradient_frame_forwards": 4000,
+  "initial_train_diag_L0": 0.025146240193862468,
+  "initial_train_diag_L0_by_task": {
+    "put_the_wine_bottle_on_the_rack": 0.025146240193862468
+  },
+  "final_train_diag_L0": 0.30485678324475884,
+  "final_train_diag_L0_by_task": {
+    "put_the_wine_bottle_on_the_rack": 0.30485678324475884
+  },
+  "final_validation_proxy_L0": 0.2374236499890685,
+  "final_validation_L0_by_task": {
+    "put_the_wine_bottle_on_the_rack": 0.2374236499890685
+  },
+  "elapsed_training_s": 728.9588351519778,
+  "texture_sha256": "c0be88b61e9b47780142104d18e84b71cad579121af6ba953db8f41545497d16",
+  "notes": "Proxy L0 only; real-render closed-loop evaluation separate."
+}

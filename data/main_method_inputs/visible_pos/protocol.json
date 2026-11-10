@@ -1,0 +1,39 @@
+{
+  "experiment": "#60 per-task visible position, single-task nominal vs EOT",
+  "tasks": [
+    "put_the_bowl_on_the_plate",
+    "put_the_bowl_on_top_of_the_cabinet",
+    "put_the_wine_bottle_on_the_rack",
+    "turn_on_the_stove",
+    "put_the_bowl_on_the_stove",
+    "put_the_cream_cheese_in_the_bowl",
+    "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "selection": "training frames only; eligible if base px>=300 on >=90% frames; argmax mean wrist px; 470 legal 13cm positions, 3cm grid, keepout+1cm",
+  "recipe": "E26 both-camera 500x8, seed 20261005, noise 20260901, gray init; eot = robotwinprobe/texture_eot.py plan seed 2026102901",
+  "conditions": [
+    "clean",
+    "random",
+    "nominal",
+    "eot"
+  ],
+  "indices": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "gpus": [
+    {
+      "index": 6,
+      "uuid": "GPU-6ae322e7-1c38-6d43-cb8e-32c002dfeec4"
+    }
+  ],
+  "host": "nnmc63"
+}

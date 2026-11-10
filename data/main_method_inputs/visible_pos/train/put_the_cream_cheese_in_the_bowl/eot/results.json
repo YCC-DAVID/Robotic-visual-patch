@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "iterations": 500,
+  "gradient_frame_forwards": 4000,
+  "initial_train_diag_L0": 0.18426135927438736,
+  "initial_train_diag_L0_by_task": {
+    "put_the_cream_cheese_in_the_bowl": 0.18426135927438736
+  },
+  "final_train_diag_L0": 1.6203102115541697,
+  "final_train_diag_L0_by_task": {
+    "put_the_cream_cheese_in_the_bowl": 1.6203102115541697
+  },
+  "final_validation_proxy_L0": 4.661245062222911,
+  "final_validation_L0_by_task": {
+    "put_the_cream_cheese_in_the_bowl": 4.661245062222911
+  },
+  "elapsed_training_s": 689.1655546268448,
+  "texture_sha256": "65de0772919cb65d60831ea60f026b6d669424e8095d2c6a328916dbf84f503f",
+  "notes": "Proxy L0 only; real-render closed-loop evaluation separate."
+}

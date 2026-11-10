@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "iterations": 500,
+  "gradient_frame_forwards": 4000,
+  "initial_train_diag_L0": 0.31419830955564976,
+  "initial_train_diag_L0_by_task": {
+    "put_the_bowl_on_the_plate": 0.31419830955564976
+  },
+  "final_train_diag_L0": 7.2606319561600685,
+  "final_train_diag_L0_by_task": {
+    "put_the_bowl_on_the_plate": 7.2606319561600685
+  },
+  "final_validation_proxy_L0": 1.9367620091652498,
+  "final_validation_L0_by_task": {
+    "put_the_bowl_on_the_plate": 1.9367620091652498
+  },
+  "elapsed_training_s": 711.843726831954,
+  "texture_sha256": "c73e9c13040e47d537df5437c18981c461e3f1d772b623b985cd41435acc594c",
+  "notes": "Proxy L0 only; real-render closed-loop evaluation separate."
+}

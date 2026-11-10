@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "iterations": 500,
+  "gradient_frame_forwards": 4000,
+  "initial_train_diag_L0": 0.12385775800794363,
+  "initial_train_diag_L0_by_task": {
+    "put_the_bowl_on_the_stove": 0.12385775800794363
+  },
+  "final_train_diag_L0": 0.9737242627888918,
+  "final_train_diag_L0_by_task": {
+    "put_the_bowl_on_the_stove": 0.9737242627888918
+  },
+  "final_validation_proxy_L0": 0.5466215891453127,
+  "final_validation_L0_by_task": {
+    "put_the_bowl_on_the_stove": 0.5466215891453127
+  },
+  "elapsed_training_s": 720.8865885147825,
+  "texture_sha256": "b3915875275d7be2d0db435582686edb2370ba928f88731fd3115eac9402bbcc",
+  "notes": "Proxy L0 only; real-render closed-loop evaluation separate."
+}

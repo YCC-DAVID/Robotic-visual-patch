@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "completed_iters": 500,
+  "elapsed_training_s": 724.1403140584007,
+  "peak_gpu_gib": 12.194669723510742,
+  "last_batch_L0": 0.08448338531889021,
+  "last_batch_L0_by_task": {
+    "put_the_wine_bottle_on_the_rack": 0.08448338531889021
+  }
+}

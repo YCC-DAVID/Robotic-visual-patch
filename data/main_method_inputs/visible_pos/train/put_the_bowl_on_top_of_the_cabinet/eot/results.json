@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "iterations": 500,
+  "gradient_frame_forwards": 4000,
+  "initial_train_diag_L0": 0.25194720551371574,
+  "initial_train_diag_L0_by_task": {
+    "put_the_bowl_on_top_of_the_cabinet": 0.25194720551371574
+  },
+  "final_train_diag_L0": 0.9939837194979191,
+  "final_train_diag_L0_by_task": {
+    "put_the_bowl_on_top_of_the_cabinet": 0.9939837194979191
+  },
+  "final_validation_proxy_L0": 0.4545132979242639,
+  "final_validation_L0_by_task": {
+    "put_the_bowl_on_top_of_the_cabinet": 0.4545132979242639
+  },
+  "elapsed_training_s": 733.5416828277521,
+  "texture_sha256": "e24bdaf6b4b3970f7937196df433cb937dee57256bf75b52c9454adadf525073",
+  "notes": "Proxy L0 only; real-render closed-loop evaluation separate."
+}

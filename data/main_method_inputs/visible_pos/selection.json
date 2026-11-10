@@ -1,0 +1,121 @@
+{
+  "put_the_bowl_on_the_plate": {
+    "task": "put_the_bowl_on_the_plate",
+    "candidate": 142,
+    "world": [
+      0.09,
+      0.15
+    ],
+    "wrist_mean": 3503.6838709677418,
+    "wrist_max": 7221,
+    "base_mean": 1280.9354838709678,
+    "eligible": 195,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 3503.6838709677418
+  },
+  "put_the_bowl_on_top_of_the_cabinet": {
+    "task": "put_the_bowl_on_top_of_the_cabinet",
+    "candidate": 142,
+    "world": [
+      0.09,
+      0.15
+    ],
+    "wrist_mean": 2270.890804597701,
+    "wrist_max": 6115,
+    "base_mean": 1281.0057471264367,
+    "eligible": 195,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 2270.890804597701
+  },
+  "put_the_wine_bottle_on_the_rack": {
+    "task": "put_the_wine_bottle_on_the_rack",
+    "candidate": 67,
+    "world": [
+      -0.09,
+      0.24
+    ],
+    "wrist_mean": 312.8198757763975,
+    "wrist_max": 3173,
+    "base_mean": 825.1273291925465,
+    "eligible": 195,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 157.1583850931677
+  },
+  "turn_on_the_stove": {
+    "task": "turn_on_the_stove",
+    "candidate": 26,
+    "world": [
+      -0.33,
+      0.03
+    ],
+    "wrist_mean": 1344.5714285714287,
+    "wrist_max": 4895,
+    "base_mean": 484.3975155279503,
+    "eligible": 207,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 338.58385093167703
+  },
+  "put_the_bowl_on_the_stove": {
+    "task": "put_the_bowl_on_the_stove",
+    "candidate": 67,
+    "world": [
+      -0.09,
+      0.24
+    ],
+    "wrist_mean": 2886.1387283236995,
+    "wrist_max": 10929,
+    "base_mean": 825.0,
+    "eligible": 195,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 1792.0231213872833
+  },
+  "put_the_cream_cheese_in_the_bowl": {
+    "task": "put_the_cream_cheese_in_the_bowl",
+    "candidate": 142,
+    "world": [
+      0.09,
+      0.15
+    ],
+    "wrist_mean": 6510.17032967033,
+    "wrist_max": 20164,
+    "base_mean": 1281.0,
+    "eligible": 195,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 6510.17032967033
+  },
+  "open_the_middle_drawer_of_the_cabinet": {
+    "task": "open_the_middle_drawer_of_the_cabinet",
+    "candidate": 90,
+    "world": [
+      -0.03,
+      0.24
+    ],
+    "wrist_mean": 1028.0352564102564,
+    "wrist_max": 18947,
+    "base_mean": 907.7179487179487,
+    "eligible": 195,
+    "site101_nearest_candidate": [
+      0.09,
+      0.15
+    ],
+    "site101_nearest_wrist_mean": 561.0512820512821
+  }
+}
