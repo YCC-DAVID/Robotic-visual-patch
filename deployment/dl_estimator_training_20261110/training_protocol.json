@@ -1,0 +1,24 @@
+{
+  "target": "Train RGB+EEF predictor of H, color C, sampling S, and visible-plane mask",
+  "module": "proxy_estimator.train_robot_conditioned",
+  "data": "result/proxy_estimator_eef_20261107/packed",
+  "epochs": 80,
+  "patience": 15,
+  "batch_size": 8,
+  "workers": 4,
+  "seed": 17,
+  "lr": 0.0003,
+  "checkpoint_selection": "minimum validation total loss; test never selects checkpoints",
+  "split_counts": {
+    "train": 3891,
+    "val": 516,
+    "test": 538
+  },
+  "evaluation": "proxy_estimator.evaluate_robot_conditioned on CPU with held-out texture fixtures",
+  "not_required": [
+    "pi05 policy weights",
+    "adversarial patch optimization",
+    "policy closed loop",
+    "kinematic calibration-head-only training"
+  ]
+}

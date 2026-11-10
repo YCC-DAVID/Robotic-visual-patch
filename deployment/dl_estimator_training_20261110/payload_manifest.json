@@ -1,0 +1,1578 @@
+{
+  "purpose": "RGB + EEF -> H/C/S/visible-plane mask supervised model training",
+  "source_index_sha256": "20c77529e2ba86af0a1be06feac74f906fce01ab839387a83282acbc8e2a4ac4",
+  "independent_texture_test_bundle_ids": [
+    40,
+    190,
+    290,
+    544,
+    712,
+    858,
+    1015,
+    1035,
+    1054,
+    1541,
+    1580,
+    1630,
+    2027,
+    2236,
+    2326,
+    2515,
+    2545,
+    2625,
+    3214,
+    3332,
+    3402,
+    3540,
+    3618,
+    3708,
+    3985,
+    4014,
+    4264,
+    4732,
+    4802
+  ],
+  "sampling_supervision": {
+    "libero": true,
+    "robotwin": false
+  },
+  "fixed_simulator_rigs": true,
+  "real_robot_validated": false,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1038,
+      "sha256": "87704da3c29b75df44b66504be4562e6ed2c73b918451273fdec0ac511942e24"
+    },
+    {
+      "path": "proxy_estimator/README.md",
+      "bytes": 13210,
+      "sha256": "8721cefbd6cf25a087ba94cb7aa0b198f3fb8a26383cd158c8818a291f0dfb6b"
+    },
+    {
+      "path": "proxy_estimator/__init__.py",
+      "bytes": 58,
+      "sha256": "288b656e5518345e33c3dbd288c72ffc3ebc7425e697a3162f0a31f4050186fc"
+    },
+    {
+      "path": "proxy_estimator/audit_capture.py",
+      "bytes": 3139,
+      "sha256": "c0719441577950d085e07df8aff2537160e86d03d7c417d5604be06b569fc61f"
+    },
+    {
+      "path": "proxy_estimator/calibration_context.py",
+      "bytes": 2704,
+      "sha256": "a467af78caa652d93ebf8fbb20dbad5c15245ec60ac8b5e7d4afb0be189e9929"
+    },
+    {
+      "path": "proxy_estimator/capture.py",
+      "bytes": 16853,
+      "sha256": "d1818f80c957580ad942646a140f995b5b5209778ce3cc5cb0364e67bc50541a"
+    },
+    {
+      "path": "proxy_estimator/capture_robot_conditioned.py",
+      "bytes": 25468,
+      "sha256": "6b9e4fb4e935f9c308dfb397bf494bbfa88a8bd6b3fba96df21e82ba6bf0f617"
+    },
+    {
+      "path": "proxy_estimator/check_single_frame.py",
+      "bytes": 4242,
+      "sha256": "5771e7fad117dfa52d1f334da2664ca602d0842d66b440462a4bf1330e213e8e"
+    },
+    {
+      "path": "proxy_estimator/closure_capture.py",
+      "bytes": 5635,
+      "sha256": "20b6f81d2a9edfc85fe8b629e789c46c675480d48a49db4babdb2c2c02c4600c"
+    },
+    {
+      "path": "proxy_estimator/closure_estimate.py",
+      "bytes": 6206,
+      "sha256": "1234db1cead89cfe0d163c6bf540b4c91b62d7939c5c19f583183ec0301e1a0a"
+    },
+    {
+      "path": "proxy_estimator/closure_proxy.py",
+      "bytes": 1478,
+      "sha256": "21b828d7f91ae5daef98bfe034ce8edfc67c6ddb0c353fdba3a8ee7aad59032e"
+    },
+    {
+      "path": "proxy_estimator/closure_report.py",
+      "bytes": 7686,
+      "sha256": "755171008cecf752faf5be09b25d38c09b4e9584d256543355d1132f6ec2065d"
+    },
+    {
+      "path": "proxy_estimator/closure_rollout.py",
+      "bytes": 367,
+      "sha256": "824174a56361f63c647143d29ffc2c70e8d75129a9534c48a5f984a796a73dce"
+    },
+    {
+      "path": "proxy_estimator/closure_service.py",
+      "bytes": 726,
+      "sha256": "fe92a7d2b8b5f85c5516e298791c3dbf9d0d8f77dfc66f1d8231a57f957bb5d9"
+    },
+    {
+      "path": "proxy_estimator/closure_train.py",
+      "bytes": 11396,
+      "sha256": "f995134c41d40e4e27518e4404e38866288dab4f22f77bbc773f5515206bd5b0"
+    },
+    {
+      "path": "proxy_estimator/closure_validation_capture.py",
+      "bytes": 2913,
+      "sha256": "5866286db19387378c1c002d1924b3ce7003533653514800d0b8fe36ca53b56f"
+    },
+    {
+      "path": "proxy_estimator/collect_robot_conditioned.py",
+      "bytes": 4166,
+      "sha256": "040f4ca2616a85857591c0391bcb8f0d86fe2e183fada0889c27b12c8273f96b"
+    },
+    {
+      "path": "proxy_estimator/diagnose_photometry.py",
+      "bytes": 8261,
+      "sha256": "71a827d2263d84530883de8edc25aef9bc237a7e60cc72106fcdcb4292ba68b6"
+    },
+    {
+      "path": "proxy_estimator/dual_eot_eval.py",
+      "bytes": 4410,
+      "sha256": "748a32629a72aa3047c232d3629856d8c3f5bf46b50a63b30358a738a2775239"
+    },
+    {
+      "path": "proxy_estimator/dual_eot_prepare.py",
+      "bytes": 2368,
+      "sha256": "81c2059295089202969a0cd2373142d3e100a6e5df47b6c9b4868f9bc7c819b5"
+    },
+    {
+      "path": "proxy_estimator/dual_eot_proxy.py",
+      "bytes": 2817,
+      "sha256": "c49a2fb5df6fc1afe56b4c43fda67665011e27affea1ad0d8698784f48440bc7"
+    },
+    {
+      "path": "proxy_estimator/dual_eot_render_probe.py",
+      "bytes": 1038,
+      "sha256": "209b0e2ca36fb652a70cc49ece8f17ecabdd9b2839ecbbe2461d3655eaf44a82"
+    },
+    {
+      "path": "proxy_estimator/dual_eot_report.py",
+      "bytes": 7545,
+      "sha256": "033a30b2bd270ba4ed35e646bcc538f70ebcba5388709922ee0adc1975cffc24"
+    },
+    {
+      "path": "proxy_estimator/eef_closure_pipeline.py",
+      "bytes": 7578,
+      "sha256": "9162f45f187f8d0d896d407fb85ceab6fa53b44ff77afb2eb6c726d1c39ef885"
+    },
+    {
+      "path": "proxy_estimator/eef_closure_prepare.py",
+      "bytes": 6597,
+      "sha256": "abad597446535fd0ebee7557072d74b4a5c2bf89e4ed36dcef343403b22cd56c"
+    },
+    {
+      "path": "proxy_estimator/evaluate.py",
+      "bytes": 5833,
+      "sha256": "f10ac7ca72ecb8349c8798225a77a46acc438a1dcb7b712310cc65f4b36b76a2"
+    },
+    {
+      "path": "proxy_estimator/evaluate_robot_conditioned.py",
+      "bytes": 6912,
+      "sha256": "dc86a9d9d74bc7bcdc930e89046774a6c2c490289ec752a7268e3708216d3387"
+    },
+    {
+      "path": "proxy_estimator/geometry.py",
+      "bytes": 2186,
+      "sha256": "0a36d5e041b3a7e87034fc3c634667f667a8371636207125e2f53bc1d8e54a24"
+    },
+    {
+      "path": "proxy_estimator/gpu_allocation.py",
+      "bytes": 569,
+      "sha256": "edb06cdc57fe77999ba1336b34918704b2e03dca5aba3d19dbbe74512de4668b"
+    },
+    {
+      "path": "proxy_estimator/imaging.py",
+      "bytes": 5587,
+      "sha256": "a96b3efd12b686f1ce91099b50a216e5575d9154e28e853abffb04cc6bef37d1"
+    },
+    {
+      "path": "proxy_estimator/kinematic_closure_prepare.py",
+      "bytes": 7746,
+      "sha256": "fd2fb0f16a2a63d0e4313c5c8c61b1e5f4f4fadc417cfcddc0a15f062661de4f"
+    },
+    {
+      "path": "proxy_estimator/kinematic_model.py",
+      "bytes": 7334,
+      "sha256": "daf17ff6c238250e6b43452198271f45f32b29d12f9475d6ca5bfa5a05e62786"
+    },
+    {
+      "path": "proxy_estimator/kinematic_trial_pipeline.py",
+      "bytes": 11208,
+      "sha256": "818cdf7ca69d60811edb120264d2e52a566b0f1c3bb7f13ed6e7b61e5b780347"
+    },
+    {
+      "path": "proxy_estimator/launch_capture.py",
+      "bytes": 5229,
+      "sha256": "b25d0db1bbe74ffef394377634646dad886fdb3836cfa27c508e6644d70a4777"
+    },
+    {
+      "path": "proxy_estimator/launch_closure_job.py",
+      "bytes": 5258,
+      "sha256": "0b963acd2917fa58eba98c940393250543594f3680c968ffa2b834f5034eae45"
+    },
+    {
+      "path": "proxy_estimator/launch_robot_conditioned.py",
+      "bytes": 5670,
+      "sha256": "7108fec3cb9efc21ac7f44a7ecf16af6fa4afa755415a7da098e8de19594b60c"
+    },
+    {
+      "path": "proxy_estimator/launch_train.py",
+      "bytes": 3217,
+      "sha256": "3293a32b335aa337cd84b51cbfea767fa50c42bf4f4e446e2cbbbe9a33b096e8"
+    },
+    {
+      "path": "proxy_estimator/model.py",
+      "bytes": 2129,
+      "sha256": "8d460f93b95948cd332e86a612d3bd1a93caba97bb2e154f7557e0860def6607"
+    },
+    {
+      "path": "proxy_estimator/multiview.py",
+      "bytes": 4446,
+      "sha256": "f5c8132d73005b22f845fa77c9d42451dece4f3ae5073991ec3414ed45b4ec96"
+    },
+    {
+      "path": "proxy_estimator/oracle_h_prepare.py",
+      "bytes": 3524,
+      "sha256": "939b1ce88c29eb4486281f5661f7d190ee61025e5d4b6a1c1ffc51fa488f9c64"
+    },
+    {
+      "path": "proxy_estimator/pack_robot_conditioned.py",
+      "bytes": 2292,
+      "sha256": "459179a258a5b7bf7c11a50f65ffcef3689edd9870fc8ad8921f83ee83bc51e9"
+    },
+    {
+      "path": "proxy_estimator/predict.py",
+      "bytes": 3592,
+      "sha256": "00be3ed081be82a835a719cc7ebdc242dca99fcb55768bbb89ea637aa3f78a2c"
+    },
+    {
+      "path": "proxy_estimator/predict_sequence.py",
+      "bytes": 2981,
+      "sha256": "12c1cd779002ce564165bd99fc67c1a97c816e531fe735b989c650d10b039182"
+    },
+    {
+      "path": "proxy_estimator/predict_vggt.py",
+      "bytes": 3063,
+      "sha256": "255ab694b27856c41dbddb2a1d0d0ffe379e1c6ca6b67b0a3690a9ab05b285ad"
+    },
+    {
+      "path": "proxy_estimator/prepare.py",
+      "bytes": 13524,
+      "sha256": "56a076ce49ceeb559274655f82dd95c8e7964a9c2410e124cf306dbc20b9129f"
+    },
+    {
+      "path": "proxy_estimator/prepare_kinematic.py",
+      "bytes": 3469,
+      "sha256": "684f695b66a266a2f02f9fbff71c3064e87eacc685ed0b6ab2a7e139404118b2"
+    },
+    {
+      "path": "proxy_estimator/prepare_robot_conditioned.py",
+      "bytes": 9918,
+      "sha256": "8bd5c04ccb66f756515248521d5cba3b7d6b899023945c66ccee14fe734fa058"
+    },
+    {
+      "path": "proxy_estimator/queue_robot_conditioned.py",
+      "bytes": 9127,
+      "sha256": "73b17679f5b7833a6fa0c65d2e948c81613af773657d12be072998a6b72fa92d"
+    },
+    {
+      "path": "proxy_estimator/report.py",
+      "bytes": 6482,
+      "sha256": "758a4c0bdb70b7b1ed6c7005db23952abe71922ee4d9c803169b5007af9a3dff"
+    },
+    {
+      "path": "proxy_estimator/robot_conditioned_model.py",
+      "bytes": 4579,
+      "sha256": "1d1fb40e1e257e6ec9f04e601932f6ed80ce8427eb730c917d0bc8ddac4c5197"
+    },
+    {
+      "path": "proxy_estimator/run_curriculum.py",
+      "bytes": 12705,
+      "sha256": "46d42d92a3a3725b50a2fc591297c9c60a792e8aedd662198681de65ad6399da"
+    },
+    {
+      "path": "proxy_estimator/sequence_index.py",
+      "bytes": 5775,
+      "sha256": "f733e37aebde99708ba9bb928c9796e38d794f6630f2630851021a3882f6dfe2"
+    },
+    {
+      "path": "proxy_estimator/sequence_model.py",
+      "bytes": 3271,
+      "sha256": "e921dfa020f23278cb80c437f8226d3a336320557ea5c7c4bb6361a7d2ebc639"
+    },
+    {
+      "path": "proxy_estimator/teacher_cache.py",
+      "bytes": 2281,
+      "sha256": "8a773a91a25132fd9dffd02f02b2a369a7291c42f9891d43b83c1d9e0b25d767"
+    },
+    {
+      "path": "proxy_estimator/test_core.py",
+      "bytes": 5452,
+      "sha256": "f9ecb0bff0e047fec9ad0a237f80f706073e3adbd2a79d742891b4da4c0f8e90"
+    },
+    {
+      "path": "proxy_estimator/test_multiview.py",
+      "bytes": 3441,
+      "sha256": "2809735e7c6dec09e3c5df208d0b12f6d49e496930949091c9bcd9cc65d74435"
+    },
+    {
+      "path": "proxy_estimator/train.py",
+      "bytes": 12173,
+      "sha256": "f6590f2770edda5dc9f3f164b37f2599ef6965a8969c6e4b0a2c9ba7b3aa6e50"
+    },
+    {
+      "path": "proxy_estimator/train_kinematic.py",
+      "bytes": 9789,
+      "sha256": "61b1d6e721d75abc6ef2b420b8a14e79f3bee8aa20a074e1c9edd717ec764e5f"
+    },
+    {
+      "path": "proxy_estimator/train_robot_conditioned.py",
+      "bytes": 14090,
+      "sha256": "b45c68c3adb4a87a477ae0f06a8ecd776db0c99fae5aae4cd7e6cca7fe44fb3d"
+    },
+    {
+      "path": "proxy_estimator/train_sequence.py",
+      "bytes": 11707,
+      "sha256": "2d7c407e314e9ce8aae1e83bcb3d9bd69b62ba949d70b38930faff95d85c002f"
+    },
+    {
+      "path": "proxy_estimator/train_vggt.py",
+      "bytes": 12978,
+      "sha256": "40622dfb367fb62ca113ec1b711e5dbd224a100e30e1e5824bf1adde074fc8bf"
+    },
+    {
+      "path": "proxy_estimator/vggt_model.py",
+      "bytes": 2747,
+      "sha256": "2da6f57c017eaa7d760ba17d3086515820cf7e6f7cc041ae22784236602669ca"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/T_world_eef.npy",
+      "bytes": 2531968,
+      "sha256": "780a79699fa2d99cb26601dddb5742274ab4cec2b111c733c63a58f8b17cb00d"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/camera_valid.npy",
+      "bytes": 59468,
+      "sha256": "c6fb6ee0c6be861ddef722d315e59c0a9be013e13af47bc4189657316f12a69b"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/eef_valid.npy",
+      "bytes": 39688,
+      "sha256": "b0dec98027d1abdd6f05bb50060a1c794317770b97a3071bd1dcfbd32557273d"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/gripper.npy",
+      "bytes": 158368,
+      "sha256": "5aeaec89306fa4d661b9e8a5e42c111452d83f9ca4e2c0bdfc7088c83f9247f6"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/labels_native_hw.npy",
+      "bytes": 316608,
+      "sha256": "2fc7b58ca189ba2919041090b1e0c480a6453086846f187829db7f093777dcea"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/labels_plane_mask_valid.npy",
+      "bytes": 59468,
+      "sha256": "c6fb6ee0c6be861ddef722d315e59c0a9be013e13af47bc4189657316f12a69b"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/labels_plane_masks.npy",
+      "bytes": 1519104128,
+      "sha256": "6d449aea5536df3b810ef098dbe84248a537370b3524475258f836b408531992"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/labels_targets.npy",
+      "bytes": 4272608,
+      "sha256": "abff166916ca09681f5ce9c36e3ca9379f6c46cb988f522e0cb342cc899db342"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/labels_valid.npy",
+      "bytes": 4272608,
+      "sha256": "ed9e7e2881dbb8453b70f34d6ec887551c8aea75d25a56d10991b6ae2e47bc44"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/manifest.json",
+      "bytes": 5836531,
+      "sha256": "7cfca51b1a08ccc7dca62724c38f763584179d90ec34b41bc9ac9f32880e0331"
+    },
+    {
+      "path": "result/proxy_estimator_eef_20261107/packed/rgb.npy",
+      "bytes": 4557312128,
+      "sha256": "1339309be726159fecd330fab8a86e837d936c97bf1d39c3f573bede2b163343"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0000.npz",
+      "bytes": 1392467,
+      "sha256": "75967664fc551cfcabf43779286703a13d1aa0c441e21beac8312dbd52f093f0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0001.npz",
+      "bytes": 1398873,
+      "sha256": "dbd68490522deb41e6dfc717d43686900924e38ea1f9f4dcd4175c21b0c80813"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0002.npz",
+      "bytes": 1403486,
+      "sha256": "11bce8577948f13a24ded77524c4d31361943ee95647256c5265ce2fe78e7ad2"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0003.npz",
+      "bytes": 1405916,
+      "sha256": "89a903cf11365e33635c280196337cb1a220d06ac827afc50bb1f0ef15a4271d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0000.npz",
+      "bytes": 1383756,
+      "sha256": "237fc0929996c5b4166c1aeb7fa30a33c882df3a47195b06acf4d66cfbf72f51"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0001.npz",
+      "bytes": 1395338,
+      "sha256": "361f50390ff10401e9dace0412d5e439629e717429e26dc524e1308a10391175"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0002.npz",
+      "bytes": 1413426,
+      "sha256": "bbc779f995727a93b59252c20d911c04d3e5307de79324d52cf0a5a243aad6c5"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0003.npz",
+      "bytes": 1419721,
+      "sha256": "bd51549e6d4ffae77f2498b493dba1ad7304ecab029946ad4e39b7a787bfa98b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0000.npz",
+      "bytes": 1375682,
+      "sha256": "8c8a0df6119ac58856ce64463c02e2c412f77e8f04a90cf8ce3171afd04f10c3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0001.npz",
+      "bytes": 1383335,
+      "sha256": "c23d24cef4e1746e8c8209a5dbee948b3e017667051466ea75509c09ad6a7449"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0002.npz",
+      "bytes": 1397370,
+      "sha256": "9150a5ae1da9c86e6d9b8ac2645163cebaa30ff7789e256558eeb1622c21d176"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0003.npz",
+      "bytes": 1398762,
+      "sha256": "139bb78bc315128f7fa08bc052c1080d37454d17697ba25ac6be9604fef00a8b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80005/frame_0000.npz",
+      "bytes": 1414955,
+      "sha256": "efa8c80119619c7e73e147c8acecd0571478f92c7e429cb4ef2a40f90be6ec00"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80005/frame_0001.npz",
+      "bytes": 1424914,
+      "sha256": "74cf3a9d5cdbee9755d8078277c2d3d62954afc8a049e5903d70794f8ba3c5fd"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80005/frame_0002.npz",
+      "bytes": 1417855,
+      "sha256": "80e29482f19454630acfaa97a4d7b7503a6de07f673fe123758d6235d6d0b3b2"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80005/frame_0003.npz",
+      "bytes": 1414896,
+      "sha256": "a239fdf8399018c8bf1a606ede2b9598b41d616fb5d5ec2e1398b1bfbbdf8a72"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80022/frame_0000.npz",
+      "bytes": 1407457,
+      "sha256": "cc07d3ebe02749ef5a87452a7f474c084c5f648ba74f67894402f5c3c2616af3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80022/frame_0001.npz",
+      "bytes": 1416334,
+      "sha256": "50cc87274f203e1b6a57e521962cd57c576e10044911d4d21b03570bebec5b11"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80022/frame_0002.npz",
+      "bytes": 1413992,
+      "sha256": "3a364ece3e6408c176761b9a23d9e780b765d79e9c72fc121a054a84dd9cd498"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80022/frame_0003.npz",
+      "bytes": 1411732,
+      "sha256": "c08dba81025726b021e4e2f0468968a88478515fb2dc51fc30ee91abac18fe8b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80037/frame_0000.npz",
+      "bytes": 1386850,
+      "sha256": "54c4a2ec963152ea5b925493521edd6101bdbf978d4358916f985e5863917aac"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80037/frame_0001.npz",
+      "bytes": 1397577,
+      "sha256": "cd6947e41016db2e49ac621450fa56d77f301d7e577cfe177c84d72ec9a43c56"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80037/frame_0002.npz",
+      "bytes": 1407579,
+      "sha256": "56717bf885a5d266532f57e235cba1080f2ea9cdbd2b418881f1582ac0713f68"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_plate/seed80037/frame_0003.npz",
+      "bytes": 1420324,
+      "sha256": "3e47993acc23a3ade18f0ec0c80beb85c6877d996af3914275dc87a96c2df2fb"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83003/frame_0000.npz",
+      "bytes": 1433173,
+      "sha256": "3c9d655515faa382c951aaaf6840a4691129529ebb6c33abb907f14de0fd0b6a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83003/frame_0001.npz",
+      "bytes": 1448409,
+      "sha256": "856cdafaf1eb266ce96459e0655300c26636606b28d48ab200452ffee585c417"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83003/frame_0002.npz",
+      "bytes": 1451150,
+      "sha256": "7f8a457d855a608af50f016c1ce4ec9554e5361fd14b662fd76aa80ccd354a0c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83003/frame_0003.npz",
+      "bytes": 1449605,
+      "sha256": "068329bcfec3cdfb4d1739e256af56c08a98bc98ff4dbffe50a03372f565a87e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83005/frame_0000.npz",
+      "bytes": 1363623,
+      "sha256": "58850c3d0bb9825b077638bb2c1e80cf0f51a9e55bff7dabb19208eeeacc97af"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83005/frame_0001.npz",
+      "bytes": 1362920,
+      "sha256": "ef3daf64b08a58d55830569314d5c34c444770efc743bc4d8396e83cffa1d352"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83005/frame_0002.npz",
+      "bytes": 1367553,
+      "sha256": "6448ef4d1bad8809e4fd6a891c52375427c0fd6a31bac8365350a95c62284196"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83005/frame_0003.npz",
+      "bytes": 1364951,
+      "sha256": "e1725c1b800b254e5d36798b6393c69fc9d2cf478cc9acf304813a96c4362081"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83007/frame_0000.npz",
+      "bytes": 1393738,
+      "sha256": "e3f3798dbff5b3c96333a8a291d0b0260189f061716055319664cbf28631bf87"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83007/frame_0001.npz",
+      "bytes": 1394350,
+      "sha256": "7e4b505bc5ce4970edfd23973624a0c1cec8a271d3f475303e90f52816098225"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83007/frame_0002.npz",
+      "bytes": 1402014,
+      "sha256": "dfbd630dcdb58b783710a3904d5f633803a16738a5b6df92ec1c8849babcb465"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_bowl_on_the_stove/seed83007/frame_0003.npz",
+      "bytes": 1408853,
+      "sha256": "2ed83adbf7fbfdfab68077ae35618aafc2fcaa770d09c78c34d87ac2f44cefa2"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0000.npz",
+      "bytes": 1388202,
+      "sha256": "dbdc2e8c5ef91585920749bd8628b059372e3b63a333bd9453e2be10490c3c04"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0001.npz",
+      "bytes": 1385914,
+      "sha256": "383982e02bf034e637fc3fe39c935e133e94e4ac9235e29011b5093633cd4ef3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0002.npz",
+      "bytes": 1392726,
+      "sha256": "e1d9140b2083cda8413da1149e15949c07f60a56a2be55030fc9bfcc6c0b3d0b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0003.npz",
+      "bytes": 1398564,
+      "sha256": "82631f38d51c5316a616290fc39704a1297ddebf62ce84a744a3e2e3b5bc502f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0000.npz",
+      "bytes": 1436801,
+      "sha256": "747e33f8709cf680d36da8959aec1e6b6458347b7bcd286532a7e06f424082e5"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0001.npz",
+      "bytes": 1432189,
+      "sha256": "a38832e61c56d7d8e2e851123a3e61ff1fa10f8fa551cccedcec4be58ad9e0a1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0002.npz",
+      "bytes": 1431956,
+      "sha256": "5635a438e55ec65daf33602e87100d1f6c40e4ee9abfd4632a73d3e201061f43"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0003.npz",
+      "bytes": 1428795,
+      "sha256": "4a645903c1377511b66ca1d76375ff741e9a165b9ab9bc09caf5d78b0d4914f8"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0000.npz",
+      "bytes": 1410617,
+      "sha256": "752bce0f373b7a3316cd63fbbe63a55d0286cd3f0ab0fd105930ff388de413be"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0001.npz",
+      "bytes": 1418710,
+      "sha256": "71410316de414b0f004945584ac19867ff0a6e72759a68242659b4b6e8e092d5"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0002.npz",
+      "bytes": 1408891,
+      "sha256": "29707f96b34d54abc1d8c94d150f9bae273c4e8e0b4a482a62dee64e60c4fef1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0003.npz",
+      "bytes": 1409181,
+      "sha256": "1d12ed33c047d5c1b36608b3c5d206e2011a81e610f94b9d24f5c12a826a72b6"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0000.npz",
+      "bytes": 1427319,
+      "sha256": "119f195611fcfd49746eaac8f8af8a46180dec30806364a0ead9a124ca3526df"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0001.npz",
+      "bytes": 1429708,
+      "sha256": "a325824a6b79fd4f27c75c414ec245ff7c7d746cd703c4915676a9a4808fea7a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0002.npz",
+      "bytes": 1429956,
+      "sha256": "a9ef27ddb44d51a8e5c3e096db05472a67803e0a163f829efb48ef85193e147b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0003.npz",
+      "bytes": 1430145,
+      "sha256": "ab9765080eb1c488845f8b943393c047215177f996ffb25bee3116721dba1691"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0000.npz",
+      "bytes": 1419061,
+      "sha256": "4cdfffc7a6a265a0ff31fa09113c0e880d8cefec5026d19ff8fa8b21ffac2a81"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0001.npz",
+      "bytes": 1423405,
+      "sha256": "ed1bc041c27d2919aa9dc0863c5da5c180b673fb659cf84a2a3f273bfeac68ec"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0002.npz",
+      "bytes": 1432193,
+      "sha256": "bb7a5dbf2c5e3c440fd7623da41638b6e773396ddcbc3639e088a9dfcce056a3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0003.npz",
+      "bytes": 1448378,
+      "sha256": "637b607c1b383714086ad285713ba95614577f06dfc2fd8c274f2c0a927a334a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0000.npz",
+      "bytes": 1395695,
+      "sha256": "f1a51a742402c001b1a6e67a951e48c763ede36bdca561d4a96fdcaf5d94b649"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0001.npz",
+      "bytes": 1398616,
+      "sha256": "dd22233b78926d3cd4ce435e67e210f1ce4ed8823929913c7fd1730d523932dc"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0002.npz",
+      "bytes": 1399536,
+      "sha256": "befffcae6cce85f107d562a9387683926aaad395421e68b1de938d2167124030"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0003.npz",
+      "bytes": 1408158,
+      "sha256": "363bbe56ddaa3968d625ccd3ebcac3cb832f67630756fb4d7a88084f295d5d77"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84004/frame_0000.npz",
+      "bytes": 1047648,
+      "sha256": "2713c1fdaf8beda7cd636b756f025494e5e1266921b763465aba9f3a76b5b823"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84004/frame_0001.npz",
+      "bytes": 1045021,
+      "sha256": "ce69cd50f241bb0795d47fa95cda4032406995880c41b1fa2ab0ec4a0f64d326"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84004/frame_0002.npz",
+      "bytes": 1024390,
+      "sha256": "f7da4fbce8c8218059d10b715d7a5c01a60d6da8fa24f1b13e5df8ba01e35579"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84004/frame_0003.npz",
+      "bytes": 1029811,
+      "sha256": "d19f136cc99bc0b81702efda6856954d11426700570855783445b412055f379a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84007/frame_0000.npz",
+      "bytes": 1164320,
+      "sha256": "f7df228197315fdab7f436e11755dd14c39a5ffc2a071457386a3df7c0109611"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84007/frame_0001.npz",
+      "bytes": 1149250,
+      "sha256": "af187d451424a7c124b598d73f5abb4ed181aa3a0ffc906ea71df0b3b2f056d9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84007/frame_0002.npz",
+      "bytes": 1164754,
+      "sha256": "d53978b4bbcceae1f87bff4dd8187d099c9a00460f86f2416d0a70015b9c66a9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84007/frame_0003.npz",
+      "bytes": 1163342,
+      "sha256": "c5126ef74ad83b54bd4af9d2a40f1150beec86cf129ec3c18912f58593bc1300"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84015/frame_0000.npz",
+      "bytes": 1199826,
+      "sha256": "ad52af68a5eb86c993bef18f837b011c4bf251716bb139669d3d0f34539c0b98"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84015/frame_0001.npz",
+      "bytes": 1197533,
+      "sha256": "03dc5b6f4ea60c9c8154f682f454abf9937aedc9300383b0c8c8034e61636790"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84015/frame_0002.npz",
+      "bytes": 1195294,
+      "sha256": "04156d7388057a8fa7493952c599cdbf75894ac1d04e7d911b72d5309c1ca839"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_basket/seed84015/frame_0003.npz",
+      "bytes": 1180146,
+      "sha256": "b9a717bb23316d9e170ffdb66b742a81e06716e7dc7e673acbb1ea470a15257c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83025/frame_0000.npz",
+      "bytes": 1116110,
+      "sha256": "aec5c892c53bae85b627f42a3d11d1f886289b437eedd18026d1d67d16c7382d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83025/frame_0001.npz",
+      "bytes": 1113641,
+      "sha256": "a46f7ef54598ae63397b5f56048de527ec0ca49e2f58a9a486727eeb8d76ac90"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83025/frame_0002.npz",
+      "bytes": 1105836,
+      "sha256": "fa1090aaadb06f58e25f8a26d8348a1cb1f61df527ba74f377d2c6143657196f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83025/frame_0003.npz",
+      "bytes": 1073824,
+      "sha256": "c6bf26277df9bfe737c641d2fb84e9cf6e3762bd6e4e9b69c53d17e19b47cd7d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83037/frame_0000.npz",
+      "bytes": 1031263,
+      "sha256": "8a4cfd327db03d8eb8ef16aca6443e99349fcb7e9984f5c51a323ffe164b5e54"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83037/frame_0001.npz",
+      "bytes": 1021486,
+      "sha256": "745239b2f47bbfacb00d72078a8c96efb164068e95b15d346f5e28c43b128790"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83037/frame_0002.npz",
+      "bytes": 1007971,
+      "sha256": "aa8a5c304be0c46c83bf30e7f93dca242eefdcdc23d2011876fd42722b70d857"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83037/frame_0003.npz",
+      "bytes": 994420,
+      "sha256": "21e36252bb30ac3113d473ea4675874e38b9c79780dbfa6d526281b9da374f0e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83044/frame_0000.npz",
+      "bytes": 1130635,
+      "sha256": "069280045ba581a3cd362bf28fda805cade4b33026a0bb7ca0f6c9c1f444d6ef"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83044/frame_0001.npz",
+      "bytes": 1127404,
+      "sha256": "1faab1dbf10b7cc2f995ea00ff42854388a576d4ba9836323b38d50d21b2d80e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83044/frame_0002.npz",
+      "bytes": 1133614,
+      "sha256": "9215e90908cb0f23d9c81ad1aaeb30d6de1c4aec4d87c20a2f5fc1bcef389145"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_bread_skillet/seed83044/frame_0003.npz",
+      "bytes": 1139282,
+      "sha256": "c9e734b68a170f6962dd620be4d8db4eb3a0cf9703dab2b5a32a8cce3eb0a9cd"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80008/frame_0000.npz",
+      "bytes": 1063911,
+      "sha256": "843403cd708e8f35c9d98512f3cadbacd1d41549dd037797eeb248273b590d8a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80008/frame_0001.npz",
+      "bytes": 1055974,
+      "sha256": "198a560a22414d32bcf6a945b2a4d94a9d06eb82b9889f470df5868389682df3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80008/frame_0002.npz",
+      "bytes": 1043096,
+      "sha256": "96314f08551d29ac4bf55fe4ce01c6d728ce7703610fa497ed6d1e73bbe431b4"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80008/frame_0003.npz",
+      "bytes": 1048971,
+      "sha256": "8077521ffdf50ea27a6e065c465ad0c06e2b4f1862259cbd1eb4ad00fe4e997c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80016/frame_0000.npz",
+      "bytes": 981697,
+      "sha256": "3e6cb3182e9bf05e075163808499d48cc1e545e7c5dbe1406a63a9d741183cc0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80016/frame_0001.npz",
+      "bytes": 1017012,
+      "sha256": "1e98ed63cf57713d752adf73fd6dc8db7f090fbad3d8c44bcaa979f5147072f9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80016/frame_0002.npz",
+      "bytes": 1064273,
+      "sha256": "828165ab70b143518a75d90e34a217e6949532f1c862e82cc4372a1512e74dfa"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80016/frame_0003.npz",
+      "bytes": 1072952,
+      "sha256": "776abb2fb6efd5cd62bb556fef589ed0bacd7bbc3a29b99d0fef282616a7541c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80025/frame_0000.npz",
+      "bytes": 1205494,
+      "sha256": "9e40b2926a151cfd305a7ed47ab3254c7630c7f608029b1cae8c27f914d9015a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80025/frame_0001.npz",
+      "bytes": 1177227,
+      "sha256": "95c4a73c21f6bdc1ee1dfcc00d1df16685122918b3754753497fb4a49b3e786a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80025/frame_0002.npz",
+      "bytes": 1127735,
+      "sha256": "8a504495e4546db323e781ddf1f60f47ccd51335830d9a3e8e1134b8132279ec"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_container_plate/seed80025/frame_0003.npz",
+      "bytes": 1088678,
+      "sha256": "4519a108acdba60fcbd1a3d6dc77d88990b91e7df664c6d0563615246e325249"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82003/frame_0000.npz",
+      "bytes": 751554,
+      "sha256": "bfca0a429ae5d2c60918f4a556969c3a7c98c7243206575bf4e27c2cc74abe17"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82003/frame_0001.npz",
+      "bytes": 763411,
+      "sha256": "d41bf78c7da11eb8582c0cfb251b5840fcc3824c074527ca2228520d305349c9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82003/frame_0002.npz",
+      "bytes": 764626,
+      "sha256": "8fc1a679f562d41ee0da5f2d6e24b0fdd23e51f1e090170b0e3d3c11d683a753"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82003/frame_0003.npz",
+      "bytes": 770341,
+      "sha256": "d288732d5a380a34581ff7499ded6a6ec5ce924d788ecaa350a3878bb875ce49"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82006/frame_0000.npz",
+      "bytes": 736168,
+      "sha256": "c5f3237098849fb496b8633db2ca830d32576a6f75e9cd9d0bc27ddb51a4fb73"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82006/frame_0001.npz",
+      "bytes": 761822,
+      "sha256": "92827acd383fc4416230219e635ef6014be5dd938fe9f3d9dd90ea086fac0f9e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82006/frame_0002.npz",
+      "bytes": 797674,
+      "sha256": "0090b04d938560c397defcac04575bb40789980fb625278e7a45268fa3d8ca19"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82006/frame_0003.npz",
+      "bytes": 822698,
+      "sha256": "93cbdaa63a0e4ffd9fe89a63a2510ad628c75f7b27a2930cd6d619f659348142"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82031/frame_0000.npz",
+      "bytes": 1029380,
+      "sha256": "d4fe814353ea7ffbfb2f2d17a59dee8f36a969bc51ea9e5843949bce5a03f7b1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82031/frame_0001.npz",
+      "bytes": 1031639,
+      "sha256": "23e87529201b59b0910a8f3e92b3bf0bd57eccc72f5d907fbe8d484db65ee5d8"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82031/frame_0002.npz",
+      "bytes": 1028555,
+      "sha256": "164e1b01b08e7882a6c54d45a2371fd041b4adcaee34470fa74663b1339a539f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/place_mouse_pad/seed82031/frame_0003.npz",
+      "bytes": 1031637,
+      "sha256": "55511735be833fd8b54f8398859919dc4a5e4b0b7486329f2b94c7543ebb83f9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81028/frame_0000.npz",
+      "bytes": 1041480,
+      "sha256": "5c6ad0109f79f9b1b3a670df9402fc7e853a15986269183cf5d1f57e0a49c407"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81028/frame_0001.npz",
+      "bytes": 1041705,
+      "sha256": "aa37a3029655459cf1901fb0a67949d4a01ca6950e12072dccdfe3330541e6cc"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81028/frame_0002.npz",
+      "bytes": 1032446,
+      "sha256": "be95a455f27f55d8be47ad27f6bbe1a6935a153832e29592ba933a9d9b89b6f0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81028/frame_0003.npz",
+      "bytes": 1027184,
+      "sha256": "da466dc6e20ced3a1e0ba09ee49581b490d666c01233ee52685dc4e0cd4e7cb8"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81035/frame_0000.npz",
+      "bytes": 1008177,
+      "sha256": "99d4eb69409f44e6c8163604883d90522ef2558d99a1b8e3e4267eac84b59b22"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81035/frame_0001.npz",
+      "bytes": 990182,
+      "sha256": "a80ac985b75e1cef298528f66d4a60f784102a5f2a183c0e957a2fc97d88a118"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81035/frame_0002.npz",
+      "bytes": 1020163,
+      "sha256": "a5af1538514fd184b2ca927a8061f05e2a49b35354b7546ceb769e16f4c99761"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/captures/robotwin/stack_blocks_two/seed81035/frame_0003.npz",
+      "bytes": 1017658,
+      "sha256": "8556701edb52dc1f6f2c4ec4ae7338f10f17e7402999ba9e42e8b3b9f92a4636"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0000.json",
+      "bytes": 3108,
+      "sha256": "068d1debf07fb7d7d38f691f8baf0b438f18bc5cb79481b7080777570b5df3ff"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0001.json",
+      "bytes": 3110,
+      "sha256": "804f985801e430bf953ade22235dd103b33881598f49fe0c46238bad8704850c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0002.json",
+      "bytes": 3112,
+      "sha256": "7ab5edcc02fc9bc460ebaa3590f17a3b2835c789af6fcb22438706dd0a53b66e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84004/frame_0003.json",
+      "bytes": 3109,
+      "sha256": "45ab6070cdcaee9ada0f2fb02ee37bc3ca6e83ec0962fef8b306cb0c48f5f95f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0000.json",
+      "bytes": 3105,
+      "sha256": "d404bbcfd84ed57d4411d6012ae1e6da57eb0ba605293948cee169dcb75d1e33"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0001.json",
+      "bytes": 3104,
+      "sha256": "476eccd8f7401997ea3dba11a0367de3895d80bc5358cd9b3918d1377c9a9a71"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0002.json",
+      "bytes": 3105,
+      "sha256": "ca0b04e496f9e9776de5e3c75e08ed6c144fcad338b77f083b32efe17fd2baa0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84019/frame_0003.json",
+      "bytes": 3105,
+      "sha256": "dcad7b23a589172ea7fffbc932543ec0a6863929ae40de59b2b6aaaff5fac516"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0000.json",
+      "bytes": 3107,
+      "sha256": "1ca3026b30ef39fa6b831cf8e4ad93d8f0d3a19f8eff256ed70a07aa281e7ad9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0001.json",
+      "bytes": 3110,
+      "sha256": "99a0e4a5752499850b6f8bda619c7583eaaa45f30e8f836fe1cd086711821d59"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0002.json",
+      "bytes": 3108,
+      "sha256": "ce5cb3f8499bbea6df3e26b4628d7a396bf97d8866edffc57ef526e54a31e378"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/push_the_plate_to_the_front_of_the_stove/seed84029/frame_0003.json",
+      "bytes": 3104,
+      "sha256": "035873448898d71466c51bff9bef534b29b10ebb9b7cf60deb2c67156e1a9435"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80005/frame_0000.json",
+      "bytes": 3054,
+      "sha256": "7203ecfd062c03c22953a39a281b3c78d2e2f22da833cf6b146a739e29a55f26"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80005/frame_0001.json",
+      "bytes": 3054,
+      "sha256": "92c6ed8a1508e90a8563a669604001393faa8d8c4ea2f22851d093b15fbaf511"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80005/frame_0002.json",
+      "bytes": 3060,
+      "sha256": "24007f18e413dc42a0908580116e4544c174b2e5584758413e59fb965c7d9941"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80005/frame_0003.json",
+      "bytes": 3058,
+      "sha256": "2c7b07bd4a206a07e2f48a2fb06bb650878e04a47ab2c0868c7f96f28f04a343"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80022/frame_0000.json",
+      "bytes": 3061,
+      "sha256": "92af8a9a46749ac79297b2390e025d3b0ce6d2fd35ffef9a546a33d92cd4b7fc"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80022/frame_0001.json",
+      "bytes": 3057,
+      "sha256": "f1e5995dfa59b87db7de2523c79908aaa1e21d522491c9694f26d7d16ac708bf"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80022/frame_0002.json",
+      "bytes": 3060,
+      "sha256": "c5053110a65d42da2eea8fcdf6e1ee18d46bbb7becca33462d5abe28a8c0fdb3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80022/frame_0003.json",
+      "bytes": 3062,
+      "sha256": "9da60f097a03a418990407f3e991724b809d641bf6ab84cc4721b7deb0a2c978"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80037/frame_0000.json",
+      "bytes": 3061,
+      "sha256": "f46c655ed8d3f2e67c0e63390ee113974e07c4d07371599f87f5e2fd98c433fd"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80037/frame_0001.json",
+      "bytes": 3059,
+      "sha256": "934932effd5a0a672bcb15948039ba5ef7fa2a4acf72d914ba5afaa764b1561e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80037/frame_0002.json",
+      "bytes": 3063,
+      "sha256": "51bf8eadece91026737dc9af3dbecee508c8f0f01bf8b30a22fc921ba99b88b0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_plate/seed80037/frame_0003.json",
+      "bytes": 3061,
+      "sha256": "b88bb0cc49603ad0ba97e3e168fa9799dbfecd5de5d60b45b39e4725dc3e019a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83003/frame_0000.json",
+      "bytes": 3057,
+      "sha256": "bdca740fb4b829bdab588a3fd8b0b1bb13dddcb6703cd12d581259b7e1486895"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83003/frame_0001.json",
+      "bytes": 3061,
+      "sha256": "f7301bdf0cc3e6f91f91a900b1a398043c10362f627adc3422c192ed307fd901"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83003/frame_0002.json",
+      "bytes": 3059,
+      "sha256": "88e6d78300b54affca1e2cf96ddac226194cc7d2e48b612c6bc3b2b4dabf885c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83003/frame_0003.json",
+      "bytes": 3061,
+      "sha256": "dfabe0f5ac10141989e39ddda0ebaed23ec300d50eb715661cdd7919acfb6e19"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83005/frame_0000.json",
+      "bytes": 3054,
+      "sha256": "7a12729018a416d0fa70c2afefe75e37044bbd49666fffb7d15700d418196a24"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83005/frame_0001.json",
+      "bytes": 3059,
+      "sha256": "e4cb0fe32484c6f16cfeaedb77d6b551ec3c7d759fc4aeca2951c67c7e85e684"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83005/frame_0002.json",
+      "bytes": 3060,
+      "sha256": "6acd7612763a90dae8927396f5d1dfbb28968f000b1fd05473d6e4038ae74d9d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83005/frame_0003.json",
+      "bytes": 3057,
+      "sha256": "7dc74ec6c0c9cbeca10f953fc34b3b066de916815b496e57423a02565a555f1e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83007/frame_0000.json",
+      "bytes": 3059,
+      "sha256": "cc1821ae155e87d3dd3d5fd5b094027a122384b97213f0d1a37061f6148ba35f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83007/frame_0001.json",
+      "bytes": 3061,
+      "sha256": "f4ef43507b098927cd4945d6e3df9879e7147e693af22953c9081aa141051fee"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83007/frame_0002.json",
+      "bytes": 3064,
+      "sha256": "aadcd4f678d14c4a645316a0cee31a7b908fb4a68914820b91dd64a51ae82444"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_bowl_on_the_stove/seed83007/frame_0003.json",
+      "bytes": 3062,
+      "sha256": "4dc0f30337e3dc3effcd5ca51f68fff3b607e845aee01e9ef5ba1b87ffbac62c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0000.json",
+      "bytes": 3082,
+      "sha256": "482e835790a6b62db2630bd60f13dadebf8fbb6bdb08d28cec0b3d6ab0591850"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0001.json",
+      "bytes": 3080,
+      "sha256": "832a287f8dd8477a37e3d7a6fd3d0818b50a8b79f9518530522050f5952ebd9f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0002.json",
+      "bytes": 3089,
+      "sha256": "52775c6848cb0553d9f9c6c85adf6e046f12db7cb3f39da315685064447d4284"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81006/frame_0003.json",
+      "bytes": 3082,
+      "sha256": "556156637bc33822b21ea157a82842c5a27da177fcd11ad02a33543d82f658ac"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0000.json",
+      "bytes": 3074,
+      "sha256": "7c1962a47a71e2cb62bb3b578e37a6cb7f1fc5e33274930049794746070c2e53"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0001.json",
+      "bytes": 3079,
+      "sha256": "ab60a041881ffabae7ab0fd21ede04a05c2e2d8c477c453df815888fd2a856a2"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0002.json",
+      "bytes": 3078,
+      "sha256": "1d0605324aba004624652e038a867ec1c1d336f27fd6caa4d0ed40f81a7050cb"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81010/frame_0003.json",
+      "bytes": 3082,
+      "sha256": "e6cad79a66aae060226d8c94f788c544d73374c8259ef65b745b234562ae73d6"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0000.json",
+      "bytes": 3085,
+      "sha256": "af6a40fe5a7a9cfb366e7fc9e63e8a5e2a3010850724a66e425f76fb6ef37c3b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0001.json",
+      "bytes": 3083,
+      "sha256": "373be49de314967c5832c001446480e3f393872a69225ef3fd6f17ccfe6d1c43"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0002.json",
+      "bytes": 3084,
+      "sha256": "3c9894deba7311b4f037ea557b5f9769134986e68953b10096507352b7ac32b1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_cream_cheese_in_the_bowl/seed81015/frame_0003.json",
+      "bytes": 2540,
+      "sha256": "33a5c61cf4dd56d4e37c7a4d7b02936b09341b25ce7ba3372e31a48ce578e604"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0000.json",
+      "bytes": 3066,
+      "sha256": "4332b4ec49ba75abe676fd76c4f8dcc77d2803391655c35dd87106d368fc55a5"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0001.json",
+      "bytes": 3068,
+      "sha256": "efad055e7fed6ebd2dd449d2e5bed7d0cf245f5fdfeeaf7d2f53f6fd1c445eb3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0002.json",
+      "bytes": 3069,
+      "sha256": "7fedf710a16d351a87288cdfed32899ed5e2eb68310ba8640a7360c97d69ec54"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82005/frame_0003.json",
+      "bytes": 3068,
+      "sha256": "04c119093a2c6db459b482d8fe9dc8921395611bc902e4c210d16a0a67f7eb6d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0000.json",
+      "bytes": 3077,
+      "sha256": "435feb5851a1fd21f87542bec69cbc49042335a002b21919bc89b98c1f70199c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0001.json",
+      "bytes": 3082,
+      "sha256": "3121f1114359cd001d16803e6cb833e5c2b1bc937eec3607d84ed8f7520a0895"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0002.json",
+      "bytes": 3082,
+      "sha256": "e6fa0f018f7e69749a484b84a347315b303e8f9b9925bfd5e03128d9096ec64f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82026/frame_0003.json",
+      "bytes": 3080,
+      "sha256": "48d05977a70896e1d96d903f0f768c6404f8fe49c35012d9648b64bba45ab3b1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0000.json",
+      "bytes": 3072,
+      "sha256": "0145beab4b12b9f159abb1e7c442dbb0157e9aa84ed95111a1e6cf91ca97bf62"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0001.json",
+      "bytes": 3075,
+      "sha256": "890edf5b0e538a4dd42e1cae29e6c268618492fa5c1ac695ea27433335e2df2b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0002.json",
+      "bytes": 3075,
+      "sha256": "ee50d470682c88932c59a2c3d8b0ca826097585582e0c6f04a5e7fb2a0f94265"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/libero/put_the_wine_bottle_on_the_rack/seed82035/frame_0003.json",
+      "bytes": 3074,
+      "sha256": "31028d3217a427332b094676ad09016ddad2d8afb91f1c82b5c0a4b16a69b565"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84004/frame_0000.json",
+      "bytes": 4329,
+      "sha256": "89e28a0a7c527ce9bf905914305720565894c6906b915a7b2b84cf5beb4e4360"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84004/frame_0001.json",
+      "bytes": 4329,
+      "sha256": "19004a001d4770681443dd2bf184e25eb10f71e630138fe0630e6a1999bf17bb"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84004/frame_0002.json",
+      "bytes": 4335,
+      "sha256": "2d6267d3ea8dfea34a6037ab8fc9f1149215281e3ce8adad75e20dde83a06bf3"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84004/frame_0003.json",
+      "bytes": 4328,
+      "sha256": "16f2dccf300170f296915de6dd02efe4967af19451a49a3f94733d2f57b4eba5"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84007/frame_0000.json",
+      "bytes": 4324,
+      "sha256": "c67ca8a2ae92327cd01bba054210abbdd8d46758b8747a545118d574313e4370"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84007/frame_0001.json",
+      "bytes": 4314,
+      "sha256": "7b71b5585de0fc3a18fdc663e15e94e15e02813b89ca101207a27517659f6440"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84007/frame_0002.json",
+      "bytes": 4308,
+      "sha256": "2d49be6d6bed39c63cffe38b3db370d46fe3f12977c6eda3d0ba683998543bcb"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84007/frame_0003.json",
+      "bytes": 4304,
+      "sha256": "333cce56e76d25e0ac1b48940c6d7f7b78e68b23e8e5cbb64fd41ff03c94fb3d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84015/frame_0000.json",
+      "bytes": 4326,
+      "sha256": "26740f214b1baaddf0c68855b213daa20659f0aa8858e006d890fc55799e19a0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84015/frame_0001.json",
+      "bytes": 4332,
+      "sha256": "f0e78b27308aa7ac8f191a1ca0ee87a0c8e9f5c8d79d4ab8f4c0195491dcfa00"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84015/frame_0002.json",
+      "bytes": 4337,
+      "sha256": "e140e3c411b405bf3e642d09165c63b8ffc2a93f6aa228050ccc8d51b9ee8b9c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_basket/seed84015/frame_0003.json",
+      "bytes": 4334,
+      "sha256": "b4d06192cd58e08dd449c267ffd38a0fa3d55527617821f9f3f4500d1f371e9d"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83025/frame_0000.json",
+      "bytes": 4318,
+      "sha256": "9b220160c7b1c28f249509160fd76048855c3eb10c8e4ea40ea59eba591c5bd4"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83025/frame_0001.json",
+      "bytes": 4325,
+      "sha256": "46c6b83effbb211800ba2b199571225d2cfa59d3b98a1a3fb5eeee009188be76"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83025/frame_0002.json",
+      "bytes": 4322,
+      "sha256": "c624d6e7aa2b86017a6c6d4a4294d654d5c0c48e37fba1119fe3b7b450d6605b"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83025/frame_0003.json",
+      "bytes": 3784,
+      "sha256": "38b92ebcfa64029b54de2415cfcbd675f99998a4d8064abc68cc184141625f32"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83037/frame_0000.json",
+      "bytes": 4338,
+      "sha256": "ad11cc5732f412395786da56a657b57f12203aa899f158089ab4fac82e55c304"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83037/frame_0001.json",
+      "bytes": 4320,
+      "sha256": "e8b3534b3eba2246bc6aaab6ab580474ff79445bf23f7711f5b4b1d9f57bb6b9"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83037/frame_0002.json",
+      "bytes": 4323,
+      "sha256": "eed6fe08fe143c3cc065f3ecf5635746bd34b99ec847be2fa30ab1071fadddd7"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83037/frame_0003.json",
+      "bytes": 4325,
+      "sha256": "65cf09f884ac14f187be0162f98d4e8df9d2be922e88ffa5b1b28dfa04489d60"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83044/frame_0000.json",
+      "bytes": 4309,
+      "sha256": "b48b987084abbfc9d5ec36c8f273d8cfbd87ecd3be905f73f7efc78743c1a398"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83044/frame_0001.json",
+      "bytes": 4300,
+      "sha256": "3dc86607ae9c579493e62d7bc898fa128b00eacffc6fafe985ede8c5c7f41dba"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83044/frame_0002.json",
+      "bytes": 4302,
+      "sha256": "b26ad5f2f5738a5f4973d289febcd2403c0bcda9131b7c836cda438e50b01850"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_bread_skillet/seed83044/frame_0003.json",
+      "bytes": 4301,
+      "sha256": "b8dc7a73e35b9b3881ffae96baf852dd664038c545ce383592c3dfd01b1ff47f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80008/frame_0000.json",
+      "bytes": 4334,
+      "sha256": "8f12282bbf5c36b715fdad8c022db97f68c1f27ae689573fe43c2ef71d92f778"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80008/frame_0001.json",
+      "bytes": 4331,
+      "sha256": "60a3c305709f87731080e2d11f927469c7604d1ca8d0ef73a76ebedbf30c4d15"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80008/frame_0002.json",
+      "bytes": 4323,
+      "sha256": "d225b903dc9ded5f4f872488a6c3a340a54abf146c8d0a807c380e7609fc3a97"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80008/frame_0003.json",
+      "bytes": 4346,
+      "sha256": "b23e5b4bb07395ffb36e37319d905539e312cd8519bbbf52f6bbaf5ccc18bf00"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80016/frame_0000.json",
+      "bytes": 4315,
+      "sha256": "4b8a7a9ba0ebe8f01512848dc8b0d7afdbf28a8766f0acae1bfbd94b1ca18510"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80016/frame_0001.json",
+      "bytes": 4328,
+      "sha256": "490bc1f1fa2d2e3cc7a4739544668598376eed9981d9ffd80ddc72c7cee364f0"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80016/frame_0002.json",
+      "bytes": 4322,
+      "sha256": "2b625f15e67da64755895695d1a0cd8a03144e3c69c6cfd81e444cfbd1c7877a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80016/frame_0003.json",
+      "bytes": 4315,
+      "sha256": "bc9fcbadfe23da86ca0cf88714ff6759b3345d06641b5ce7a0961c4a7ec16dee"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80025/frame_0000.json",
+      "bytes": 4316,
+      "sha256": "a4b2387a74a046f134ff40a789faf47f00e0d142fd4c2e0293d27d015d16b1f1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80025/frame_0001.json",
+      "bytes": 4320,
+      "sha256": "06b841c980e026454aaa3cb041377c9a27ebbdb786d935b19f6c1f56f365ba91"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80025/frame_0002.json",
+      "bytes": 4315,
+      "sha256": "a8df9a7a26387959eece930ee75b8ba8fc4695e9c1195f4150968aa23e78ca56"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_container_plate/seed80025/frame_0003.json",
+      "bytes": 4309,
+      "sha256": "505c7e2a7a350413a9604a39a552187cee91bea58de676504c741ee8d753627e"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82003/frame_0000.json",
+      "bytes": 4285,
+      "sha256": "7ce62d1ec3e8553a8c92e16f0eb6b1576b353005466bf5f874a56c5e68884a47"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82003/frame_0001.json",
+      "bytes": 4310,
+      "sha256": "5ba3546c8df81331eaada26934319fe1546dde990dfa082a5d5ebc4a0dbca06f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82003/frame_0002.json",
+      "bytes": 4310,
+      "sha256": "ee84efa7298c097dc8dc2fad3d20dad5e1f0882b76598f754cbf53a7bd6fe7c4"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82003/frame_0003.json",
+      "bytes": 4301,
+      "sha256": "7e701bb27e231453a3a167949558ea5e24b04d72edcd70a357d780ff11a1b401"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82006/frame_0000.json",
+      "bytes": 3761,
+      "sha256": "5dbc0d22105aa2a4dc41c4473559cd35b7e2e0168d57b2d2c417b8b75689b02a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82006/frame_0001.json",
+      "bytes": 3758,
+      "sha256": "282cb8f1216c3ae97fc44095c312379514f1cdc0b46c6c6cad7533e2c484896c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82006/frame_0002.json",
+      "bytes": 3760,
+      "sha256": "f4595e193d4b283b205621578033be9d685cee3954830959fa328d46a22ed170"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82006/frame_0003.json",
+      "bytes": 4320,
+      "sha256": "9792d4e2ca1b8f31babe544b5475b2c694082c22ce26547f2615318e8e97b477"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82031/frame_0000.json",
+      "bytes": 4290,
+      "sha256": "968a721c42bd4efc1404d84ff2c9e6e0f5ef3badc909eca7818ca443417cc5b5"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82031/frame_0001.json",
+      "bytes": 4294,
+      "sha256": "086d1272f33a6230153fd81a24f30da88e0e3f6eea81fc6149da981a2582c0c4"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82031/frame_0002.json",
+      "bytes": 4295,
+      "sha256": "64ca2a17766eb877ca74fc4500eeaf3e18c6c2c1dcff7073e504ce0317c7d574"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/place_mouse_pad/seed82031/frame_0003.json",
+      "bytes": 4293,
+      "sha256": "b6794d881f0821ed6f1ff4d8f0a95a154361b25187d53d1336deb5eae52a753a"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81028/frame_0000.json",
+      "bytes": 4323,
+      "sha256": "28c7e2c71d45d3e8718f843eb6ec239a9486686b58360510880b1e82c47ca1b1"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81028/frame_0001.json",
+      "bytes": 4324,
+      "sha256": "538ae5a5da658ed9379e6eaaa51f228b261aa87f443c912c381c7b0bf84127f8"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81028/frame_0002.json",
+      "bytes": 4322,
+      "sha256": "e32aceed0ad57a4c13301fd3a758ae74dc9d9bf07af1ed9b0585ba8938fc4f3f"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81028/frame_0003.json",
+      "bytes": 4323,
+      "sha256": "41bbf7aa825a07737e02bfe1d17103e9fb23bd64753590d85ac0f82047e5ec04"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81035/frame_0000.json",
+      "bytes": 4320,
+      "sha256": "ca379837000a722499bcbc11321db88ed3274d8fec2a82239cb92368c65204c6"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81035/frame_0001.json",
+      "bytes": 4313,
+      "sha256": "a5601502d77389aca8884092dfd82a559e456612f3362445e86b66d358f6c76c"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81035/frame_0002.json",
+      "bytes": 4312,
+      "sha256": "34b9cfea38d67991fb8eeb07a3e61d85ec1a04642414addf7124a4fc0db59aad"
+    },
+    {
+      "path": "result/robot_conditioned_capture_20261106/full_v4/prepared/frames/robotwin/stack_blocks_two/seed81035/frame_0003.json",
+      "bytes": 4316,
+      "sha256": "2efe1d2e3a8dd5fafd179143e09f345ac772836cdba22fa3431781ab7bd7d835"
+    },
+    {
+      "path": "skills/gpu-preflight/SKILL.md",
+      "bytes": 3547,
+      "sha256": "1a7e3bf30c82e04e3b975ecf0cbff8c98e221dfeedea1867a29c4f26fbde19bc"
+    },
+    {
+      "path": "skills/gpu-preflight/scripts/check_gpus.py",
+      "bytes": 4059,
+      "sha256": "7045e46ab3a8baf72058091ac3744c5463c4d13a6b4512dc3a4626a0f8054fff"
+    }
+  ]
+}
