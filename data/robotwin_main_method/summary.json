@@ -1,0 +1,26 @@
+{
+  "task": "place_container_plate",
+  "expected_seeds": 10,
+  "completed_seeds": 10,
+  "complete": true,
+  "clean_successes": 8,
+  "clean_evaluated": 10,
+  "paired_clean_success_n": 8,
+  "runtime_errors": [],
+  "conditions": {
+    "random": {
+      "failures": 0,
+      "n": 8,
+      "ASR": 0.0,
+      "robot_successes": 8,
+      "robot_evaluated": 10
+    },
+    "method": {
+      "failures": 1,
+      "n": 8,
+      "ASR": 0.125,
+      "robot_successes": 8,
+      "robot_evaluated": 10
+    }
+  }
+}

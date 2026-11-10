@@ -1,0 +1,16 @@
+{
+  "task": "place_container_plate",
+  "protocol_sha256": "442ad3a8e9d7aa12ba629e106318108651e58c39f006262710c3f267b6762d28",
+  "training_result_sha256": "7e069a5685d43080decfa6b0eeec54ef70ed2717240b897a675b75817953fadb",
+  "textures": {
+    "clean": null,
+    "random": {
+      "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/main_method/random.png",
+      "sha256": "eb0b30f301cab984ccdda78a51bd5a51aeb05d8f0e532dfa1adccb659ae5c36d"
+    },
+    "method": {
+      "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/main_method/train/place_container_plate/texture_0500.png",
+      "sha256": "c58a2409ede2e9094f890ed1fd507f5057a77431238d3176f3f80098719e94e3"
+    }
+  }
+}

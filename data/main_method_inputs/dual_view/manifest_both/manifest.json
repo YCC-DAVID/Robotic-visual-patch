@@ -1,0 +1,63 @@
+{
+  "stage": "development",
+  "geometry": {
+    "patch_m": 0.13,
+    "cell_world": [
+      0.04532392120444463,
+      0.11654159759599582,
+      0.9015
+    ]
+  },
+  "frequency": "full",
+  "mode": "both",
+  "train_run": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/train_both",
+  "train_config_sha256": "80cf45aed5b637a1fb9767ba3aa36567c4068064a8c5bbd43924e3dda122fc54",
+  "textures": {
+    "clean": null,
+    "random": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/manifest_both/random.png",
+    "optimized": "/home/user1/workspace/chence/WAMattack/pi05probe/out/dual_view/train_both/texture_0500.png"
+  },
+  "texture_sha256": {
+    "clean": null,
+    "random": "d3f845aa17142cd5ed4aac8f030eb0090a43f9d51187c32fc5dd3d96ce7178bd",
+    "optimized": "f55fd7b5ceb4e0df2be80e70de3b732d729449d6e271b6f004d6324eb1ff7aef"
+  },
+  "random_seed": 20261008,
+  "random_parameter_shape": [
+    1,
+    3,
+    128,
+    128
+  ],
+  "training_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "validation_indices": [
+    10,
+    11
+  ],
+  "development_indices": [
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "confirmation_indices": [
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "notes": "Same raw simulator trajectories, per-geometry calibration, 500x8 training. Both cameras see real render. Development selects sizes; confirmation must not be used to adapt a selected candidate."
+}

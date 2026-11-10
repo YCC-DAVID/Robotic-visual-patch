@@ -1,0 +1,483 @@
+{
+  "schema": "robotwin-main-method-v1",
+  "benchmark": "RoboTwin",
+  "tasks": [
+    "place_container_plate"
+  ],
+  "first_ready_batch": true,
+  "ready_tasks": [
+    "place_container_plate"
+  ],
+  "remaining_task_scope": "other49 require their own pools, position selection and calibration; no coverage claim",
+  "method": {
+    "schema": "robotwin-main-texture-eot-train-v1",
+    "task": "place_container_plate",
+    "checkpoint": "/shared/user65/workspace/chence/WAMattack/checkpoints/pi05_robotwin2_pytorch",
+    "checkpoint_sha256": "de8e03a445f3e0af417a9d61a903d342fca5b6a5b4fdc6f20445e14ad25692eb",
+    "source_manifest": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/collection_manifest.json",
+    "source_manifest_sha256": "abd6bc2aa4998892e6dd4d9d591440b8b033d15897bd3ba9497af797f0159af4",
+    "records": [
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25000_q000_d0.npz",
+        "sha256": "7a8cf1bd2cd849d2886715ecd63839cc5fdf3721b97f99c0c7d6751c4e683afa",
+        "seed": 25000,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25000_q001_d0.npz",
+        "sha256": "413f935c101a60fc17f986911d940a9422159745340b46cac05d8cd815c77186",
+        "seed": 25000,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25001_q000_d0.npz",
+        "sha256": "b942d91619ec1614582ef30697abb8e239427f08e7d84d70f6c8909496a3d8f5",
+        "seed": 25001,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25001_q001_d0.npz",
+        "sha256": "a499d9d1744f6964e895eab8e8c915074fd5d588bd4a6e2e355aa68d86ca4d4e",
+        "seed": 25001,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25002_q000_d0.npz",
+        "sha256": "a891478179ba77463c974b2b4a9252b1f73f2a956231f0690f6eede1e05617ab",
+        "seed": 25002,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25002_q001_d0.npz",
+        "sha256": "04cb3664f68e1e31015c1192bc4856a02832c7e79a8dae03763708f07ecfcf20",
+        "seed": 25002,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25003_q000_d0.npz",
+        "sha256": "a7c33d667d5b2368f4f050089859b34975aa03921c2f538daad72c1ddaab13f7",
+        "seed": 25003,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25003_q001_d0.npz",
+        "sha256": "e5a373f52579343eed29501a838bcfaffbedddd067ae77fc3d238408cecee1a6",
+        "seed": 25003,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25004_q000_d0.npz",
+        "sha256": "d9ea6a85138814b61dd0d50d791b11c73a9f55327f519ac7e940beb659916f06",
+        "seed": 25004,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25004_q001_d0.npz",
+        "sha256": "bc953b2c6efb39e3b5dc16215b08c3036e9607322fa804aff225381d66155ddb",
+        "seed": 25004,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25005_q000_d0.npz",
+        "sha256": "5a896cbc7da325e04f31d1bffbfff04d72c992a143dbdb965b85aa96418ca709",
+        "seed": 25005,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25005_q001_d0.npz",
+        "sha256": "ab4df53581c2f0f8edefe65c1e391cd5d8881fb0a15cdabe5fbbcd3542c6d1e6",
+        "seed": 25005,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25006_q000_d0.npz",
+        "sha256": "7516b5dc2a45816e3f3e51af34128a7b2246595195a86fe39a39e2d244eb96ba",
+        "seed": 25006,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25006_q001_d0.npz",
+        "sha256": "488e9adc920746517a1416d7022722f9058f27e32a4eb1c60f9d17e82797bc53",
+        "seed": 25006,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25007_q000_d0.npz",
+        "sha256": "51ba5032ec4040395a29185c9af92c379a6769add6ee247fec56ca2678280aec",
+        "seed": 25007,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25007_q001_d0.npz",
+        "sha256": "5fa5d8f1cd8c526c0b37e7abf2b1758c3b94b8c15694b6d565228bb57528e1ec",
+        "seed": 25007,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25008_q000_d0.npz",
+        "sha256": "2ac29aea7a0f60cbb04631ca867f6c13a0195452c3061f49cc713bc38e300e32",
+        "seed": 25008,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25008_q001_d0.npz",
+        "sha256": "1fd303b87a56d4b46b15b0d6afa25e5525dd1624c66f7b9cb323af95030b4f8f",
+        "seed": 25008,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25009_q000_d0.npz",
+        "sha256": "7558839996ee82abd86edb5111065a806a826466735f11b90ba450fed076c980",
+        "seed": 25009,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25009_q001_d0.npz",
+        "sha256": "6434a33ff340e879167bd2bd6525b03e2b686c879ed2fc6a97ebb568eedb501c",
+        "seed": 25009,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25010_q000_d0.npz",
+        "sha256": "c5b5a6f826e27fef402078383e0fb50c5d79e1d1bdfdb1bfa5554e2f1f1a8824",
+        "seed": 25010,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25010_q001_d0.npz",
+        "sha256": "39b3d266284fbf1c9beed0df58c8de449fe3cb07c47c29c84e8a71550099cfec",
+        "seed": 25010,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25011_q000_d0.npz",
+        "sha256": "a7aef8abb469c21fc3a8668530ddff5c70da7b9a2de4f24219ecdf764a503260",
+        "seed": 25011,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25011_q001_d0.npz",
+        "sha256": "7e54d5ce9ed5afb9898d6005657f014c0a66564fd9e541719b6f65494f3e3580",
+        "seed": 25011,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25012_q000_d0.npz",
+        "sha256": "ee11eb89610e68e2c199719012d9864ba906d26211de1f73da2bfc74187216c1",
+        "seed": 25012,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25012_q001_d0.npz",
+        "sha256": "34178a8f03eeb1b990d71842a68911bf094d6ff1e5d781b1b00acae9e8ac6f1e",
+        "seed": 25012,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25013_q000_d0.npz",
+        "sha256": "d2afb10c86de39d15df327bf4f09ce8e76e3f91d410128c45404b320b4121d38",
+        "seed": 25013,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25013_q001_d0.npz",
+        "sha256": "dcfb4e32dcaa9397197e863b6087d6c991c5f12fb81a1ece953fcc8b5450cde1",
+        "seed": 25013,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25014_q000_d0.npz",
+        "sha256": "2741e98f6228f6adb177d02519687154ea96db03e95560a3b2bd57f9006ad73b",
+        "seed": 25014,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25014_q001_d0.npz",
+        "sha256": "d252a123c77c3539dcff9b0743000a60eb5f52f92336eef5505aac9ebde79fc6",
+        "seed": 25014,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25015_q000_d0.npz",
+        "sha256": "d25dbac1d5612bb95306bd5b6d25c1e60c9f7b341b6f6aa6cfded2675f61a19c",
+        "seed": 25015,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25015_q001_d0.npz",
+        "sha256": "6f19c205b02dce7880d3988282113f839ecc2dcc40c49f54e732153fa4d28686",
+        "seed": 25015,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25016_q000_d0.npz",
+        "sha256": "40d79fb65acfc8c4f7f2d447769536a083ec776a52e961cc036726e81c1ce5b9",
+        "seed": 25016,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25016_q001_d0.npz",
+        "sha256": "d0120abac8f233937e4fce8c15ac8941dfe3deaa870cd9fafc781e7e68bfe329",
+        "seed": 25016,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25017_q000_d0.npz",
+        "sha256": "82ed0b73c001acc802794615ab96a6980a9cf3c179e8d151a99ab36e90d08a1a",
+        "seed": 25017,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25017_q001_d0.npz",
+        "sha256": "390ef8800ca13a9acb85c86eff4e2cacd17c243c77a1d5b33d50b99032c4ff57",
+        "seed": 25017,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25018_q000_d0.npz",
+        "sha256": "626d7b49cbab4a5cce402b222280bdb7d325ed62e204f2928f07fef9b38c32cc",
+        "seed": 25018,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25018_q001_d0.npz",
+        "sha256": "da3ec7522cca76ebdd20cc6ed6de526abc42085af9bd8b6db698772c5d2be678",
+        "seed": 25018,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25019_q000_d0.npz",
+        "sha256": "1a105aa7303c53de7d80deca6d59ad5a00c56e97353a5b802e4b67dd8085047b",
+        "seed": 25019,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25019_q001_d0.npz",
+        "sha256": "a63afc403289dfda5ca19d0fe7de96576f0783f0ae967365b5f45fe2b4e67930",
+        "seed": 25019,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25020_q000_d0.npz",
+        "sha256": "aad4b45d17a0ea822dd586c6b7318ef97ac2b9d7f152745b39759936e4d2a0d2",
+        "seed": 25020,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25020_q001_d0.npz",
+        "sha256": "877d4a940bbb33a330f9bb34fe8ff319d8cc5af5afe9b61bf1eb1f007f659105",
+        "seed": 25020,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25021_q000_d0.npz",
+        "sha256": "e8fa19faf3e94c0e4d0dea12eead02fd4e612b99fc8cb3d57e7ebb142c6285d0",
+        "seed": 25021,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25021_q001_d0.npz",
+        "sha256": "541a8910dbfaf0e30a05c27e38e418af7a0edbe76d31116f2af5fdfceb2ec0d9",
+        "seed": 25021,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25022_q000_d0.npz",
+        "sha256": "99931cefcf00ea1e8426440f9c87600d6a2897956bc137614d56b047b07b36b3",
+        "seed": 25022,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25022_q001_d0.npz",
+        "sha256": "01ffbac5da9d88c6a55e1a3e020132a37884d5d8d240723cf950cf355305d37e",
+        "seed": 25022,
+        "query": 1,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25022_q002_d0.npz",
+        "sha256": "ada2db683b661b5123dea637ce684b78e2688ed4e13251ebc947008395e22687",
+        "seed": 25022,
+        "query": 2,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25023_q000_d0.npz",
+        "sha256": "8d5ea0cf52d9c6fad4dfaac38bd7056d460152147b1a09f7d14a7451004be42a",
+        "seed": 25023,
+        "query": 0,
+        "draw": 0
+      },
+      {
+        "path": "/shared/user65/workspace/chence/WAMattack/robotwinprobe/out/frequency_bands_13cm_20261030/bank/s25023_q001_d0.npz",
+        "sha256": "aa2f3d44dc7ec33c5b852bb225c6bc8c82178fb222e6ba168007e2a9918be63b",
+        "seed": 25023,
+        "query": 1,
+        "draw": 0
+      }
+    ],
+    "data": "49 nominal calibrated policy approach states from 24 clean-policy training seeds; approach only; no expert-success filtering",
+    "train_seeds": [
+      25000,
+      25001,
+      25002,
+      25003,
+      25004,
+      25005,
+      25006,
+      25007,
+      25008,
+      25009,
+      25010,
+      25011,
+      25012,
+      25013,
+      25014,
+      25015,
+      25016,
+      25017,
+      25018,
+      25019,
+      25020,
+      25021,
+      25022,
+      25023
+    ],
+    "independent_validation": false,
+    "patch_m": 0.13,
+    "center_m": [
+      -0.0400000000000002,
+      0.2400000000000001,
+      0.741
+    ],
+    "resolution": 128,
+    "steps": 500,
+    "batch": 8,
+    "lr": 0.01,
+    "initialization": "gray .5",
+    "seed_batch": 20261005,
+    "noise_seed": 20260901,
+    "eot_seed": 2026102901,
+    "objective": "full 32x32 first-t=1 velocity SSE against same-noise clean",
+    "eot": {
+      "angle_deg": [
+        -15.0,
+        15.0
+      ],
+      "dx_fraction": [
+        -0.05,
+        0.05
+      ],
+      "dy_fraction": [
+        -0.05,
+        0.05
+      ],
+      "scale": [
+        0.9,
+        1.1
+      ],
+      "gain": [
+        0.9,
+        1.1
+      ]
+    },
+    "eot_scope": "one texture-plane draw per sampled state, shared before all three camera proxies; fixed world footprint",
+    "proxy": "existing native SAPIEN five-gray response, linear-RGB 4x4 footprint quadrature and global response",
+    "proxy_fidelity": "random-interior RMSE is measured and reported, not asserted as <0.02; this SAPIEN proxy has a known larger fidelity gap",
+    "checkpoint_selection": "fixed final step500; no test-driven selection",
+    "source_sha256": {
+      "main_method_train.py": "4fa209009cdab611d90d2251c966887bcdefb498ecb1633686faaf4166b648ba",
+      "main_method_common.py": "36a55f4f43ee387295fc54c13b37e03856203f062fdf297cef7cee1f2854f30e",
+      "crossarch_proxy.py": "9ea757e00a99ff22bda25508e1a520a20bcde959a9f21c79e1ff02744c51e6a1",
+      "crossarch_backend.py": "ec6cfcd4169562577d71b445d63c4b06f266221111e6e2687c6b61a55a597866",
+      "render_model.py": "a90fbadf5c97b8ba3a2b849bb8e4ed6b8f4f6755b65397f48c5fca4a47a23dbd",
+      "texture_eot.py": "b0c395aeea15e72fed23d46b5e0c75e2ae874226bac8e5efae2f5da17f218e56"
+    }
+  },
+  "evaluation": {
+    "seeds": [
+      26000,
+      26001,
+      26002,
+      26003,
+      26004,
+      26005,
+      26006,
+      26007,
+      26008,
+      26009
+    ],
+    "conditions": [
+      "clean",
+      "random",
+      "method"
+    ],
+    "task_config": "demo_clean",
+    "patch_m": 0.13,
+    "center_m": [
+      -0.0400000000000002,
+      0.2400000000000001,
+      0.741
+    ],
+    "action_horizon": 32,
+    "replan": 32,
+    "denoise_steps": 10,
+    "noise_seed_rule": "20261006+seed*1000+query",
+    "expert_prefilter": false,
+    "prompt": "actual bowl/cup on plate, same historical task prompt; all conditions share prompt",
+    "ASR": "clean-success and method-failure / matched clean successes",
+    "endpoint": "native task eval_success or official step limit; runtime errors never count as attack successes",
+    "source_sha256": {
+      "main_method_rollout.py": "028e8525040d001f7c5c33b38e41ea61980690886f9d2cdc75eef756150473f1",
+      "main_method_runtime.py": "d067b8898d1a3bd0d6e698aa0d632a08391d49b278bc70ee110b45cad55fc24c",
+      "render_geometry.py": "e23bbc187a2644be3bb639b48a6176290523830a2fcb5aea419eb4939a381c89",
+      "scene_smoke.py": "bcc837caa20a1e3d4421aab38a2064313767be965382583055a2f95173fc10fd",
+      "policy_server.py": "55666752d74f9cb38448a31863a2014d9ef235e070a3c186f1b597ee989024de"
+    }
+  }
+}

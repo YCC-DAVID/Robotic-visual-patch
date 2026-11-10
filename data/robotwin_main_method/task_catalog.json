@@ -1,0 +1,1591 @@
+{
+  "schema": "robotwin-main-method-task-readiness-v1",
+  "updated": "2026-11-06T20:10:37.362556+00:00",
+  "benchmark": "RoboTwin2.0",
+  "method": "per-task render-proxy plus texture-plane EOT",
+  "task_count": 50,
+  "catalog_source": {
+    "directory": "third_party/RoboTwin/description/task_instruction",
+    "ordering": "alphabetical official instruction JSON filename",
+    "performance_based_selection": false
+  },
+  "frozen_checkpoint": {
+    "path": "checkpoints/pi05_robotwin2_pytorch",
+    "model": "pi05_robotwin2",
+    "frozen": true,
+    "modelcard": "checkpoints/pi05_robotwin2_pytorch/README.md",
+    "modelcard_sha256": "9b190ee56b9ab62f8a76edee1c698b5bbefd0b75a12ffa6ae214abfdfec51a0f",
+    "declared_training": {
+      "distinct_tasks": 50,
+      "clean_episodes_per_task": 50,
+      "randomized_episodes_per_task": 500,
+      "total_episodes": 27500
+    },
+    "named_training_task_membership_verified": false,
+    "named_membership_note": "Model card declares 50 training tasks but does not enumerate their names; catalog names come from the official task instruction directory.",
+    "source_revision": "effc6e1a99bd4d0edf9447e8ba313def67649cfe",
+    "weights_sha256": "de8e03a445f3e0af417a9d61a903d342fca5b6a5b4fdc6f20445e14ad25692eb",
+    "weights_hash_source": "checkpoints/pi05_robotwin2_pytorch/.cache/huggingface/download/model.safetensors.metadata",
+    "weights_rehashed_for_this_catalog": false
+  },
+  "scope": {
+    "current_default_first_batch": [
+      "place_container_plate"
+    ],
+    "broader_50_task_execution_authorized": false,
+    "pending_user_scope_choice": true,
+    "libero_current_batch_tasks": 7,
+    "note": "Readiness inventory only. It does not launch training/evaluation or select tasks by model performance."
+  },
+  "counts": {
+    "nominal_calibration_ready": 1,
+    "pending_task_preparation": 49,
+    "main_method_trained": 0,
+    "main_method_tested": 0
+  },
+  "tasks": [
+    {
+      "task": "adjust_bottle",
+      "full_description": "Pick up the bottle on the table head-up with the correct arm",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/adjust_bottle.json",
+      "instruction_json_sha256": "62f87545deb98985db67c854bca2a49afe369688876b1087d41120622d2da26e",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/adjust_bottle.py",
+      "task_py_exists": true,
+      "task_py_sha256": "4f76b35e718a4c5a364dae564d35d68268755818d9062e3ed4ff393d158d0548",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "beat_block_hammer",
+      "full_description": "there is a hammer and a block on the table, use the arm to <grab the hammer> and <beat the block>",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/beat_block_hammer.json",
+      "instruction_json_sha256": "f2e419c385c80a3d8dac0bec0516b19eea6cdfa1985d754466afaff7211e8262",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/beat_block_hammer.py",
+      "task_py_exists": true,
+      "task_py_sha256": "90269f15f9ce274fb5bcad703c47b0b552ff5a2f0a3ff62d12dbe9a553018014",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "blocks_ranking_rgb",
+      "full_description": "<Place> the red block, green block, and blue block <in the order> of red, green, and blue from left to right, <placing in a row>.",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/blocks_ranking_rgb.json",
+      "instruction_json_sha256": "c814cda100d7600659a3c790267851068cffca7d736d74475192e2aac0fba6aa",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/blocks_ranking_rgb.py",
+      "task_py_exists": true,
+      "task_py_sha256": "0e632df38d9024e7952c0df7a1f59e3d011b537724e6e6588455dee4d4e6074b",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "blocks_ranking_size",
+      "full_description": "there are three blocks on the table, the color of the blocks is random, move the blocks to the center of the table, and arrange them from largest to smallest, from left to right",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/blocks_ranking_size.json",
+      "instruction_json_sha256": "815e02d899ceaf8852d758e32d0df8aeaeccfa34b63d6141397d2e95de1e6614",
+      "instruction_template_counts": {
+        "seen": 42,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/blocks_ranking_size.py",
+      "task_py_exists": true,
+      "task_py_sha256": "18ddb8ca5465f450ef03db292bcfc22e8e795fcb397f104fc24213a5fa063696",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "click_alarmclock",
+      "full_description": "click the alarm clock's center of the top side button on the table",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/click_alarmclock.json",
+      "instruction_json_sha256": "46cc55f23d3224ff3bbdd5958b90d23fba6f2dbda0ac72471e0c5744697e0424",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/click_alarmclock.py",
+      "task_py_exists": true,
+      "task_py_sha256": "f69a1ad4f1b483ab0dd82d8bad872e12047ed8d898f1fa4058de9e382ddeef49",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "click_bell",
+      "full_description": "click the <bell's top center> on the table",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/click_bell.json",
+      "instruction_json_sha256": "f0cc725a3cacb4182ee27b39f04139213af78fa2480f100f2abbf2ab0b83cd44",
+      "instruction_template_counts": {
+        "seen": 31,
+        "unseen": 7
+      },
+      "task_py": "third_party/RoboTwin/envs/click_bell.py",
+      "task_py_exists": true,
+      "task_py_sha256": "a0b7673e6ef842738999acbccaaa3d01f86d62a147bb8387cb92163218db48ac",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "dump_bin_bigbin",
+      "full_description": "Grab the small bin and pour the balls into the big bin",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/dump_bin_bigbin.json",
+      "instruction_json_sha256": "cbd1922bc3b793289acb349b77061ec9a668e922403323162aee2ae1420148de",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/dump_bin_bigbin.py",
+      "task_py_exists": true,
+      "task_py_sha256": "3bd57fe9172d59731db1ccf1bc9605dfe3ef08a0f7224edc720ea4812c214611",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "grab_roller",
+      "full_description": "use both arms to grab the roller on the table",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/grab_roller.json",
+      "instruction_json_sha256": "2148b70c6c6ea702c32578d333537a32b27b666dc14da0e57e9bd298e674fc87",
+      "instruction_template_counts": {
+        "seen": 45,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/grab_roller.py",
+      "task_py_exists": true,
+      "task_py_sha256": "f0e1864199605acf59cf8982dded05129d873bb3934f200e47abafd918d41c89",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "handover_block",
+      "full_description": "use the left arm to grasp the red block on the table, handover it to the right arm and place it on the blue pad",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/handover_block.json",
+      "instruction_json_sha256": "c67350f7684c5d39cf7458c9775e087670e4f03828cea94536f1a7a7d203edd2",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/handover_block.py",
+      "task_py_exists": true,
+      "task_py_sha256": "5439712296d7e143d41f8e78b4ab86cd4fad7fb98f40f5f5abb067a462d17650",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "handover_mic",
+      "full_description": "Use one arm to grasp the microphone on the table and handover it to the other arm",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/handover_mic.json",
+      "instruction_json_sha256": "808af664ff5a7fd3303b55b8a09f5d6048287792e6ffa769df74af21a492fbfe",
+      "instruction_template_counts": {
+        "seen": 45,
+        "unseen": 7
+      },
+      "task_py": "third_party/RoboTwin/envs/handover_mic.py",
+      "task_py_exists": true,
+      "task_py_sha256": "41ed0f2561cc8f1ae2449ba405decd4f5d7e3b80243b60921598657551891b17",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "hanging_mug",
+      "full_description": "Use left arm to pick the mug on the table, rotate the mug and put the mug down in the middle of the table, use the right arm to pick the mug and hang it onto the rack.",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/hanging_mug.json",
+      "instruction_json_sha256": "241be0ee8011f888c613575ec58a8789f22ab54c1829cefeb7a9fe6ee048eed2",
+      "instruction_template_counts": {
+        "seen": 42,
+        "unseen": 8
+      },
+      "task_py": "third_party/RoboTwin/envs/hanging_mug.py",
+      "task_py_exists": true,
+      "task_py_sha256": "8793ed6be6a80b18a10690767a1910c3c49a7a9e4887ecbdd48a191ca3e03034",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "lift_pot",
+      "full_description": "use BOTH!!! arms to lift the pot",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/lift_pot.json",
+      "instruction_json_sha256": "9b145355b15a87d72fa1561151d16d9a71faa242a3f287ffad546825c393f63b",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/lift_pot.py",
+      "task_py_exists": true,
+      "task_py_sha256": "347e06f3f9f82b1bc35882671bbbdea50b6e3c77fff0f7fb4449b024875402eb",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "move_can_pot",
+      "full_description": "there is a can and a pot on the table, use one arm to <pick up the can> and <move it to beside the pot>",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/move_can_pot.json",
+      "instruction_json_sha256": "a82cfb64ee7d642b2b8c1da7cd9a0fcad522574782575653e1e89e740ab7afe5",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/move_can_pot.py",
+      "task_py_exists": true,
+      "task_py_sha256": "ea838bb2502199610eea6cc058a4ba5fc7abb01c3d8ee0705c44854ddca20186",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "move_pillbottle_pad",
+      "full_description": "Use one arm to pick the pillbottle and place it onto the pad.",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/move_pillbottle_pad.json",
+      "instruction_json_sha256": "37fe85c95f87ac30506a597bfcd01064265cf0c09a8adb8fc5a91f54859f6d12",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/move_pillbottle_pad.py",
+      "task_py_exists": true,
+      "task_py_sha256": "a5db7c65db15c2273d1f9e99fab8fc00533a27b740a45161c9402d43b8aa6824",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "move_playingcard_away",
+      "full_description": "use the arm to <pick up the playing card> and <move it away from the table>.For example, if the playing card is on the outward side of the table, you should move it further outward side of the table.",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/move_playingcard_away.json",
+      "instruction_json_sha256": "c65cfdbc0bb65132adeeb8ffcd4ccc76d388df36fc3942b18b7b58e30f49b81b",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/move_playingcard_away.py",
+      "task_py_exists": true,
+      "task_py_sha256": "edf557d5a29ab724860651e24398e03c400a71e4c82bdbf2cedd3958fbfb6cc2",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "move_stapler_pad",
+      "full_description": "use appropriate arm to move the stapler to a colored mat",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/move_stapler_pad.json",
+      "instruction_json_sha256": "69b41ecebdbc2c9fb8492b571505a1468116e4b1c588b1f0f2d10d8690179eb0",
+      "instruction_template_counts": {
+        "seen": 49,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/move_stapler_pad.py",
+      "task_py_exists": true,
+      "task_py_sha256": "c2b7aa7bf4e896afc392a8cf1ac107b6982088a459c716de005a3412fcdedd6d",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "open_laptop",
+      "full_description": "use one arm to open the laptop",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/open_laptop.json",
+      "instruction_json_sha256": "7b549a1ca76c67955a2b89256a26eb6cfcaa400c28758eb5df1455bea95faa29",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/open_laptop.py",
+      "task_py_exists": true,
+      "task_py_sha256": "ec9d157a7d7f09a096807dff113b41c095317d9910b05037bf3e8c8865be313a",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "open_microwave",
+      "full_description": "Use one arm to open the microwave.",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/open_microwave.json",
+      "instruction_json_sha256": "c75c294f0591e6ab4b2198833d4871a3ad553250884680d02ba6959a74fe4261",
+      "instruction_template_counts": {
+        "seen": 39,
+        "unseen": 8
+      },
+      "task_py": "third_party/RoboTwin/envs/open_microwave.py",
+      "task_py_exists": true,
+      "task_py_sha256": "ad679b7753fc50487ba8034570e3b94aa7bfc84756048b94580fa3d2516a1bd0",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "pick_diverse_bottles",
+      "full_description": "simultaneously pick up the two different bottles, one with each arm",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/pick_diverse_bottles.json",
+      "instruction_json_sha256": "e96317aca064a30699ec2244d058a184fc143f007ed53175efb3ef750c630b49",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/pick_diverse_bottles.py",
+      "task_py_exists": true,
+      "task_py_sha256": "95ebb80fa96eafd0b7ff5518251c2a7aa42f22ef9b7cfdda4e80eac511f06151",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "pick_dual_bottles",
+      "full_description": "simultaneously pick up one bottle with each arm",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/pick_dual_bottles.json",
+      "instruction_json_sha256": "aedbdd5d0f9c562a4f6bc7c3459996e1b786a648cbac41c955faee9c0eb75085",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/pick_dual_bottles.py",
+      "task_py_exists": true,
+      "task_py_sha256": "422f23510f3662405dcb5518d1ebe8a0270935849a4b02a2585615ff7bffc4ef",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_a2b_left",
+      "full_description": "use appropriate arm to place object A on the left of object B",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_a2b_left.json",
+      "instruction_json_sha256": "4b8a3c065fc3b37412efb393e54149f7ac35f24a275b87657383a2af727a34e9",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_a2b_left.py",
+      "task_py_exists": true,
+      "task_py_sha256": "9d50d15b8461691484820a3de90b661feba31d8a164581d42b0f68142990e599",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_a2b_right",
+      "full_description": "use appropriate arm to place object A on the right of object B",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_a2b_right.json",
+      "instruction_json_sha256": "c3466a444a36faf555bc16bf30b974c9a017ca2fa1c797887669dc6f55ca47b7",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_a2b_right.py",
+      "task_py_exists": true,
+      "task_py_sha256": "41f805f7d621038d38d06aafa7d27f6b1184217772cbe44314988c15a2409dbc",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_bread_basket",
+      "full_description": "place every bread on the table into the basket, using the available arm or arms",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_bread_basket.json",
+      "instruction_json_sha256": "3a88066872b1ced991e7b76d9a759329fdde0da835ee31597f63eba31053cd8c",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_bread_basket.py",
+      "task_py_exists": true,
+      "task_py_sha256": "50c433166301a7f0ac8615d041cc51aa673746b5b7d6fcc0b6f29790c560c053",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_bread_skillet",
+      "full_description": "use one arm to lift and hold the skillet while the other arm places the bread into it",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_bread_skillet.json",
+      "instruction_json_sha256": "9d29f1289b11755b02089431bd5bb9b4dd4b762419fb073022513b32418b8345",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_bread_skillet.py",
+      "task_py_exists": true,
+      "task_py_sha256": "b1fa08d7f23d8bcd933ea7d64904fea17f67dbe58101c66e42c6addbfdbbcd73",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_burger_fries",
+      "full_description": "simultaneously pick up the hamburger and fries with both arms, then place both foods on the tray",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_burger_fries.json",
+      "instruction_json_sha256": "af9a9d757e79b408f39a8a3a22a5e727f23369b3dcbd0e7a064a7f67055b8664",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_burger_fries.py",
+      "task_py_exists": true,
+      "task_py_sha256": "19e8a3428e677839e7e51ae6488752acc940a7d2bc8ee54587c354b422ba6d2c",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_can_basket",
+      "full_description": "use one arm to pick up the can, put it into the basket, and use another arm to lift the basket",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_can_basket.json",
+      "instruction_json_sha256": "c72a58e58e33b7179406018ed480be9dd7305b7f42a4f1105658d587b533d88d",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_can_basket.py",
+      "task_py_exists": true,
+      "task_py_sha256": "9f24e5ac98146babe93c68cb46baaf1d7bf21e38dbfc7c0b29e7020ae764e7f0",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_cans_plasticbox",
+      "full_description": "simultaneously pick up both cans with separate arms, then place the left can and right can into the plastic box",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_cans_plasticbox.json",
+      "instruction_json_sha256": "58c5e951f5daac2a21bd127c36fe63d7a6341ea5ce048e7564a6314901820475",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_cans_plasticbox.py",
+      "task_py_exists": true,
+      "task_py_sha256": "5d004110de53d95c7a6fc7721f9136d96b9792a61b97686f7b5489ff7ec48a5f",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_container_plate",
+      "full_description": "place the container onto the plate",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_container_plate.json",
+      "instruction_json_sha256": "096eb4b5b1ceda0c3d724058e6088e3387d249d9a6c630d9bef3c0b12828cfc6",
+      "instruction_template_counts": {
+        "seen": 16,
+        "unseen": 4
+      },
+      "task_py": "third_party/RoboTwin/envs/place_container_plate.py",
+      "task_py_exists": true,
+      "task_py_sha256": "7a288f27f61e96fe905d5cfb80eb0a4fd8e490c829f2f02149951266012a3aee",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "nominal_calibration_ready_needs_fresh_eot_training",
+      "task_pool": "ready_49_approach_states_from24_clean_policy_training_seeds",
+      "patch_position": "existing_fixed_13cm_position",
+      "render_calibration": "ready_nominal_three_camera",
+      "prompt_adapter": "existing_place_container_plate_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "fresh_matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ],
+      "calibration_provenance": {
+        "collection_manifest": "robotwinprobe/out/frequency_bands_13cm_20261030/collection_manifest.json",
+        "collection_manifest_sha256": "abd6bc2aa4998892e6dd4d9d591440b8b033d15897bd3ba9497af797f0159af4",
+        "record_hashes_checked": true,
+        "nominal_records": 49,
+        "training_seeds": [
+          25000,
+          25001,
+          25002,
+          25003,
+          25004,
+          25005,
+          25006,
+          25007,
+          25008,
+          25009,
+          25010,
+          25011,
+          25012,
+          25013,
+          25014,
+          25015,
+          25016,
+          25017,
+          25018,
+          25019,
+          25020,
+          25021,
+          25022,
+          25023
+        ],
+        "patch_m": 0.13,
+        "center_m": [
+          -0.0400000000000002,
+          0.2400000000000001,
+          0.741
+        ],
+        "yaw_deg": 0,
+        "light": "nominal",
+        "views": [
+          "head_camera",
+          "left_camera",
+          "right_camera"
+        ],
+        "scope": "policy approach states only; independent validation not established",
+        "no_outcome_filter": true
+      }
+    },
+    {
+      "task": "place_dual_shoes",
+      "full_description": "use both arms to pick up the two shoes on the table and put them in the shoebox, with the shoe tip pointing to the left",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_dual_shoes.json",
+      "instruction_json_sha256": "61e41ff4a6ab157ed633faf09dc47424e1d985e392fc51b0d2213127a7db9bf0",
+      "instruction_template_counts": {
+        "seen": 48,
+        "unseen": 9
+      },
+      "task_py": "third_party/RoboTwin/envs/place_dual_shoes.py",
+      "task_py_exists": true,
+      "task_py_sha256": "f35c4a133e1de567b274cbd15f158f585eb05e32aeb05be88839d249d0d7ab9e",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_empty_cup",
+      "full_description": "use an arm to place the empty cup on the coaster",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_empty_cup.json",
+      "instruction_json_sha256": "95de3567883298db94e311e4c363f5474a9a7545dcbd55751b273f4e0523d86e",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_empty_cup.py",
+      "task_py_exists": true,
+      "task_py_sha256": "424bbd61f990ebfffb283eb152d17103c2a990edd20f68229203a96a2fd4d581",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_fan",
+      "full_description": "grab the fan and place it on a colored mat, <make sure the fan is facing the robot!(THIS MUST BE REFERRED TO>",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_fan.json",
+      "instruction_json_sha256": "915a824f58307dd30e7b13375dd901a906bead2fda3bb7be6c1d883a05658102",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_fan.py",
+      "task_py_exists": true,
+      "task_py_sha256": "7e8be55f1f26ce6128c254b50464edc438a96f272581ccb19827521bc679c237",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_mouse_pad",
+      "full_description": "grab the mouse and place it on a colored mat",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_mouse_pad.json",
+      "instruction_json_sha256": "2b839baba447bc28528533e585445ca090ffa776414e41063d00f97e69fcee90",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_mouse_pad.py",
+      "task_py_exists": true,
+      "task_py_sha256": "369bf399d0fd6a2687abb7d80b8feb6101c8b5405d33f9de63bbbdaaea7b73d0",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_object_basket",
+      "full_description": "use one arm to grab the target object and put it in the basket, then use the other arm to grab the basket, and finally move the basket slightly away",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_object_basket.json",
+      "instruction_json_sha256": "2d7972e2c184abe1cb65d97f992ece56c56dfb5f8cdc22761ce2e1bfd1f9fc79",
+      "instruction_template_counts": {
+        "seen": 33,
+        "unseen": 9
+      },
+      "task_py": "third_party/RoboTwin/envs/place_object_basket.py",
+      "task_py_exists": true,
+      "task_py_sha256": "e809bd3eabac48cb34589f164291b04b9e2fbf6cc1ebd8c4024c0af8e265ed48",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_object_scale",
+      "full_description": "use one arm to grab the object and put it on the scale",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_object_scale.json",
+      "instruction_json_sha256": "f2f55311cc540b79d50a767c4d07cd238e1c17ebdc23ef46bde5a31065baf7a2",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_object_scale.py",
+      "task_py_exists": true,
+      "task_py_sha256": "541e5e89582b05f4a82f19712c6a2ad6fd884d8f98bb041072009784fbdf633e",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_object_stand",
+      "full_description": "use appropriate arm to place the object on the stand",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_object_stand.json",
+      "instruction_json_sha256": "0d83ea204b1e3fe6a74c58f6072524f7f5f2b446c9e52f804246f20bd1a84878",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_object_stand.py",
+      "task_py_exists": true,
+      "task_py_sha256": "62a6b5d93513d61ad67756a96c9375979249531b55ac0957d233f597826ee58e",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_phone_stand",
+      "full_description": "pick up the phone and put it on the phone stand",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_phone_stand.json",
+      "instruction_json_sha256": "8411896081df6efc4a895dbe1a4813becfa812ee429286fc7b756212e2fee733",
+      "instruction_template_counts": {
+        "seen": 5,
+        "unseen": 1
+      },
+      "task_py": "third_party/RoboTwin/envs/place_phone_stand.py",
+      "task_py_exists": true,
+      "task_py_sha256": "719cf84ebf997b8d15d0ef9f997d439da62d64067a292b6008433da3536a0216",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "place_shoe",
+      "full_description": "use one arm to grab the shoe from the table and place it on the mat",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/place_shoe.json",
+      "instruction_json_sha256": "f325857f6e9fc110f397cf9fed23d0ac3e3c78d156a301e59b38b86a2c69948d",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/place_shoe.py",
+      "task_py_exists": true,
+      "task_py_sha256": "9e9b29eaca488f41617127070add87f33900c37db0d286a4c4b08e2138cbfc6f",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "press_stapler",
+      "full_description": "Use one arm to press the stapler.",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/press_stapler.json",
+      "instruction_json_sha256": "7062168b216b2a5a6f575741ff834a07f88bca17ea885cd372460eb4d5a8bf82",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/press_stapler.py",
+      "task_py_exists": true,
+      "task_py_sha256": "69274cf09aa1d4ba51469621461683b5225b8f98cf7837f821e848196ce51f9c",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "put_bottles_dustbin",
+      "full_description": "use arms to grab the bottles and put them into the dustbin to the left of the table",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/put_bottles_dustbin.json",
+      "instruction_json_sha256": "cbaf7e58e8c0fe47b8d323f83ba989976b79d5c741725e948548b9e1139153cd",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/put_bottles_dustbin.py",
+      "task_py_exists": true,
+      "task_py_sha256": "1c03a4b227daa7d285fa366944f1f75773e32dc6a7b73ab693217a13fcd42795",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "put_object_cabinet",
+      "full_description": "use one arm to hold the object and the other arm to open the cabinet drawer, then place the object inside",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/put_object_cabinet.json",
+      "instruction_json_sha256": "9351ba0992276b5f9fab1621aa1aaba9d50dc99cb2f9ee785b6305b2a98b8f8e",
+      "instruction_template_counts": {
+        "seen": 29,
+        "unseen": 2
+      },
+      "task_py": "third_party/RoboTwin/envs/put_object_cabinet.py",
+      "task_py_exists": true,
+      "task_py_sha256": "ea3ffdb9fc1fef3b349beb874d2305f2217dfffa22a282845a93edff69423417",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "rotate_qrcode",
+      "full_description": "Use arm to catch the qrcode board on the table, pick it up, rotate to let the qrcode face towards you, then put it back on the table and release it",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/rotate_qrcode.json",
+      "instruction_json_sha256": "8873ecfa306b98774fdf0450fd01e50dce3ac1ef3dec23a88c512ec15dd011fc",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/rotate_qrcode.py",
+      "task_py_exists": true,
+      "task_py_sha256": "382165e22a2a52a73958ff69c662e57a4d1f0bc8cb7cecf3e9dd1f5ba11defa9",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "scan_object",
+      "full_description": "simultaneously pick up the scanner and the object with separate arms, then scan the object",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/scan_object.json",
+      "instruction_json_sha256": "6748923128a9b4c523efc69f5b94d99630f6887b98558c82755dcba50f367436",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/scan_object.py",
+      "task_py_exists": true,
+      "task_py_sha256": "860dfe2cc86d180096089bc87502c7904f7ce2efb64fb32620c1720ca0178c2b",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "shake_bottle",
+      "full_description": "Shake the bottle with proper arm",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/shake_bottle.json",
+      "instruction_json_sha256": "ed6db88170f6f5c95fda09a3386078f43d1bc85b7ef5f74f64026866d7f9248f",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/shake_bottle.py",
+      "task_py_exists": true,
+      "task_py_sha256": "2e37395b302eb37ecac39b2a676ea119c4bf7a1dcc9e6df75cd683a5cf37b026",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "shake_bottle_horizontally",
+      "full_description": "Shake the bottle horizontally with proper arm",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/shake_bottle_horizontally.json",
+      "instruction_json_sha256": "2e71dd47b716f61ee4ee33776bcb2c2e6a9346e0012d0129903d46449b373759",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/shake_bottle_horizontally.py",
+      "task_py_exists": true,
+      "task_py_sha256": "def5f373a3a289c946bb32c6d01145672432dbe1d2b71a10992e5280d5f8dead",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "stack_blocks_three",
+      "full_description": "build a three-block stack at the center by placing the red block first, the green block on red, and the blue block on green",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/stack_blocks_three.json",
+      "instruction_json_sha256": "fb6f2b798f977541d347ee7c3850594be96498644c6896252bd211440a964ad2",
+      "instruction_template_counts": {
+        "seen": 30,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/stack_blocks_three.py",
+      "task_py_exists": true,
+      "task_py_sha256": "b19f1f1c5a3a2c7c7312a4e1b2e577ccd269ebb0c444c287fecbc16ff5b47fb9",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "stack_blocks_two",
+      "full_description": "there are two blocks on the table, the color of the blocks is <red, green>, <move the blocks to the center of the table>, and <stack the geen block on the red block>",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/stack_blocks_two.json",
+      "instruction_json_sha256": "0229ae6057d5304c9aa145b8925fb5ec31c358392ebbe3c26b144d096d18a498",
+      "instruction_template_counts": {
+        "seen": 44,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/stack_blocks_two.py",
+      "task_py_exists": true,
+      "task_py_sha256": "4e92a679cb5be4ef87a1b842432c930560a2c9b539a4cbcee0161e2b2112f526",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "stack_bowls_three",
+      "full_description": "stack the three bowls on top of each other",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/stack_bowls_three.json",
+      "instruction_json_sha256": "49f5b5c96242ba8807104c2f8d30c35dc4f08dce262e708cd3f4c15567e4c02f",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/stack_bowls_three.py",
+      "task_py_exists": true,
+      "task_py_sha256": "95848e9c2987e64fef2cfd928128d7a19967ba600c57dc7a6b7f1c9ea5b358e6",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "stack_bowls_two",
+      "full_description": "stack the two bowls on top of each other",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/stack_bowls_two.json",
+      "instruction_json_sha256": "89cd4827e78dde5928ce35a49dc850d1cef9cadbb80efa90181564cb383c129c",
+      "instruction_template_counts": {
+        "seen": 49,
+        "unseen": 9
+      },
+      "task_py": "third_party/RoboTwin/envs/stack_bowls_two.py",
+      "task_py_exists": true,
+      "task_py_sha256": "3e3217c277d84a0838739d55a0061a9acb3315240b5a99c6607d9637ea719637",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "stamp_seal",
+      "full_description": "Grab the stamp and stamp onto the specific color mat",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/stamp_seal.json",
+      "instruction_json_sha256": "d1b32ae177638dcf379b534a78c8977125a7e554c2193c377d481a45ff5b182c",
+      "instruction_template_counts": {
+        "seen": 43,
+        "unseen": 9
+      },
+      "task_py": "third_party/RoboTwin/envs/stamp_seal.py",
+      "task_py_exists": true,
+      "task_py_sha256": "28a159e27aa76459355fa1f81e962815c62ee6435727039d73664b7eb6731b82",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    },
+    {
+      "task": "turn_switch",
+      "full_description": "use the robotic arm to click the switch",
+      "instruction_json": "third_party/RoboTwin/description/task_instruction/turn_switch.json",
+      "instruction_json_sha256": "05d97ea19651a875e7b7fff73e21aebc0dfe69c62620db5ad64c3aa7870d90d5",
+      "instruction_template_counts": {
+        "seen": 50,
+        "unseen": 10
+      },
+      "task_py": "third_party/RoboTwin/envs/turn_switch.py",
+      "task_py_exists": true,
+      "task_py_sha256": "035e108a861f94f61369ba2221431e123b7ac231e8de683d8bf38090bf021f9a",
+      "main_method_tested": false,
+      "main_method_ASR": null,
+      "readiness": "pending_task_preparation",
+      "task_pool": "pending",
+      "patch_position": "pending",
+      "render_calibration": "pending",
+      "prompt_adapter": "pending_task_specific_adapter",
+      "eot_training": "pending_fresh_matching_500x8",
+      "evaluation": "not_started",
+      "remaining_steps": [
+        "task_pool",
+        "task_specific_patch_position",
+        "three_camera_render_calibration",
+        "task_prompt_adapter",
+        "matching_eot_training",
+        "paired_clean_random_method_ASR"
+      ]
+    }
+  ]
+}

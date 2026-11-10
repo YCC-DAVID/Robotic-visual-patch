@@ -1,0 +1,923 @@
+{
+  "base": {
+    "parameters": {
+      "dx_native_px": 0.00027141475584357977,
+      "dy_native_px": -0.0006532042170874774,
+      "lod_bias": 0.039816003292798996
+    },
+    "records": [
+      {
+        "frame": 155,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0014806258474332314
+      },
+      {
+        "frame": 155,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020346813616217703
+      },
+      {
+        "frame": 156,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0014851729558943078
+      },
+      {
+        "frame": 156,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020379926526274527
+      },
+      {
+        "frame": 157,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0014852072850852118
+      },
+      {
+        "frame": 157,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.002038017669921885
+      },
+      {
+        "frame": 158,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0014869603569550463
+      },
+      {
+        "frame": 158,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.002039295576026076
+      },
+      {
+        "frame": 159,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015053970127442676
+      },
+      {
+        "frame": 159,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.00205277751089177
+      },
+      {
+        "frame": 160,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015026459736913803
+      },
+      {
+        "frame": 160,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020507608991529366
+      },
+      {
+        "frame": 161,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0014993448688910413
+      },
+      {
+        "frame": 161,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.002048343325498325
+      },
+      {
+        "frame": 162,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015017618644639404
+      },
+      {
+        "frame": 162,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.002050113177559194
+      },
+      {
+        "frame": 163,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015020339748939534
+      },
+      {
+        "frame": 163,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020503125139791187
+      },
+      {
+        "frame": 164,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015034276436921127
+      },
+      {
+        "frame": 164,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020513337181115275
+      },
+      {
+        "frame": 165,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015103431559960905
+      },
+      {
+        "frame": 165,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020564074966085578
+      },
+      {
+        "frame": 166,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.001499310771595534
+      },
+      {
+        "frame": 166,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020483183671163134
+      },
+      {
+        "frame": 167,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0014963437352530503
+      },
+      {
+        "frame": 167,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020461475795442263
+      },
+      {
+        "frame": 168,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015028839445844979
+      },
+      {
+        "frame": 168,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.002050935273023872
+      },
+      {
+        "frame": 169,
+        "pattern": "random",
+        "visible": 1071,
+        "mask_RMSE": 0.002689285613018153,
+        "image_RMSE": 0.0015088204292504758
+      },
+      {
+        "frame": 169,
+        "pattern": "check",
+        "visible": 1071,
+        "mask_RMSE": 0.004908153695554512,
+        "image_RMSE": 0.0020552893788873708
+      },
+      {
+        "frame": 170,
+        "pattern": "random",
+        "visible": 904,
+        "mask_RMSE": 0.002746256016955981,
+        "image_RMSE": 0.001511661583271396
+      },
+      {
+        "frame": 170,
+        "pattern": "check",
+        "visible": 904,
+        "mask_RMSE": 0.0050783829372761345,
+        "image_RMSE": 0.001991877430805528
+      },
+      {
+        "frame": 171,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.001473501582648919
+      },
+      {
+        "frame": 171,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002035861003201304
+      },
+      {
+        "frame": 172,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014738828908723066
+      },
+      {
+        "frame": 172,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002036137000865379
+      },
+      {
+        "frame": 173,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014703781821646031
+      },
+      {
+        "frame": 173,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.0020336015118190276
+      },
+      {
+        "frame": 174,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014795559161062837
+      },
+      {
+        "frame": 174,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.0020402472446181753
+      },
+      {
+        "frame": 175,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.001490837330254964
+      },
+      {
+        "frame": 175,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.0020484430808711037
+      },
+      {
+        "frame": 176,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014969921563547065
+      },
+      {
+        "frame": 176,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002052926843916866
+      },
+      {
+        "frame": 177,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014946015822778814
+      },
+      {
+        "frame": 177,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002051184292069949
+      },
+      {
+        "frame": 178,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014992425729427178
+      },
+      {
+        "frame": 178,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002054568422518669
+      },
+      {
+        "frame": 179,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014990040929794702
+      },
+      {
+        "frame": 179,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002054394407375603
+      },
+      {
+        "frame": 180,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014967191539152912
+      },
+      {
+        "frame": 180,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002052727779318012
+      },
+      {
+        "frame": 181,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014928575448786476
+      },
+      {
+        "frame": 181,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.0020499138419914275
+      },
+      {
+        "frame": 182,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.0014956949525652804
+      },
+      {
+        "frame": 182,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.0020519811162425954
+      },
+      {
+        "frame": 183,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.001497026337552193
+      },
+      {
+        "frame": 183,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.0020529517689443864
+      },
+      {
+        "frame": 184,
+        "pattern": "random",
+        "visible": 1084,
+        "mask_RMSE": 0.0027161083105894826,
+        "image_RMSE": 0.001509429683501923
+      },
+      {
+        "frame": 184,
+        "pattern": "check",
+        "visible": 1084,
+        "mask_RMSE": 0.005110141915790943,
+        "image_RMSE": 0.002062013840817677
+      },
+      {
+        "frame": 185,
+        "pattern": "random",
+        "visible": 963,
+        "mask_RMSE": 0.0027503204961251445,
+        "image_RMSE": 0.0015051935046120773
+      },
+      {
+        "frame": 185,
+        "pattern": "check",
+        "visible": 963,
+        "mask_RMSE": 0.005203758485899497,
+        "image_RMSE": 0.001999300829310344
+      },
+      {
+        "frame": 186,
+        "pattern": "random",
+        "visible": 882,
+        "mask_RMSE": 0.0027834292421269804,
+        "image_RMSE": 0.0014968897773618532
+      },
+      {
+        "frame": 186,
+        "pattern": "check",
+        "visible": 882,
+        "mask_RMSE": 0.005387526020083879,
+        "image_RMSE": 0.0019887719246767205
+      }
+    ],
+    "mask_RMSE_mean": 0.003866855718693493
+  },
+  "wrist": {
+    "parameters": {
+      "dx_native_px": 0.00017348532855976373,
+      "dy_native_px": -5.813921961816959e-05,
+      "lod_bias": 0.004881288390606642
+    },
+    "records": [
+      {
+        "frame": 155,
+        "pattern": "random",
+        "visible": 2324,
+        "mask_RMSE": 0.0027296767974017387,
+        "image_RMSE": 0.0015586791097678455
+      },
+      {
+        "frame": 155,
+        "pattern": "check",
+        "visible": 2324,
+        "mask_RMSE": 0.004469649557295128,
+        "image_RMSE": 0.002265087783856856
+      },
+      {
+        "frame": 156,
+        "pattern": "random",
+        "visible": 2596,
+        "mask_RMSE": 0.003039325489955281,
+        "image_RMSE": 0.0015825194369442183
+      },
+      {
+        "frame": 156,
+        "pattern": "check",
+        "visible": 2596,
+        "mask_RMSE": 0.005189461786196423,
+        "image_RMSE": 0.002232605334886521
+      },
+      {
+        "frame": 157,
+        "pattern": "random",
+        "visible": 2847,
+        "mask_RMSE": 0.004615279088720901,
+        "image_RMSE": 0.001813699615112624
+      },
+      {
+        "frame": 157,
+        "pattern": "check",
+        "visible": 2847,
+        "mask_RMSE": 0.009088726566179917,
+        "image_RMSE": 0.0030706200508831467
+      },
+      {
+        "frame": 158,
+        "pattern": "random",
+        "visible": 3220,
+        "mask_RMSE": 0.004546834087929133,
+        "image_RMSE": 0.0018929424255175898
+      },
+      {
+        "frame": 158,
+        "pattern": "check",
+        "visible": 3220,
+        "mask_RMSE": 0.007982465059527167,
+        "image_RMSE": 0.003009320395737569
+      },
+      {
+        "frame": 159,
+        "pattern": "random",
+        "visible": 4586,
+        "mask_RMSE": 0.004167406757854726,
+        "image_RMSE": 0.001982623544989362
+      },
+      {
+        "frame": 159,
+        "pattern": "check",
+        "visible": 4586,
+        "mask_RMSE": 0.006744298199753562,
+        "image_RMSE": 0.002897289329382401
+      },
+      {
+        "frame": 160,
+        "pattern": "random",
+        "visible": 7305,
+        "mask_RMSE": 0.004435864156482911,
+        "image_RMSE": 0.0026068582463612726
+      },
+      {
+        "frame": 160,
+        "pattern": "check",
+        "visible": 7305,
+        "mask_RMSE": 0.006041039776730758,
+        "image_RMSE": 0.003483218674589601
+      },
+      {
+        "frame": 161,
+        "pattern": "random",
+        "visible": 7302,
+        "mask_RMSE": 0.003872115534464409,
+        "image_RMSE": 0.0023606328188582057
+      },
+      {
+        "frame": 161,
+        "pattern": "check",
+        "visible": 7302,
+        "mask_RMSE": 0.004310040502224387,
+        "image_RMSE": 0.0025987129367209634
+      },
+      {
+        "frame": 162,
+        "pattern": "random",
+        "visible": 5104,
+        "mask_RMSE": 0.006144489163338857,
+        "image_RMSE": 0.002589300113878812
+      },
+      {
+        "frame": 162,
+        "pattern": "check",
+        "visible": 5104,
+        "mask_RMSE": 0.007114670831555957,
+        "image_RMSE": 0.0028971658076808447
+      },
+      {
+        "frame": 163,
+        "pattern": "random",
+        "visible": 2955,
+        "mask_RMSE": 0.010268944805378674,
+        "image_RMSE": 0.002873744155676314
+      },
+      {
+        "frame": 163,
+        "pattern": "check",
+        "visible": 2955,
+        "mask_RMSE": 0.010480466702016035,
+        "image_RMSE": 0.0029332800272805237
+      },
+      {
+        "frame": 164,
+        "pattern": "random",
+        "visible": 2467,
+        "mask_RMSE": 0.011592742992224498,
+        "image_RMSE": 0.002919384958534811
+      },
+      {
+        "frame": 164,
+        "pattern": "check",
+        "visible": 2467,
+        "mask_RMSE": 0.011326740559809019,
+        "image_RMSE": 0.002857468747870423
+      },
+      {
+        "frame": 165,
+        "pattern": "random",
+        "visible": 3062,
+        "mask_RMSE": 0.009342819621899692,
+        "image_RMSE": 0.0027301937787164573
+      },
+      {
+        "frame": 165,
+        "pattern": "check",
+        "visible": 3062,
+        "mask_RMSE": 0.009135159086155855,
+        "image_RMSE": 0.002717798059005657
+      },
+      {
+        "frame": 166,
+        "pattern": "random",
+        "visible": 5237,
+        "mask_RMSE": 0.004523911396956583,
+        "image_RMSE": 0.0023643734227390897
+      },
+      {
+        "frame": 166,
+        "pattern": "check",
+        "visible": 5237,
+        "mask_RMSE": 0.005110926432657026,
+        "image_RMSE": 0.0025233567092089884
+      },
+      {
+        "frame": 167,
+        "pattern": "random",
+        "visible": 7098,
+        "mask_RMSE": 0.0060150826509488605,
+        "image_RMSE": 0.0029478036929473823
+      },
+      {
+        "frame": 167,
+        "pattern": "check",
+        "visible": 7098,
+        "mask_RMSE": 0.005517278922055279,
+        "image_RMSE": 0.0030785949675739945
+      },
+      {
+        "frame": 168,
+        "pattern": "random",
+        "visible": 6248,
+        "mask_RMSE": 0.006071853244642367,
+        "image_RMSE": 0.0027231690643019788
+      },
+      {
+        "frame": 168,
+        "pattern": "check",
+        "visible": 6248,
+        "mask_RMSE": 0.005637277158905083,
+        "image_RMSE": 0.0029160938900348217
+      },
+      {
+        "frame": 169,
+        "pattern": "random",
+        "visible": 6702,
+        "mask_RMSE": 0.006236157293470135,
+        "image_RMSE": 0.0028159258922540995
+      },
+      {
+        "frame": 169,
+        "pattern": "check",
+        "visible": 6702,
+        "mask_RMSE": 0.005287889977977642,
+        "image_RMSE": 0.0027697233854471746
+      },
+      {
+        "frame": 170,
+        "pattern": "random",
+        "visible": 5101,
+        "mask_RMSE": 0.006504867649826488,
+        "image_RMSE": 0.0026696117646395363
+      },
+      {
+        "frame": 170,
+        "pattern": "check",
+        "visible": 5101,
+        "mask_RMSE": 0.005490116163754569,
+        "image_RMSE": 0.002434920637616387
+      },
+      {
+        "frame": 171,
+        "pattern": "random",
+        "visible": 2266,
+        "mask_RMSE": 0.0028565545187815514,
+        "image_RMSE": 0.0015222691746960427
+      },
+      {
+        "frame": 171,
+        "pattern": "check",
+        "visible": 2266,
+        "mask_RMSE": 0.004885118117381932,
+        "image_RMSE": 0.002131064725508636
+      },
+      {
+        "frame": 172,
+        "pattern": "random",
+        "visible": 2526,
+        "mask_RMSE": 0.0030985546134103896,
+        "image_RMSE": 0.0016224927569134687
+      },
+      {
+        "frame": 172,
+        "pattern": "check",
+        "visible": 2526,
+        "mask_RMSE": 0.005253540552997265,
+        "image_RMSE": 0.0023903943860792386
+      },
+      {
+        "frame": 173,
+        "pattern": "random",
+        "visible": 3079,
+        "mask_RMSE": 0.0035142926637438364,
+        "image_RMSE": 0.0016196568093623657
+      },
+      {
+        "frame": 173,
+        "pattern": "check",
+        "visible": 3079,
+        "mask_RMSE": 0.006007088358055532,
+        "image_RMSE": 0.0022499727751810776
+      },
+      {
+        "frame": 174,
+        "pattern": "random",
+        "visible": 3438,
+        "mask_RMSE": 0.004192258279969495,
+        "image_RMSE": 0.0018437281658471056
+      },
+      {
+        "frame": 174,
+        "pattern": "check",
+        "visible": 3438,
+        "mask_RMSE": 0.007600612066899673,
+        "image_RMSE": 0.0029208020736464176
+      },
+      {
+        "frame": 175,
+        "pattern": "random",
+        "visible": 4876,
+        "mask_RMSE": 0.004156355292681603,
+        "image_RMSE": 0.0021693844578989352
+      },
+      {
+        "frame": 175,
+        "pattern": "check",
+        "visible": 4876,
+        "mask_RMSE": 0.007423835869054596,
+        "image_RMSE": 0.003384561036066152
+      },
+      {
+        "frame": 176,
+        "pattern": "random",
+        "visible": 7813,
+        "mask_RMSE": 0.0040395866794507755,
+        "image_RMSE": 0.002225891270535358
+      },
+      {
+        "frame": 176,
+        "pattern": "check",
+        "visible": 7813,
+        "mask_RMSE": 0.005189312783596295,
+        "image_RMSE": 0.0027096285909199154
+      },
+      {
+        "frame": 177,
+        "pattern": "random",
+        "visible": 7889,
+        "mask_RMSE": 0.0038891224157601885,
+        "image_RMSE": 0.0022415105346089118
+      },
+      {
+        "frame": 177,
+        "pattern": "check",
+        "visible": 7889,
+        "mask_RMSE": 0.0042384999585372805,
+        "image_RMSE": 0.0024426285668055765
+      },
+      {
+        "frame": 178,
+        "pattern": "random",
+        "visible": 5218,
+        "mask_RMSE": 0.008071720855094887,
+        "image_RMSE": 0.002947386944558322
+      },
+      {
+        "frame": 178,
+        "pattern": "check",
+        "visible": 5218,
+        "mask_RMSE": 0.008865384779423235,
+        "image_RMSE": 0.0032234438481262956
+      },
+      {
+        "frame": 179,
+        "pattern": "random",
+        "visible": 4961,
+        "mask_RMSE": 0.01017111351946527,
+        "image_RMSE": 0.003456498426587279
+      },
+      {
+        "frame": 179,
+        "pattern": "check",
+        "visible": 4961,
+        "mask_RMSE": 0.010792135221878557,
+        "image_RMSE": 0.003640151288497145
+      },
+      {
+        "frame": 180,
+        "pattern": "random",
+        "visible": 4939,
+        "mask_RMSE": 0.007838769027590576,
+        "image_RMSE": 0.002925904257972844
+      },
+      {
+        "frame": 180,
+        "pattern": "check",
+        "visible": 4939,
+        "mask_RMSE": 0.008293443856446599,
+        "image_RMSE": 0.003063141228619184
+      },
+      {
+        "frame": 181,
+        "pattern": "random",
+        "visible": 5980,
+        "mask_RMSE": 0.004884156293711878,
+        "image_RMSE": 0.002570072422628275
+      },
+      {
+        "frame": 181,
+        "pattern": "check",
+        "visible": 5980,
+        "mask_RMSE": 0.0054657523459361495,
+        "image_RMSE": 0.002708082180773169
+      },
+      {
+        "frame": 182,
+        "pattern": "random",
+        "visible": 8271,
+        "mask_RMSE": 0.005244855134913543,
+        "image_RMSE": 0.0030368969303135613
+      },
+      {
+        "frame": 182,
+        "pattern": "check",
+        "visible": 8271,
+        "mask_RMSE": 0.0056365000192791365,
+        "image_RMSE": 0.0032895151433351023
+      },
+      {
+        "frame": 183,
+        "pattern": "random",
+        "visible": 7147,
+        "mask_RMSE": 0.0043111821925679175,
+        "image_RMSE": 0.002511303859387058
+      },
+      {
+        "frame": 183,
+        "pattern": "check",
+        "visible": 7147,
+        "mask_RMSE": 0.004758324329043255,
+        "image_RMSE": 0.0029339071684702164
+      },
+      {
+        "frame": 184,
+        "pattern": "random",
+        "visible": 7284,
+        "mask_RMSE": 0.004468947957546782,
+        "image_RMSE": 0.002473427866059814
+      },
+      {
+        "frame": 184,
+        "pattern": "check",
+        "visible": 7284,
+        "mask_RMSE": 0.004979680070876417,
+        "image_RMSE": 0.0028038722821665182
+      },
+      {
+        "frame": 185,
+        "pattern": "random",
+        "visible": 5922,
+        "mask_RMSE": 0.005562766560149884,
+        "image_RMSE": 0.0027086856276351936
+      },
+      {
+        "frame": 185,
+        "pattern": "check",
+        "visible": 5922,
+        "mask_RMSE": 0.005753166019382378,
+        "image_RMSE": 0.0028264451175966394
+      },
+      {
+        "frame": 186,
+        "pattern": "random",
+        "visible": 6305,
+        "mask_RMSE": 0.007025769547403779,
+        "image_RMSE": 0.00310264323854011
+      },
+      {
+        "frame": 186,
+        "pattern": "check",
+        "visible": 6305,
+        "mask_RMSE": 0.0069683100091848475,
+        "image_RMSE": 0.00316473426196384
+      }
+    ],
+    "mask_RMSE_mean": 0.006069848248820384
+  },
+  "routing_check": {
+    "identity_forward_exact": true,
+    "backward_equals_lowpass_adjoint": true,
+    "not_a_strict_bandlimit": true
+  }
+}
