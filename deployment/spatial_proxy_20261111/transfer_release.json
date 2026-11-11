@@ -1,7 +1,8 @@
 {
-  "stage": "teacher",
+  "stage": "data",
   "packages": [
-    "dl_full_proxy_teacher_20261111"
+    "dl_full_proxy_teacher_20261111",
+    "dl_spatial_proxy_targets_20261111"
   ],
   "files": [
     {
@@ -118,6 +119,396 @@
       "path": "deployment/dl_full_proxy_teacher_20261111/parts/payload.tar.part0020",
       "bytes": 6123520,
       "sha256": "e6f1c85b061e8753d7ca23ad8a5c20b7d91991bdbb04048bf575f75db036534d"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/transfer_manifest.json",
+      "bytes": 12909,
+      "sha256": "b945173ddc8eeed7e9add2233876b273df28caba4ebda249036140c9ac0eec33"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/restore_package.py",
+      "bytes": 1986,
+      "sha256": "94892d75c4ac71e45ff157951c1e33495975f6680686f1d8ff0bea6718f17ba9"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0000",
+      "bytes": 8388608,
+      "sha256": "ee4bc182a666873360db8045e6f2e92d6bc6666c1c24e25d48d14e027f235307"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0001",
+      "bytes": 8388608,
+      "sha256": "756ebf44a3f93683389a92596bb3e42aa40bf12794acdb27ebb09625f11c2c08"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0002",
+      "bytes": 8388608,
+      "sha256": "5659b1b7745eb024ec69015e8723081def982ed0a0ab86ac66a625536b62634b"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0003",
+      "bytes": 8388608,
+      "sha256": "5711de86a68c146353586ddc267e45786a6f72028decd1a2a66fb3a5fb7bbe8d"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0004",
+      "bytes": 8388608,
+      "sha256": "aa1dc59d230a887cba51719c2742eb46e1f305005a386102f5dd7e73d249e2b6"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0005",
+      "bytes": 8388608,
+      "sha256": "1695fa2a59f4365695a10c39633b8360fb966fc4dc2cf79d3e16f0b7ab6e6b82"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0006",
+      "bytes": 8388608,
+      "sha256": "a8e0cc39e57046ba3a4a8c96bb771499d7778a867736ed7efe7cbd944a880659"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0007",
+      "bytes": 8388608,
+      "sha256": "df90e1f9c2bfd8b76c837f9b59e5c81cf0498c893a619f608b75f49b2b9d0b63"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0008",
+      "bytes": 8388608,
+      "sha256": "093cd74b1d52ec69092cbb758106d4eb44d1f0f94ecc7dd0c671c6e802f057c5"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0009",
+      "bytes": 8388608,
+      "sha256": "b21c71cbdf87b72e937f7ac8df4a35733852fdb27b1fd6e3ccb201978c1ee86e"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0010",
+      "bytes": 8388608,
+      "sha256": "1fccc20f1f6636e2cc4665975bb0f8fa0090784cce8440ca6e01ee37b1746a88"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0011",
+      "bytes": 8388608,
+      "sha256": "ea47d0c4df4231d6d3335a2b6c3db89dbdc25613dd9ade65b16bce5a6af12a55"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0012",
+      "bytes": 8388608,
+      "sha256": "19a9282f76c4a6b1772ab265623be432d68a8d3e86fad889f8f0f8e954872f0d"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0013",
+      "bytes": 8388608,
+      "sha256": "7462af719c4c4efbed31cf24b2ee4d3768548c4027c17c3f9c4d1198d723be57"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0014",
+      "bytes": 8388608,
+      "sha256": "3ffc90f02ba2a434d1da894220e4d8ae9a0055a2eb58e3139a8f4e129f6dd225"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0015",
+      "bytes": 8388608,
+      "sha256": "72cdbd063355fcd9f1fca33fa4944ace3a8ec86519f0fd6b0bcbdd8b0cd0aad2"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0016",
+      "bytes": 8388608,
+      "sha256": "0eb01951c16683551efbf2b8809fb5b4357892c72cead7c7825fffc27d1a2080"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0017",
+      "bytes": 8388608,
+      "sha256": "560bdbd0c203e2748c0d9cdc6716756961727bfc2252915867e8915e9f26fb8d"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0018",
+      "bytes": 8388608,
+      "sha256": "4b639262b47b4121ac026a0dcecc4239b33edc611a1a5a0868d1fa56c67804b4"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0019",
+      "bytes": 8388608,
+      "sha256": "200c6454e99f5f0c1299a493ac637923f2b71b34859c4fee7e5e3af554ffa90c"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0020",
+      "bytes": 8388608,
+      "sha256": "17ae131d81ee164a19650720c4e0862b1fa3bb013942502e23977af21078b90c"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0021",
+      "bytes": 8388608,
+      "sha256": "333262c1f891824fbd2839c061adb03cdb4a995adec7c798291279ea5f278f73"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0022",
+      "bytes": 8388608,
+      "sha256": "5c3fdbbeb00ab1d718b01d4b2a0472e9b7839b4e5fec10361921227f6e3ec62b"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0023",
+      "bytes": 8388608,
+      "sha256": "f7e09b0cce45e48f8ab7cd47a49c7e72ba349bd76b4e816c29e136fba064d2b8"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0024",
+      "bytes": 8388608,
+      "sha256": "aac3651de46368a6399453877cc5a3ee39c63503213dc8a04f8259af475b9a9a"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0025",
+      "bytes": 8388608,
+      "sha256": "0672e94fbdb62f30bc78f961a3b628c841f85fda55b3fadd560bfb94049f7f1e"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0026",
+      "bytes": 8388608,
+      "sha256": "93f3be551d1aef8ece3cf30c09e61c6c742054977bac073573118e00386fe632"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0027",
+      "bytes": 8388608,
+      "sha256": "5255f28b60dde0259d0f0148d8c3c68d812a1101df57f827a4bd6441217cf590"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0028",
+      "bytes": 8388608,
+      "sha256": "cd6c38ac9cac57d0baf884b8774159bf89ab9586de85c871580b6356e92c80ef"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0029",
+      "bytes": 8388608,
+      "sha256": "00f93514908e4e7b721f6b6c35265f5946c82266e4084ef1308dfa6e888aeabe"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0030",
+      "bytes": 8388608,
+      "sha256": "2284630536046cbf39d529494905d405079cea28a51d8c608ad6b2f7b97446d2"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0031",
+      "bytes": 8388608,
+      "sha256": "22fc094871df78310e52792869dbf2b8e77d929f382ca8e4322e580207537541"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0032",
+      "bytes": 8388608,
+      "sha256": "730dd55fa044882bd400b5a94fa4b34383ce08aa04605a20549fbec213c23569"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0033",
+      "bytes": 8388608,
+      "sha256": "39eac7f5b54ec180bb377f62f0a4c38c7fc76035aaee1972bee8f966ca61756b"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0034",
+      "bytes": 8388608,
+      "sha256": "fdc7fec7d45f309afecf122620915c7962ceeb419475a586110bb70d347dc05e"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0035",
+      "bytes": 8388608,
+      "sha256": "57d4440b64195b2a07a7de00b78185f46d4a0ad825424dd0cd184df660ac2589"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0036",
+      "bytes": 8388608,
+      "sha256": "dc7129ac161d6f51a5f1428695eb3584e70604bf99672552d2b29fbce6eaa696"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0037",
+      "bytes": 8388608,
+      "sha256": "be1c624e0d983dff4fe1ddf903a118cf984dab8ab123d9e81179fd23d91b2f1e"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0038",
+      "bytes": 8388608,
+      "sha256": "b3db9aebef042c5daeb11b84475c6b6326eddf4e6cd653cd3cd09ce99b87ffa2"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0039",
+      "bytes": 8388608,
+      "sha256": "61bda023126bf0f2bfa8e71a895bc84290dfc813e74a1002301d148fc747d00a"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0040",
+      "bytes": 8388608,
+      "sha256": "2e0de90f9911c9741a7c569685d12c58fa3e5b40bb97a7b3f191f274efed6765"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0041",
+      "bytes": 8388608,
+      "sha256": "2c9870c897ad4a927c6ce87102fa6d22f8e5eed87448f2be4a2cbf9cceeb85d4"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0042",
+      "bytes": 8388608,
+      "sha256": "47a8305c5a3e3b2c0aacfeb3a61638ce10b62a1738ef1182d53867601ada4e36"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0043",
+      "bytes": 8388608,
+      "sha256": "6fc02e7e05bf377d679e28697ecb80094fce5c37dc4e1c016ea20a17d35a6a64"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0044",
+      "bytes": 8388608,
+      "sha256": "a0a73f4b70b941279f9af3f3c8b655ae653cd7e7fbf039500d0cb8f5b21c777c"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0045",
+      "bytes": 8388608,
+      "sha256": "89cebefe716544c5b0687b41f3f3cef368b21734e07383819f440d3d044c05f1"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0046",
+      "bytes": 8388608,
+      "sha256": "d00ae88b20c778e77c9203bcead621f7d7634f9961642315e5cdb12c9e49fd92"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0047",
+      "bytes": 8388608,
+      "sha256": "6a06f65a470224548d91124cd9ac00471c320fa619453118292572363b81804a"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0048",
+      "bytes": 8388608,
+      "sha256": "ee66446cec02c162b34b8d4ec3bfe4d30b1335f4ea51013434a0422bc403dcf2"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0049",
+      "bytes": 8388608,
+      "sha256": "e3d6b0acafb5ce41a4a9cca5b642e45cef9fe36fd71f04db2de057e7dbbbe64b"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0050",
+      "bytes": 8388608,
+      "sha256": "213efdd4ed5fe36db7bfe95b39eb5164ec1c06be2ec5d1e641b51b3445894215"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0051",
+      "bytes": 8388608,
+      "sha256": "983947aa46f559bd3671eaf7cd5533ab11cc8d313ae5e5a4ebae11eba1aebb5e"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0052",
+      "bytes": 8388608,
+      "sha256": "dc44ca9408214793bab55ac195b061ab04d09b5f18854e2849f2876062863770"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0053",
+      "bytes": 8388608,
+      "sha256": "307a7eb1bb4f0004537098ae5904c6fd8443f8e3549ee16ac48d573b65688046"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0054",
+      "bytes": 8388608,
+      "sha256": "9ede3a0003684587e2ae0048be3d1d67fa146ef0fb4c51c9d805364a3c9b610c"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0055",
+      "bytes": 8388608,
+      "sha256": "ff2560e4cb46651bc3ba23e96a238bda7ef55e29a885cdb84395beff16f55b44"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0056",
+      "bytes": 8388608,
+      "sha256": "b4c2bfd99bb913958b0886af2ecbc85f03a8c9ec65f133d88da6340839950785"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0057",
+      "bytes": 8388608,
+      "sha256": "cd3494f12b73b4aacc372dc3b664a035d078561a2a179c0ea26f75975f9bf846"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0058",
+      "bytes": 8388608,
+      "sha256": "c686654d098dfd718f28e491eaf11e0b8f630d1ef0a01597a76886ac1d0faa74"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0059",
+      "bytes": 8388608,
+      "sha256": "01bf910e2aa9e7d3fb7cd15098e26ea1570d4df0d7a50cbc83b7baadfd1a48a7"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0060",
+      "bytes": 8388608,
+      "sha256": "b12237f9c0ea14110ffffb1bc7f5b9eb8c4b5ce6ab915211c3626c7662e172a9"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0061",
+      "bytes": 8388608,
+      "sha256": "6058529a408694b660c84bf8f10c5b85fea796401043f5f033fe4bdcb1e0efb7"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0062",
+      "bytes": 8388608,
+      "sha256": "980c1b0a2d39abe2e855563d89823a9e5ca51f6c9494169ccdf3963e262e5e0f"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0063",
+      "bytes": 8388608,
+      "sha256": "228abaf0b639036fedac20af627885bee54313bf35bc03c06bd750dd0cfbd782"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0064",
+      "bytes": 8388608,
+      "sha256": "1cf4bbf2ace4604b6233bbf5d9c0a5bd739495f9556b8608f230ab227f5d01d6"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0065",
+      "bytes": 8388608,
+      "sha256": "d16da6dceaa785d0cce67efba516f6537c3bffb6b6a34736b737b14a314711cb"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0066",
+      "bytes": 8388608,
+      "sha256": "e7a930cbc9cdd03235a2fc048700a5198a38c31a719d157e0860b1feb39cc48e"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0067",
+      "bytes": 8388608,
+      "sha256": "9234a17f2bf9773e837fa4d0e13ca1b9c9b6e8dc869f1a9f5d23199a066b2201"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0068",
+      "bytes": 8388608,
+      "sha256": "1950823e701806e50f05b82188cda1f2bf351a7318b87bb1c332de8fd673ae6c"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0069",
+      "bytes": 8388608,
+      "sha256": "cc31c102aca8ebbdbcefc9344d51e2b3ab45528cc990836546a848c78db92c7d"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0070",
+      "bytes": 8388608,
+      "sha256": "c56e59aeadefe78eeb9a878dd6779a55f1a12e2aaa8ba7cbed5785f866cb5e79"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0071",
+      "bytes": 8388608,
+      "sha256": "f4e1daef8503a1d8fa4ad5e99d1a439f9dec437531951838b60bd099c164097c"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0072",
+      "bytes": 8388608,
+      "sha256": "efb593e365f0f63d9df012e69a7024c3ccacf566875469bbac25d37f06775037"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0073",
+      "bytes": 8388608,
+      "sha256": "ebf5d4b6023cf7638ad3efc46f3ba3191d1213925aae2f88c1a548d7d05853d0"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0074",
+      "bytes": 8388608,
+      "sha256": "648f8b86d7120a9b65e8afde191ac30897aa483396d46bb4426d9d8034709711"
+    },
+    {
+      "path": "deployment/dl_spatial_proxy_targets_20261111/parts/payload.tar.part0075",
+      "bytes": 4014080,
+      "sha256": "4aba1cb7fa279f14ac948a26a584adb4de1f22ecd496c1f88032a847e3c70578"
     },
     {
       "path": "deployment/spatial_proxy_20261111/EXPERIMENT.md",
