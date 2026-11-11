@@ -1,0 +1,199 @@
+{
+  "complete": true,
+  "cpu_only": true,
+  "original_frame_ids": [
+    167,
+    168,
+    169,
+    170,
+    183,
+    184,
+    185,
+    186
+  ],
+  "rows": 8,
+  "source_pool_rows": 187,
+  "selected_by": "Exact missing IDs from dl stage_a/native_blocker.json; not selected by outcome",
+  "source_files": [
+    {
+      "path": "result/estimated_proxy_closed_loop_20261105/capture/observations.npz",
+      "bytes": 82293262,
+      "sha256": "58919d915e557aacaeaea92be668eacc11a70ced080bec7efd0437f2490044fa"
+    },
+    {
+      "path": "result/estimated_proxy_dual_eot_20261105/wrist_capture/observations.npz",
+      "bytes": 72885804,
+      "sha256": "0d0f78cdefcdad5d666d4c268a8b4be367050ead004e18a5a438fb379595f9a3"
+    },
+    {
+      "path": "pi05probe/out/render_proxy_eot/data/manifest.json",
+      "bytes": 103248,
+      "sha256": "62c64f24c2bbea86bb9ce497678256b20b21a383f5f43eef9bc38352b25b4240"
+    }
+  ],
+  "arrays": {
+    "frame_ids": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64",
+      "sha256_raw_c_order": "09505c0348e4cc4a4bd020c43e13d58c44b3884d937b8eb1a947dbb473cd5999"
+    },
+    "sim_states": {
+      "shape": [
+        8,
+        79
+      ],
+      "dtype": "float64",
+      "sha256_raw_c_order": "27a2bdd1aa9a4057bee307ad7cc22d30055ae0def2ec409a2261d8ba750e5790"
+    },
+    "env_seed": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64",
+      "sha256_raw_c_order": "894041d14953dd1dfe49bf41470534c91aab47f9e987fbf15687f6a77eb3ba45"
+    },
+    "ep_id": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64",
+      "sha256_raw_c_order": "78a2df24b2a56a2e5dae1b1d108f39cdf0a2d71efcb1115aa80517b594b077fa"
+    },
+    "state8": {
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "float32",
+      "sha256_raw_c_order": "5f4d7d0dac5761987b8464ac9694a5d075b74d69cbd759543fbb8d16c20e02d9"
+    },
+    "clean_base": {
+      "shape": [
+        8,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256_raw_c_order": "b3a887126f5acad6ced546ea041cf7bc7064d6a9ba1b377b2dfe3676529bd1e2"
+    },
+    "clean_wrist": {
+      "shape": [
+        8,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256_raw_c_order": "0ad0c292319d66cebf66732c446555cb8a4e22c0e968d220a12e52c7050f7c55"
+    },
+    "train_mask": {
+      "shape": [
+        8
+      ],
+      "dtype": "bool",
+      "sha256_raw_c_order": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "validation_mask": {
+      "shape": [
+        8
+      ],
+      "dtype": "bool",
+      "sha256_raw_c_order": "04abc8821a06e5a30937967d11ad10221cb5ac3b5273e434f1284ee87129a061"
+    },
+    "task": {
+      "shape": [],
+      "dtype": "<U25",
+      "sha256_raw_c_order": "0f399867feb6b59353c69cc92194e26dde6464cfdb6ba4a64e7e03afc68a9353"
+    },
+    "prompt": {
+      "shape": [],
+      "dtype": "<U25",
+      "sha256_raw_c_order": "18c2c0eae09e7db18603bf4663a8e53afa37cbdf047a4850cd5dbdcd17e32f06"
+    },
+    "cell_world": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256_raw_c_order": "be07a649504ec05f784d69fd1a16f7f5a86f2ab62fe6c118caca8ca74b5a3ba1"
+    },
+    "patch_m": {
+      "shape": [],
+      "dtype": "float64",
+      "sha256_raw_c_order": "264d49edc10c5eead6e164a37ade9a9472592bf02e0616c124c696ec98dca3fe"
+    },
+    "native_base256": {
+      "shape": [
+        8,
+        256,
+        256,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256_raw_c_order": "f35c19b2ae914d0d57c1750dd320cbb8aab2d5547a78d2a5747eba19c804f2d3"
+    },
+    "native_wrist256": {
+      "shape": [
+        8,
+        256,
+        256,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256_raw_c_order": "6077897139e8d01864875ce1680aa05b915a1a86d1986375f09ba41c07c9d1d4"
+    },
+    "fixture_body_pos": {
+      "shape": [
+        8,
+        38,
+        3
+      ],
+      "dtype": "float64",
+      "sha256_raw_c_order": "4849495e52615b9fdca6e48b397574539940a06b3cf5cc22e6d4fcee83d56dcf"
+    },
+    "fixture_body_quat": {
+      "shape": [
+        8,
+        38,
+        4
+      ],
+      "dtype": "float64",
+      "sha256_raw_c_order": "1341ec6c2b3931f8e702d03610b0b284cbc1abb8db6ce8a2561939954809f461"
+    }
+  },
+  "payload_files": [
+    {
+      "path": "current_gpu_policy/AGENTS.md",
+      "bytes": 1309,
+      "sha256": "3bd8d380ae69f6dd13a7929b50cdfed94b8559fdbb98a7d5f030accd79027fd1"
+    },
+    {
+      "path": "current_gpu_policy/skills/gpu-preflight/SKILL.md",
+      "bytes": 3852,
+      "sha256": "a0cfc8d3b07735e45716e6f69208b54e1df7d82a2862f77358560dbace33e886"
+    },
+    {
+      "path": "current_gpu_policy/skills/gpu-preflight/scripts/check_gpus.py",
+      "bytes": 4439,
+      "sha256": "a8a61a3a2c34cad2fa8669191e2649c9f91e40998e9de91153582dbe662c5b87"
+    },
+    {
+      "path": "native_replay_states.npz",
+      "bytes": 2230949,
+      "sha256": "2b8414d834da5b24315414f4c7a0c3687f0072ebc009443dacdbe447ecae81f1"
+    },
+    {
+      "path": "source_pool_manifest.json",
+      "bytes": 103248,
+      "sha256": "62c64f24c2bbea86bb9ce497678256b20b21a383f5f43eef9bc38352b25b4240"
+    }
+  ],
+  "replay": "Map by frame_ids, not row numbers. Seed+reset matching env_seed/fixture, then regenerate_obs_from_state(sim_states[row]); no extra settling.",
+  "image_convention": "native_*256 are saved legacy policy-oriented capture images (already flipped relative to raw LIBERO observation). clean_* are production224. Do not flip these references again.",
+  "fixture": "Original clean-model body_pos/body_quat per frame from source manifest; a newly added visual patch body is additional.",
+  "gpu_policy": "nnmc62 is prohibited for all new tasks/controllers, even idle or existing-service reuse; read-only GPU audit only.",
+  "exact_roundtrip": true
+}
