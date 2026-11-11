@@ -1,5 +1,5 @@
 {
-  "stage": "data",
+  "stage": "full",
   "packages": [
     "dl_full_proxy_teacher_20261111",
     "dl_spatial_proxy_targets_20261111"
@@ -512,8 +512,48 @@
     },
     {
       "path": "deployment/spatial_proxy_20261111/EXPERIMENT.md",
-      "bytes": 4581,
-      "sha256": "328704e28bc24af5020d66b1dbb0e67e8954018b2e39bb4f03b1b4590e744738"
+      "bytes": 5577,
+      "sha256": "7beb7896433ed4da55eee904b8e14af189270593d8e6afd236479ea7ee01fbd9"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/source/data.py",
+      "bytes": 8475,
+      "sha256": "47c5089b6a0fc899c3be752e1833746281f163a785c80b2b3c9a4b66914308a3"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/source/model.py",
+      "bytes": 13707,
+      "sha256": "4497cd2481d2cc22708eb5367a6295cd041a04f94f774022af13955e5dba4034"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/source/renderer.py",
+      "bytes": 6610,
+      "sha256": "49eaae3dca55af4c9de6719e0cdb6e92da5409c093d3f606fdd9c83eca12e315"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/source/test_core.py",
+      "bytes": 13191,
+      "sha256": "9372d88df6a0fb48c7e301c56b4fa311b8cccb5dc1a0eb8ea69cad4dcd9f17ca"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/source/MODEL_NOTES.md",
+      "bytes": 9801,
+      "sha256": "b7fb28e801d82be1c5ba5a39f151f6ca9e870b4e95ab6084eda618f91a8a3db8"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/cpu_model_validation.json",
+      "bytes": 8389,
+      "sha256": "79e7c07fad73d17ff82e6b0749c09b4a3c55c3bb53a528a4dbc9ef3e6384632a"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/data_cpu_verification.json",
+      "bytes": 2150,
+      "sha256": "d7640a9fa5a55861ec4dc2b46d7f5bb1e40936076a19f569c03c614813e731d2"
+    },
+    {
+      "path": "deployment/spatial_proxy_20261111/cpu_data_model_integration.json",
+      "bytes": 516,
+      "sha256": "fa621394439e7fd81dcd7f31c306456c7ca35d2393546f24d7eec2fe8d51280f"
     },
     {
       "path": "deployment/dl_native_replay_states_20261111/current_gpu_policy/AGENTS.md",

@@ -6,6 +6,8 @@ User objective: estimate the parameters of the existing render proxy from observ
 
 Inputs: current native RGB; available full EEF pose and gripper with validity flags; camera identity and image size; explicitly known patch placement, orientation and physical size. Optional history must be causal. Scene, task, episode and seed identifiers are grouping metadata, not model inputs. Simulator intrinsics, extrinsics, depth, probe images and target H/B/G/S are labels only.
 
+Input audit correction: the exported `query_canonical_to_world_xy` gauge was constructed from simulator base-camera H/height. Despite the capture's `query_known_valid` flag, it is not an allowed deployment observation. Both model/data adapters force its nine reserved input values to zero and validity false. Raw files keep it for provenance only. Similarly, `lowdim_valid[:8]` concerns an older canonical square, so geometry label validity must be computed directly from the actual probe H; out-of-frame but finite convex corners remain valid.
+
 Outputs: image-pixel-to-texture-pixel H, native-resolution black response B, nonnegative spatial gain G=max(white-black,0), and dx/dy/LOD sampling parameters shared by camera/imaging configuration. B/G already encode visibility and edge mixture; do not multiply another hard mask into rendering. The model must support a single image and missing views/state.
 
 First candidate: actual TinyViT-5M multiscale encoder, shallow RGB skip and lightweight spatial decoder, state/query MLP, four-corner geometry head, and shared sampling head. All heads and the encoder train. Record the actual parameter count, dependencies and pretrained weights. A larger architecture is not an assumed solution.
@@ -13,6 +15,8 @@ First candidate: actual TinyViT-5M multiscale encoder, shallow RGB skip and ligh
 ## Data and split
 
 Use real native probe captures. Keep the existing scene-level train/val/test assignment from the 499-scene data; all views, times and texture anchors from one scene stay together. For the first pilot, select three query timestamps per scene without using labels or scores. Keep original resolution and exact pixels. A 187-frame aligned single-task historical set is a separate diagnostic, not a replacement for multi-task training or an independent unknown-rig test.
+
+The exported pilot selects the last timestamp from each scene's first/middle/last bundle (1179 train / 156 val / 162 test). The first bundle is inside the previous shared-calibration model's 12-frame prefix. It is legitimate training/evaluation data for the new single-frame model, but comparisons against the old scene-calibrated predictor must use only the common post-prefix timestamps. Do not label all 1497 targets as post-calibration queries.
 
 Training random-texture anchors may supervise rendering. Check textures are held out from training; validation scenes may use them for model selection, while test scenes stay untouched until the model and configuration are frozen. All normalization, mean baselines and sampling calibration use training scenes only. Existing low-dimensional-C sampling fits are not equivalent to the old spatial-proxy S labels; retain provenance and validity, and do not supervise RoboTwin from invalid S labels. Fit shared S against training native random anchors using oracle H/B/G if needed; record fit residuals and identifiability.
 

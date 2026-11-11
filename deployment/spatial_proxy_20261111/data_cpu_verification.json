@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "samples": [
+    {
+      "split": "train",
+      "engine": "libero",
+      "samples": 1179,
+      "input_rgb": [
+        1,
+        2,
+        3,
+        256,
+        256
+      ],
+      "H_valid": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "split": "train",
+      "engine": "robotwin",
+      "samples": 1179,
+      "input_rgb": [
+        1,
+        3,
+        3,
+        240,
+        320
+      ],
+      "H_valid": [
+        [
+          true,
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "split": "val",
+      "engine": "libero",
+      "samples": 156,
+      "input_rgb": [
+        1,
+        2,
+        3,
+        256,
+        256
+      ],
+      "H_valid": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "split": "val",
+      "engine": "robotwin",
+      "samples": 156,
+      "input_rgb": [
+        1,
+        3,
+        3,
+        240,
+        320
+      ],
+      "H_valid": [
+        [
+          true,
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "split": "test",
+      "engine": "libero",
+      "samples": 162,
+      "input_rgb": [
+        1,
+        2,
+        3,
+        256,
+        256
+      ],
+      "H_valid": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "split": "test",
+      "engine": "robotwin",
+      "samples": 162,
+      "input_rgb": [
+        1,
+        3,
+        3,
+        240,
+        320
+      ],
+      "H_valid": [
+        [
+          true,
+          true,
+          true
+        ]
+      ]
+    }
+  ],
+  "train_check_guard": true,
+  "whole_epoch_coverage": true,
+  "gauge_not_read_and_always_disabled": true,
+  "out_of_frame_regression": {
+    "timestamp": 9923,
+    "H_valid": [
+      true,
+      true,
+      true
+    ],
+    "corners_camera1": [
+      [
+        112.15966033935547,
+        213.85211181640625
+      ],
+      [
+        189.31040954589844,
+        217.7568359375
+      ],
+      [
+        181.167724609375,
+        270.6913757324219
+      ],
+      [
+        84.50558471679688,
+        263.4605712890625
+      ]
+    ]
+  }
+}

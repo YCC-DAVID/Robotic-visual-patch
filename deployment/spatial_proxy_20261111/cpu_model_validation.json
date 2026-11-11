@@ -1,0 +1,338 @@
+{
+  "CPU_only": true,
+  "torch_version": "2.2.0+cu121",
+  "legacy_equivalence": {
+    "base": {
+      "source": "/home/user1/workspace/chence/WAMattack/deployment/dl_full_proxy_teacher_20261111/payload/base.npz",
+      "selected_frame": 78,
+      "checks": [
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": false,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 5.630648136138916
+        },
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": false,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 8.508217811584473
+        },
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": true,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 5.630648136138916
+        },
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": true,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 8.508217811584473
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": false,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 4.745317459106445
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": false,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 6.968421459197998
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": true,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 4.745317459106445
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": true,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 6.968421459197998
+        }
+      ]
+    },
+    "wrist": {
+      "source": "/home/user1/workspace/chence/WAMattack/deployment/dl_full_proxy_teacher_20261111/payload/wrist.npz",
+      "selected_frame": 85,
+      "checks": [
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": false,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 84.14593505859375
+        },
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": false,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 129.61398315429688
+        },
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": true,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 84.14593505859375
+        },
+        {
+          "S": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quantize": true,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 129.61398315429688
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": false,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 68.01964569091797
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": false,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 98.01652526855469
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": true,
+          "native": false,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 68.01964569091797
+        },
+        {
+          "S": [
+            0.21,
+            -0.17,
+            0.37
+          ],
+          "quantize": true,
+          "native": true,
+          "max_image_diff": 0.0,
+          "max_Q_gradient_diff": 0.0,
+          "Q_gradient_norm": 98.01652526855469
+        }
+      ]
+    }
+  },
+  "geometry": {
+    "native_hw": [
+      240,
+      320
+    ],
+    "corner_roundtrip_max_px": 2.842170943040401e-14,
+    "DLT_float64_gradcheck": true,
+    "degenerate_corner_flagged": true
+  },
+  "renderer": {
+    "gradient_norms": {
+      "H": 134664.4764928246,
+      "B": 479.6576843261719,
+      "G": 242.56625366210938,
+      "S": 32.76176764762631,
+      "Q": 161.7906951904297
+    },
+    "dynamic_H_grid_changes": true,
+    "float_Q_directional_difference": {
+      "analytic": 0.3771931231021881,
+      "numeric": 0.37749332189559937,
+      "relative_error": 0.0007952426599331438
+    },
+    "native_hw_supported": [
+      240,
+      320
+    ],
+    "RoboTwin_native_equivalence_claim": false
+  },
+  "model": {
+    "encoder": "tiny_vit_5m_224.in1k",
+    "timm_version": "0.9.10",
+    "pretrained_requested": false,
+    "encoder_parameters": 5071124,
+    "total_parameters": 5330085,
+    "trainable_parameters": 5330085,
+    "query_fields": [
+      [
+        "center_xyz",
+        3
+      ],
+      [
+        "size_wh",
+        2
+      ],
+      [
+        "plane_z",
+        1
+      ],
+      [
+        "reserved_gauge_DISABLED",
+        9
+      ],
+      [
+        "texture_hw",
+        2
+      ],
+      [
+        "orientation_wxyz",
+        4
+      ]
+    ],
+    "query_dim": 21,
+    "disabled_input_dimensions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "canonical_gauge_is_model_input": false,
+    "H_direction": "native_image_pixel_to_texture_pixel",
+    "texture_hw": [
+      128,
+      128
+    ],
+    "S_scope": "shared imaging configuration only",
+    "single_timestamp": true,
+    "input_native_hw": [
+      256,
+      256
+    ],
+    "missing_camera_isolated": true,
+    "missing_EEF_nan_isolated": true,
+    "S_invariant_to_RGB": true,
+    "forbidden_gauge_key_never_read": true,
+    "forbidden_gauge_values_do_not_affect_outputs": true,
+    "forbidden_gauge_validity_rejected": true,
+    "CPU_bfloat16_autocast_finite": true,
+    "output_geometry_dtype": "float64",
+    "gradient_l1": {
+      "encoder": 0.7464834323246095,
+      "state": 2.8012986376779736e-05,
+      "query": 1.1603640274415739e-05,
+      "geometry": 0.002800310183374677,
+      "B": 1.7422949150204659,
+      "G": 0.0048140497819986194,
+      "S_embedding": 3.6830119398700845e-08,
+      "S_mlp": 6.33790048354399e-05,
+      "decoder": 0.0697545514558442
+    },
+    "max_parameter_updates": {
+      "encoder": 0.00010001659393310547,
+      "state": 8.059293031692505e-05,
+      "query": 7.576029747724533e-05,
+      "geometry": 9.998439054470509e-05,
+      "B": 0.00010000006295740604,
+      "G": 0.00010013580322265625,
+      "S_embedding": 4.8041343688964844e-05,
+      "S_mlp": 9.995419532060623e-05,
+      "decoder": 0.00010001659393310547
+    },
+    "loss": 0.01587815023958683,
+    "initialized_with_pretrained_weights": false,
+    "target_fixture": "/home/user1/workspace/chence/WAMattack/deployment/dl_spatial_proxy_targets_20261111/payload/targets/target_00003.npz",
+    "target_sha256": "3e85b3a2995ceb535eaecd43f7a6418fbad96cf1ddeea1ff5444323a903d7952"
+  },
+  "passed": true,
+  "source_sha256": {
+    "model.py": "4497cd2481d2cc22708eb5367a6295cd041a04f94f774022af13955e5dba4034",
+    "renderer.py": "49eaae3dca55af4c9de6719e0cdb6e92da5409c093d3f606fdd9c83eca12e315",
+    "test_core.py": "9372d88df6a0fb48c7e301c56b4fa311b8cccb5dc1a0eb8ea69cad4dcd9f17ca",
+    "MODEL_NOTES.md": "b7fb28e801d82be1c5ba5a39f151f6ca9e870b4e95ab6084eda618f91a8a3db8"
+  }
+}
