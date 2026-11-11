@@ -1,0 +1,116 @@
+{
+  "schema": "wam-lossless-transfer-v1",
+  "complete": true,
+  "cpu_only": true,
+  "archive_bytes": 173895680,
+  "archive_sha256": "d0629c21f2880b2aec7096f075fd527f7ace35215af92c5eb42ecc852368e73c",
+  "payload_manifest_sha256": "296f4639b80af9f3f0d4e75af11968dd1eb52f1662366f42f7b8cab95097930e",
+  "parts": [
+    {
+      "path": "parts/payload.tar.part0000",
+      "bytes": 8388608,
+      "sha256": "b504a3e1fc5dbe05a339eb353baed8df54b7e578e57d211fe63c8930176ccb2d"
+    },
+    {
+      "path": "parts/payload.tar.part0001",
+      "bytes": 8388608,
+      "sha256": "b2efb8d8037576080512eff03904e03d2c42cb727f0a1aba377e014058d741a6"
+    },
+    {
+      "path": "parts/payload.tar.part0002",
+      "bytes": 8388608,
+      "sha256": "ace2b46a614114db2a2ccd4d85f2c09c128a82015057095a3100b2d1b592fbef"
+    },
+    {
+      "path": "parts/payload.tar.part0003",
+      "bytes": 8388608,
+      "sha256": "55e6163db9e1507f0bab079654641d54cbeedf41a0adddf70e26f66ebd431a05"
+    },
+    {
+      "path": "parts/payload.tar.part0004",
+      "bytes": 8388608,
+      "sha256": "56777f879eddf4f65f4a45225583c693a0fb88a7865827d50c9c98ce65aeb86a"
+    },
+    {
+      "path": "parts/payload.tar.part0005",
+      "bytes": 8388608,
+      "sha256": "c795cf55fe27332176e1584f770a5df903f96efde29c50e595e9c2c51f01eb85"
+    },
+    {
+      "path": "parts/payload.tar.part0006",
+      "bytes": 8388608,
+      "sha256": "90477e6f3fe1ca21a097a33ef0ff2dd2e45917be3ed996b4f68190cd2a04c2b8"
+    },
+    {
+      "path": "parts/payload.tar.part0007",
+      "bytes": 8388608,
+      "sha256": "a0c6754f371cb095f10efe8beda2bc60a125cbb6b90d22089a7fb6896f76518d"
+    },
+    {
+      "path": "parts/payload.tar.part0008",
+      "bytes": 8388608,
+      "sha256": "8216019de93bae2cf7425b31301f3a07f6f63215f88e453b79572ba6c14e7520"
+    },
+    {
+      "path": "parts/payload.tar.part0009",
+      "bytes": 8388608,
+      "sha256": "c2e4254478d869a8848816f170d117addeb9aa0db11fd323ae3ee92b0931d509"
+    },
+    {
+      "path": "parts/payload.tar.part0010",
+      "bytes": 8388608,
+      "sha256": "1440d6387049061d9df973955bf953f73152673fa865da135db28524b40bebab"
+    },
+    {
+      "path": "parts/payload.tar.part0011",
+      "bytes": 8388608,
+      "sha256": "7432b2188797e36747254e238d6efd7e567798296ce0c68a98533300c5fc5ec8"
+    },
+    {
+      "path": "parts/payload.tar.part0012",
+      "bytes": 8388608,
+      "sha256": "9faba8f311f0184319037a71ee22b42faeb6f91d421b80efbba01143f72e68fd"
+    },
+    {
+      "path": "parts/payload.tar.part0013",
+      "bytes": 8388608,
+      "sha256": "004e6753c8c2252841dfbc782631ce3afae1d881bfbe41e559870e51f38b5f6d"
+    },
+    {
+      "path": "parts/payload.tar.part0014",
+      "bytes": 8388608,
+      "sha256": "02974c961374e07f9b69f78f0232f2b7f8d5a3406bdc9ea28f94f75f83ca226a"
+    },
+    {
+      "path": "parts/payload.tar.part0015",
+      "bytes": 8388608,
+      "sha256": "ee5333c450d4056480e837580818e5cf1f3f9cce35ff060c4d7c9a064003d7b8"
+    },
+    {
+      "path": "parts/payload.tar.part0016",
+      "bytes": 8388608,
+      "sha256": "73cbf3b8f3b96f16f01f6047fd91dd78f0b6b0d53f63726fcac80b3b91cabd48"
+    },
+    {
+      "path": "parts/payload.tar.part0017",
+      "bytes": 8388608,
+      "sha256": "7f4ad98e51f7ed58e42842d2a9ab6c502edee1d963dcd0dd1204fd09ee5605e4"
+    },
+    {
+      "path": "parts/payload.tar.part0018",
+      "bytes": 8388608,
+      "sha256": "754cb285b6efc20f72da8581b9e56cabc6b511084b15e1ad4f4378919bfcc586"
+    },
+    {
+      "path": "parts/payload.tar.part0019",
+      "bytes": 8388608,
+      "sha256": "f364f7c72c99d004182ca17118357304832f25d5f2ec71e5ef2af3b400cd5c49"
+    },
+    {
+      "path": "parts/payload.tar.part0020",
+      "bytes": 6123520,
+      "sha256": "e6f1c85b061e8753d7ca23ad8a5c20b7d91991bdbb04048bf575f75db036534d"
+    }
+  ],
+  "instruction": "Transfer parts/, transfer_manifest.json and restore_package.py. Do not also transfer payload/ or payload.tar."
+}
