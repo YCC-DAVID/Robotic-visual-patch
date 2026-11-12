@@ -1,0 +1,11 @@
+{
+  "schema": "wam-g1-agent-transfer-v1",
+  "cipher": "AES-256-GCM",
+  "key_wrap": "RSA-OAEP-SHA256-MGF1-SHA256",
+  "recipient_public_sha256": "fd59b73046f4015d93a66a3bece38408481f7085cb9d3ee43c95f0928f9e0d54",
+  "nonce_b64": "Y9TJ2O3M7EHL8g4b",
+  "wrapped_key_b64": "XoIZVGeDL5qhenjm22spmKqPt0r78y2Rs+leWVToWBDUEGDG9rKx1af7kMTtXWneJDAfNq8cC/sbbRwPhfEp/eyKG7G9foMoxP/3M7QHWV09/xzRsskJipr28E3bQC5vgHk6mndujGZeaSNFFpqKXwRdu+44wnaor7CPWRHPBvKyqLY8GEJ+LOqWnx6mgQhEw3LllCRetHXlkqXHse2QLu8YgD4SkZNlXpVgVBVkLdLd4HZRUWUrLf5Vbh8JDjBURrm9/ugPgOvtTL3eXR5zfdXqlQhx+AYxqrizdq5SCCjBg9EmO6gPr+X4UgeOOXwcFCHUZkolY4LaZrbYzJckEkY95wovuZYod1G4KXcDblrviFwQ1e9iH1fsDnP9zShU1UmYZGS9iHsH9NdD12VIHgZOE0oVDh+pXJzcEqkOJ1eAcrSKS+NH3ocVKdid3nsXRAxpGfTy/Rn5S91UZXB5DJMB5vnodntVfrlaIzgelyWkv5dQjza3uSTdokX9TsEN",
+  "aad_utf8": "wam-g1-agent-transfer-v1",
+  "ciphertext_sha256": "e93b5d815714b9cad4fa4706898bd6c5a267775cb9e1fb90dc745c8be7635982",
+  "ciphertext_bytes": 406390
+}
